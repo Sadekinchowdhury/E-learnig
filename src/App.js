@@ -13,7 +13,7 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import SignIn from "./components/Security/SignIn";
 import Signup from "./components/Security/Signup";
-
+import SeoPage from './components/topics/Seo/SeoPage'
 function App() {
     return (
         <div>
@@ -26,6 +26,8 @@ function App() {
                         element={<DigitalMarketing />}></Route>
                     <Route path="/appDevelopment"
                         element={<AppDevelopment />}></Route>
+                    <Route path="/seo"
+                        element={<SeoPage />}></Route>
                     <Route path="/privateNotice"
                         element={<PrivateNotice />}></Route>
                     <Route path="/publicNotice"

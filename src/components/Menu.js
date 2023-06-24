@@ -35,8 +35,10 @@ export default function Menu() {
                             </a>
                         </li>
                         <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a class="px-20 py-1">
-                                <span class=""></span>
+                            <a class=" py-1">
+                                <span class="">
+                                    <Link to="/seo" >Seo </Link>
+                                </span>
                             </a>
                         </li>
                     </ul>
