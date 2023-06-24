@@ -2,10 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 const Signin = () => {
 
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -17,12 +15,6 @@ const Signin = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Perform form submission or validation logic here
-        // ...
-
-        // Reset form fields
-
         setEmail('');
         setPassword('');
     };
