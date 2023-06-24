@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export default function Menu() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     return (
         <div class="px-2 md:px-0 py-3 space-y-2 md:space-y-0 md:space-x-2 font-medium text-slate-100" id="main_menu">
             <ul class="md:flex p-1 md:p-2 text-sm md:text-base" id="menu_nav">
+                {/* Home */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_home">
                     <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="last firstlevel">
@@ -13,6 +14,7 @@ export default function Menu() {
                         </span>
                     </a>
                 </li>
+                {/* Topics */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Topics</span>
@@ -35,12 +37,21 @@ export default function Menu() {
                             </a>
                         </li>
                         <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a class="py-1">
+                                <span class="">
+                                    {" "}
+                                    <Link to="/webDevelopment">Web Development</Link>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a class="px-20 py-1">
                                 <span class=""></span>
                             </a>
                         </li>
                     </ul>
                 </li>
+                {/* Notices */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Notice</span>
@@ -69,16 +80,55 @@ export default function Menu() {
                         </li>
                     </ul>
                 </li>
+                {/* Courses */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
-                        <span class="firstlevel">Courses</span>
+                        <span class="firstlevel">
+                            <Link to="/course">Courses</Link>
+                        </span>
+                    </a>
+                    {/* <ul class="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a class="px-2 py-1">
+                                <span class="">
+                                    {" "}
+                                    <Link to="/privateCourse">Private Crouse</Link>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a class="px-2 py-1">
+                                <span class="">
+                                    {" "}
+                                    <Link to="/publicCourse">Public Crouse</Link>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a class="px-20 py-1">
+                                <span class=""></span>
+                            </a>
+                        </li>
+                    </ul> */} </li>
+                {/* Meeting */}
+                <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
+                        <span class="last firstlevel">
+                            <Link to="/meeting">Meeting</Link>
+                        </span>
+                    </a>
+                </li>
+                {/* Live */}
+                <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
+                        <span class="firstlevel">Live</span>
                     </a>
                     <ul class="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a class="px-2 py-1">
                                 <span class="">
                                     {" "}
-                                    <Link to="/privateCourse">Private Course</Link>
+                                    <Link to="/liveVideos">Live Videos</Link>
                                 </span>
                             </a>
                         </li>
@@ -86,41 +136,51 @@ export default function Menu() {
                             <a class="px-2 py-1">
                                 <span class="">
                                     {" "}
-                                    <Link to="/publicCourse">Public Course</Link>
+                                    <Link to="/liveMeetings">Live Meetings</Link>
                                 </span>
                             </a>
                         </li>
                         <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a class="px-2 py-1">
-                                <span class="">
-                                    {" "}
-                                    <Link to="/publicCourse">Public Course</Link>
-                                </span>
+                            <a class="px-20 py-1">
+                                <span class=""></span>
                             </a>
                         </li>
-
                     </ul>
                 </li>
+                {/* Certificate */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <img className="w-8 h-8 rounded-full" src="" alt="" />
+                    <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
+                        <span class="last firstlevel">
+                            <Link to="/certificate">Certificate</Link>
+                        </span>
+                    </a>
+                </li>
+                {/* Login */}
+                <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <a class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
+                        <span class="firstlevel">Login</span>
+                    </a>
                     <ul class="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a class="px-2 py-1">
                                 <span class="">
                                     {" "}
-                                    <Link to="/privateNotice">Profile</Link>
+                                    <Link to="/profile">Profile</Link>
                                 </span>
                             </a>
                         </li>
                         <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a class="px-2 py-1">
-                                <span class="">
+                                {/* <span class="">
                                     {" "}
-                                    <Link to="/publicNotice">Log Out</Link>
+                                    <Link to="/publicNotice">Log out</Link>
+                                </span> */}
+                                <span class="">
+                                    Log out
                                 </span>
                             </a>
                         </li>
-                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-100 hover:text-gray-800 hover:bg-gray-100">
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a class="px-20 py-1">
                                 <span class=""></span>
                             </a>
