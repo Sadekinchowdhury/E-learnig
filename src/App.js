@@ -36,6 +36,7 @@ function App() {
 
 
                     <Route path="/appDevelopment"
+ 
 
 
                         element={<AppDevelopment />}>
@@ -50,16 +51,24 @@ function App() {
                     <Route element={<AppDevelopment />}></Route>
                     <Route path="/seo"
                         element={<SeoPage />}></Route>
-
+ 
+                        element={<AppDevelopment />}></Route>
+                    <Route path="/seo"
+                        element={<SeoPage />}></Route>
+ 
                     <Route path="/webDevelopment"
                         element={<WebDevelopment />}></Route>
                     <Route path="/course"
+ 
 
                         element={<Course />}></Route>
 
 
                     <Route element={<Course />}></Route>
 
+ 
+                        element={<Course/>}></Route>
+ 
                     <Route path="/privateNotice"
                         element={<PrivateNotice />}></Route>
                     <Route path="/meeting"
