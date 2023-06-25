@@ -20,52 +20,134 @@ import Footer from "./components/Footer";
 import Profile from "./components/Security/Profile";
 import LiveVideos from './components/live/LiveVidoes';
 import LiveMeetings from "./components/live/LiveMeetings"
+import Service from "./components/Service/Service";
+
 
 function App() {
-    return (
-        <div>
-            <BrowserRouter>
-                <Navbar/>
-                <Routes>
-                    <Route index
-                        element={<Home/>}/>
-                    <Route path="/digitalMarketing"
-                        element={<DigitalMarketing/>}></Route>
-                    <Route path="/appDevelopment"
-                        element={<AppDevelopment />}></Route>
-                    <Route path="/seo"
-                        element={<SeoPage />}></Route>
-                    <Route path="/webDevelopment"
-                        element={<WebDevelopment/>}></Route>
-                    <Route path="/course"
-                        element={<Course/>}></Route>
-                    <Route path="/privateNotice"
-                        element={<PrivateNotice/>}></Route>
-                    <Route path="/meeting"
-                        element={<Meeting/>}></Route>
-                    <Route path="/publicNotice"
-                        element={<PublicNotice/>}></Route>
-                    <Route path="/privateCourse"
-                        element={<PrivateCourse/>}></Route>
-                    <Route path="/publicCourse"
-                        element={<PublicCourse/>}></Route>
-                    <Route path="/liveVideos"
-                        element={<LiveVideos/>}></Route>
-                    <Route path="/liveMeetings"
-                        element={<LiveMeetings/>}></Route>
-                    <Route path="/certificate"
-                        element={<Certificate/>}></Route>
-                    <Route path="/signin"
-                        element={<SignIn/>}></Route>
-                    <Route path="/signup"
-                        element={<Signup/>}></Route>
-                    <Route path="/profile"
-                        element={<Profile/>}></Route>
-                </Routes>
-                <Footer/>
-            </BrowserRouter>
-        </div>
-    );
+    return (<div> {/* <BrowserRouter>
+            <Navbar/>
+            <Routes>
+                <Route index
+                    element={<Home/>}/>
+                <Route path="/digitalMarketing"
+                    element={<DigitalMarketing/>}></Route>
+
+
+                <Route path="/appDevelopment"
+
+
+                    element={<AppDevelopment/>}></Route>
+
+                <Route path="/seo"
+                    element={<SeoPage/>}></Route>
+                <Route path="/service"
+                    element={<Service/>}></Route>
+
+                <Route element={<AppDevelopment/>}></Route>
+
+                <Route element={<AppDevelopment/>}></Route>
+                <Route path="/seo"
+                    element={<SeoPage/>}></Route>
+
+                element={
+                < AppDevelopment />
+            }></Route>
+            <Route path="/seo"
+                element={<SeoPage/>}></Route>
+
+            <Route path="/webDevelopment"
+                element={<WebDevelopment/>}></Route>
+            <Route path="/course"
+
+
+                element={<Course/>}></Route>
+
+
+            <Route element={<Course/>}></Route>
+
+
+            element={
+            < Course />
+        }></Route>
+
+        <Route path="/privateNotice"
+            element={<PrivateNotice/>}></Route>
+        <Route path="/meeting"
+            element={<Meeting/>}></Route>
+        <Route path="/publicNotice"
+            element={<PublicNotice/>}></Route>
+        <Route path="/privateCourse"
+            element={<PrivateCourse/>}></Route>
+        <Route path="/publicCourse"
+            element={<PublicCourse/>}></Route>
+        <Route path="/liveVideos"
+            element={<LiveVideos/>}></Route>
+        <Route path="/liveMeetings"
+            element={<LiveMeetings/>}></Route>
+        <Route path="/certificate"
+            element={<Certificate/>}></Route>
+        <Route path="/signin"
+            element={<SignIn/>}></Route>
+        <Route path="/signup"
+            element={<Signup/>}></Route>
+        <Route path="/profile"
+            element={<Profile/>}></Route>
+    </Routes>
+    <Footer/>
+</BrowserRouter> */}
+        <BrowserRouter>
+            <Navbar/>
+            <Routes>
+                <Route index
+                    element={<Home/>}/>
+                <Route path="/digitalMarketing"
+                    element={<DigitalMarketing/>}></Route>
+                <Route path="/appDevelopment"
+                    element={<AppDevelopment/>}></Route>
+                <Route path="/seo"
+                    element={<SeoPage/>}></Route>
+                <Route path="/service"
+                    element={<Service/>}></Route>
+                <Route element={<AppDevelopment/>}></Route>
+                <Route element={<AppDevelopment/>}></Route>
+                <Route path="/seo"
+                    element={<SeoPage/>}></Route>
+                <Route path="/seo"
+                    element={<SeoPage/>}></Route>
+                <Route path="/webDevelopment"
+                    element={<WebDevelopment/>}></Route>
+                <Route path="/course"
+                    element={<Course/>}></Route>
+                <Route element={<Course/>}></Route>
+                <Route path="/privateNotice"
+                    element={<PrivateNotice/>}></Route>
+                <Route path="/meeting"
+                    element={<Meeting/>}></Route>
+                <Route path="/publicNotice"
+                    element={<PublicNotice/>}></Route>
+                <Route path="/privateCourse"
+                    element={<PrivateCourse/>}></Route>
+                <Route path="/publicCourse"
+                    element={<PublicCourse/>}></Route>
+                <Route path="/liveVideos"
+                    element={<LiveVideos/>}></Route>
+                <Route path="/liveMeetings"
+                    element={<LiveMeetings/>}></Route>
+                <Route path="/certificate"
+                    element={<Certificate/>}></Route>
+                <Route path="/signin"
+                    element={<SignIn/>}></Route>
+                <Route path="/signup"
+                    element={<Signup/>}></Route>
+                <Route path="/profile"
+                    element={<Profile/>}></Route>
+
+            </Routes>
+            <Footer/>
+        </BrowserRouter>
+
+    </div>);
+
 }
 
 export default App;

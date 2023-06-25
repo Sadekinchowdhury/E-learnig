@@ -18,6 +18,8 @@ import "swiper/css/navigation";
 import {Autoplay, Pagination, Navigation} from "swiper";
 import {Banner} from './components/Banner/Banner'
 import Card from './components/Card/Card'
+import Services from './components/Service/Services'
+import Statistics from './components/Statistics/Statistics'
 
 
 export default function Home() {
@@ -150,7 +152,18 @@ export default function Home() {
                 </div>
             </div>
             <div>
+<<<<<<< HEAD
                 <Banner/>
+=======
+                <Banner />
+
+            </div>
+            <div>
+                <Statistics />
+            </div>
+            <div>
+                <Services />
+>>>>>>> 06d49acb96c137ff8c909c5516b1bb09628d966f
             </div>
             <div>
                 <Card/>
