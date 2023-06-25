@@ -19,6 +19,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import { Banner } from './components/Banner/Banner'
 import Card from './components/Card/Card'
 import Services from './components/Service/Services'
+import Statistics from './components/Statistics/Statistics'
 
 
 export default function Home() {
@@ -175,6 +176,9 @@ export default function Home() {
             <div>
                 <Banner />
 
+            </div>
+            <div>
+                <Statistics />
             </div>
             <div>
                 <Services />
