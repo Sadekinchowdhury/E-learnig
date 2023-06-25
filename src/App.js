@@ -5,11 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import DigitalMarketing from "./components/topics/DigitalMarketing";
 import AppDevelopment from "./components/topics/AppDevelopment";
-import WebDevelopment from "./components/topics/WebDevelopment";
-import PrivateNotice from "./components/notices/PrivateNotice";
 import Contact from './components/Contact/Contact';
 import Meeting from "./components/meeting/Meeting";
 import Notices from "./components/notices/Notices";
+import WebDevelopment from './components/topics/WebDevelopment'
 import Course from "./components/courses/Course";
 import PublicCourse from "./components/courses/PublicCourse";
 import Certificate from "./components/certificate/Certificate";
@@ -21,7 +20,6 @@ import Profile from "./components/Security/Profile";
 import LiveVideos from './components/live/LiveVidoes';
 import LiveMeetings from "./components/live/LiveMeetings"
 import Service from "./components/Service/Service";
-
 
 function App() {
     return (
@@ -52,7 +50,6 @@ function App() {
                     <Route path="/seo"
                         element={<SeoPage />}></Route>
  
-                        element={<AppDevelopment />}></Route>
                     <Route path="/seo"
                         element={<SeoPage />}></Route>
  
@@ -67,24 +64,21 @@ function App() {
                     <Route element={<Course />}></Route>
 
  
-                        element={<Course/>}></Route>
  
-                    <Route path="/privateNotice"
-                        element={<PrivateNotice />}></Route>
+                    <Route path="/notices"
+                        element={<Notices />}></Route>
                     <Route path="/meeting"
-<<<<<<< HEAD
                         element={<Meeting/>}></Route>
                     <Route path="/notices"
                         element={<Notices/>}></Route>
                     <Route path="/contact"
                         element={<Contact/>}></Route>
-=======
+                        <Route path="/meeting"
                         element={<Meeting />}></Route>
-                    <Route path="/publicNotice"
+                    {/* <Route path="/publicNotice"
                         element={<PublicNotice />}></Route>
                     <Route path="/privateCourse"
-                        element={<PrivateCourse />}></Route>
->>>>>>> 06d49acb96c137ff8c909c5516b1bb09628d966f
+                        element={<PrivateCourse />}></Route> */}
                     <Route path="/publicCourse"
                         element={<PublicCourse />}></Route>
                     <Route path="/liveVideos"
