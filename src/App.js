@@ -13,6 +13,7 @@ import PrivateCourse from "./components/courses/PrivateCourse";
 import Course from "./components/courses/Course";
 import PublicCourse from "./components/courses/PublicCourse";
 import Certificate from "./components/certificate/Certificate";
+import CertificateForm from "./components/certificate/CertificateForm";
 import SignIn from "./components/Security/SignIn";
 import Signup from "./components/Security/Signup";
 import SeoPage from './components/topics/Seo/SeoPage'
@@ -135,6 +136,8 @@ function App() {
                     element={<LiveMeetings/>}></Route>
                 <Route path="/certificate"
                     element={<Certificate/>}></Route>
+                <Route path="/certificateForm"
+                    element={<CertificateForm/>}></Route>
                 <Route path="/signin"
                     element={<SignIn/>}></Route>
                 <Route path="/signup"
