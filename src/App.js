@@ -7,9 +7,9 @@ import DigitalMarketing from "./components/topics/DigitalMarketing";
 import AppDevelopment from "./components/topics/AppDevelopment";
 import WebDevelopment from "./components/topics/WebDevelopment";
 import PrivateNotice from "./components/notices/PrivateNotice";
+import Contact from './components/Contact/Contact';
 import Meeting from "./components/meeting/Meeting";
-import PublicNotice from "./components/notices/PublicNotice";
-import PrivateCourse from "./components/courses/PrivateCourse";
+import Notices from "./components/notices/Notices";
 import Course from "./components/courses/Course";
 import PublicCourse from "./components/courses/PublicCourse";
 import Certificate from "./components/certificate/Certificate";
@@ -43,10 +43,10 @@ function App() {
                         element={<PrivateNotice/>}></Route>
                     <Route path="/meeting"
                         element={<Meeting/>}></Route>
-                    <Route path="/publicNotice"
-                        element={<PublicNotice/>}></Route>
-                    <Route path="/privateCourse"
-                        element={<PrivateCourse/>}></Route>
+                    <Route path="/notices"
+                        element={<Notices/>}></Route>
+                    <Route path="/contact"
+                        element={<Contact/>}></Route>
                     <Route path="/publicCourse"
                         element={<PublicCourse/>}></Route>
                     <Route path="/liveVideos"
