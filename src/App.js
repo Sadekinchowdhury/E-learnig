@@ -15,15 +15,12 @@ import PublicCourse from "./components/courses/PublicCourse";
 import Certificate from "./components/certificate/Certificate";
 import SignIn from "./components/Security/SignIn";
 import Signup from "./components/Security/Signup";
-<<<<<<< HEAD
 import SeoPage from './components/topics/Seo/SeoPage'
-=======
 import Footer from "./components/Footer";
 import Profile from "./components/Security/Profile";
 import LiveVideos from './components/live/LiveVidoes';
 import LiveMeetings from "./components/live/LiveMeetings"
 
->>>>>>> e2135cf41761257621e0031228d856c48566ca5b
 function App() {
     return (
         <div>
@@ -35,17 +32,13 @@ function App() {
                     <Route path="/digitalMarketing"
                         element={<DigitalMarketing/>}></Route>
                     <Route path="/appDevelopment"
-<<<<<<< HEAD
                         element={<AppDevelopment />}></Route>
                     <Route path="/seo"
                         element={<SeoPage />}></Route>
-=======
-                        element={<AppDevelopment/>}></Route>
                     <Route path="/webDevelopment"
                         element={<WebDevelopment/>}></Route>
                     <Route path="/course"
                         element={<Course/>}></Route>
->>>>>>> e2135cf41761257621e0031228d856c48566ca5b
                     <Route path="/privateNotice"
                         element={<PrivateNotice/>}></Route>
                     <Route path="/meeting"
