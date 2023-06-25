@@ -15,9 +15,7 @@ import PublicCourse from "./components/courses/PublicCourse";
 import Certificate from "./components/certificate/Certificate";
 import SignIn from "./components/Security/SignIn";
 import Signup from "./components/Security/Signup";
-
 import SeoPage from './components/topics/Seo/SeoPage'
-
 import Footer from "./components/Footer";
 import Profile from "./components/Security/Profile";
 import LiveVideos from './components/live/LiveVidoes';
@@ -39,6 +37,7 @@ function App() {
 
                     <Route path="/appDevelopment"
 
+
                         element={<AppDevelopment />}>
                     </Route>
 
@@ -47,10 +46,19 @@ function App() {
                     <Route path="/service" element={<Service />}></Route>
 
                     <Route element={<AppDevelopment />}></Route>
+
+                    <Route element={<AppDevelopment />}></Route>
+                    <Route path="/seo"
+                        element={<SeoPage />}></Route>
+
                     <Route path="/webDevelopment"
                         element={<WebDevelopment />}></Route>
                     <Route path="/course"
+
                         element={<Course />}></Route>
+
+
+                    <Route element={<Course />}></Route>
 
                     <Route path="/privateNotice"
                         element={<PrivateNotice />}></Route>
@@ -76,9 +84,11 @@ function App() {
                         element={<Profile />}></Route>
                 </Routes>
                 <Footer />
-            </BrowserRouter>
+            </BrowserRouter >
         </div >
+
     );
+
 }
 
 export default App;
