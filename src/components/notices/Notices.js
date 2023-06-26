@@ -1,22 +1,43 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react'
+import PrivateNotice from './PrivateNotice';
+import PublicNotice from './PublicNotice';
+import {IoIosNotifications} from 'react-icons/io'
 const Notices = () => {
+  const [privateNotice, setPrivateNotice] = useState(false);
+  const [publicNotice, setPublicNotice] = useState(true)
 
+  const showPrivateNotice = () => {
+    if (!privateNotice) {
+      setPrivateNotice(!privateNotice);
+      setPublicNotice(false)
+    }
+
+  }
+  const showPublicNotice = () => {
+    if (!publicNotice) {
+      setPublicNotice(!publicNotice)
+      setPrivateNotice(false);
+    }
+  }
   return (
-    <div className='py-8 bg-[#00194a]'>
-        <h2 className='text-3xl text-center text-white'>Notifications</h2>
-        <div className='max-w-[900px] mx-auto border border-red-500 mt-5'>
-<ul className='flex gap-5'>
-                <li>
-                <Link className='btn btn-lg bg-black text-white font-semibold py-3 px-4 rounded' to="/notices/private">Private Notice</Link>
-                </li>
-                <li>
-                <Link className='btn btn-lg bg-black text-white font-semibold py-3 px-4 rounded' to="/notices/public">Private Notice</Link>
-                </li>
-            </ul>            
+    <section className='py-8 bg-[#001030]'>
+      <h2 className='text-4xl text-center text-white font-bold'> <IoIosNotifications className='inline text-5xl text-[#00ba57]'/> Notifications</h2>
+      <ul className='mt-8 flex items-center justify-center'>
+        <li>
+          <button onClick={showPublicNotice} className={`notice-toggle-btn btn btn-lg bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${publicNotice && 'active-notice'}`} to="/notices/public">Public Notice</button>
+        </li>
+        <li>
+          <button onClick={showPrivateNotice} className={`notice-toggle-btn btn btn-lg bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${privateNotice && 'active-notice'}`}>Private Notice</button>
+        </li>
+
+      </ul>
+      <div className='max-w-[900px] mx-auto mt-3'>
+        <div>
+          {privateNotice && <PrivateNotice />}
+          {publicNotice && <PublicNotice />}
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 
