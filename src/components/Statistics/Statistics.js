@@ -38,7 +38,7 @@ const Statistics = () => {
 
                 <div className="grid  gap-5  w-11/12 mx-auto grid-cols-1 md:grid-cols-2">
                     {statistics.map((statics, index) => (
-                        <Link className='text-white transition duration-200 hover:scale-110 cursor-pointer bg-blue-900    border-[0.01px] border-gray-700 rounded-2xl shadow-2xl p-4 flex-col text-center items-center justify-center'>
+                        <Link className='text-white transition duration-200 hover:scale-110 cursor-pointer bg-blue-900  hover:border-[1px] hover:border-blue-400  border-[0.01px] border-gray-700 rounded-2xl shadow-2xl p-4 flex-col text-center items-center justify-center'>
                             <div className='flex items-center justify-center mb-2 rounded-full'>
                                 {statics.icon.map(Icon =>
                                     <div className='
