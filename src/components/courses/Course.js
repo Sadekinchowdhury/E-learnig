@@ -4,7 +4,7 @@ import AllCourse from './AllCourse'
 
 export default function Course() {
     return (
-        <div>
+        <div className=''>
 
             <Filters />
             <AllCourse />
