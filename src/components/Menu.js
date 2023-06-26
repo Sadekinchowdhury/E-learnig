@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Modal from "./meeting/MeetingModal";
 
 export default function Menu() {
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
 
     const [showModal, setShowModal] = useState(null);
-
-
 
     return (
         <div className="px-2 md:px-0 py-3 space-y-2 md:space-y-0 md:space-x-2 font-medium text-slate-100" id="main_menu">
@@ -25,73 +21,7 @@ export default function Menu() {
                     <Link to="/service" class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Topics</span>
                     </Link>
-                    {/* <ul class="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
-                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a class="py-1">
-                                <span class="">
-=======
-                <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
-                        <span className="firstlevel">Topics</span>
-                    </a>
-                    {/* <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="py-1">
-                                <span className="">
->>>>>>> a53c1e4c30f779f465cee4d515ebaf676cb7b151
-                                    {" "}
-                                    <Link to="/digitalMarketing">Digital Marketing</Link>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="py-1">
-                                <span className="">
-                                    {" "}
-                                    <Link to="/appDevelopment">App Development</Link>
-                                </span>
-                            </a>
-                        </li>
-<<<<<<< HEAD
-                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            {/* <<<<<<< HEAD */}
-                    {/* <a class=" py-1">
-                                <span class="">
-                                    <Link to="/seo" >Seo </Link>
-                                </span>
-                            </a>
-                            {/* ======= */}
-                    {/* <a class="py-1">
-                                <span class="">
-=======
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className=" py-1">
-                                <span className="">
-                                    <Link to="/seo" >Seo </Link>
-                                </span>
-                                </a>
-                            <a className="py-1">
-                                <span className="">
- 
-                                    {" "}
-                                    <Link to="/webDevelopment">Web Development</Link>
-                                </span>
-                            </a>
-                        </li>
-<<<<<<< HEAD
-                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a class="px-20 py-1">
-                                <span class=""></span> */}
-                    {/* >>>>>>> e2135cf41761257621e0031228d856c48566ca5b */}
-                    {/* </a>
-=======
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="px-20 py-1">
-                                <span className=""></span>
-                            </a>
->>>>>>> a53c1e4c30f779f465cee4d515ebaf676cb7b151
-                        </li>
-                    </ul> */}
+
                 </li>
                 {/* Notices */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
@@ -129,29 +59,7 @@ export default function Menu() {
                             <Link to="/course">Courses</Link>
                         </span>
                     </a>
-                    {/* <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="px-2 py-1">
-                                <span className="">
-                                    {" "}
-                                    <Link to="/privateCourse">Private Crouse</Link>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="px-2 py-1">
-                                <span className="">
-                                    {" "}
-                                    <Link to="/publicCourse">Public Crouse</Link>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="px-20 py-1">
-                                <span className=""></span>
-                            </a>
-                        </li>
-                    </ul> */} </li>
+                </li>
                 {/* Meeting */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
@@ -163,7 +71,7 @@ export default function Menu() {
                                 {showModal && (
                                     <div className="fixed z-10 inset-0 overflow-y-auto">
 
-                                        <div className="flex items-end justify-center min-h-screen pt-4 px-1 pb-20 text-center sm:block sm:p-0">
+                                        <div className="px-1 pb-8 text-center sm:block sm:p-0 mt-8">
                                             <div className="fixed inset-0 transition-opacity">
                                                 <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
                                             </div>
@@ -179,7 +87,7 @@ export default function Menu() {
                                                 aria-modal="true"
                                                 aria-labelledby="modal-headline"
                                             >
-                                                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                                                <div className="bg-white px-4  pt-5 pb-4 sm:p-6 sm:pb-4">
                                                     <div className="flex items-center justify-center">
 
                                                         <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
