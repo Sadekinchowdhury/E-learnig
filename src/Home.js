@@ -20,6 +20,7 @@ import { Banner } from './components/Banner/Banner'
 import Card from './components/Card/Card'
 import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
+import ServiceSlider from './components/Service/ServiceSlider'
 
 
 export default function Home() {
@@ -136,6 +137,23 @@ export default function Home() {
                     </div>
                 </div>
                 {/* FAQ section */}
+
+            </div>
+            <div>
+                <Banner />
+
+            </div>
+            <div>
+                <Statistics />
+            </div>
+            <div>
+                <Services />
+
+            </div>
+            {/* <div>
+                <Card />
+            </div> */}
+            <div>
                 <div className="flex items-center justify-center w-10/12 mx-auto mt-2">
                     <div className="bg-white">
                         <h2 className="text-2xl font-semibold">
@@ -172,19 +190,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <Banner />
-
-            </div>
-            <div>
-                <Statistics />
-            </div>
-            <div>
-                <Services />
-            </div>
-            <div>
-                <Card />
             </div>
         </div>
     )
