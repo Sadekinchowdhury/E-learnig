@@ -1,0 +1,128 @@
+.seo-banner {
+    padding: 100px 200px;
+    background: linear-gradient(to bottom, rgb(23 23 23 / 93%), rgba(117, 19, 93, 0.73)), url('../../../assects//images//search-engine-optimization.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+button.enroll-seo {
+    background: #cb47b0;
+    padding: 16px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.seo-details{
+    background: #fbe5ff;
+    padding:100px 200px;
+}
+.course-info{
+    color:#2e475d;
+}
+.skill {
+    display: inline-block;
+    background: #2e475d;
+    margin: 6px 7px;
+    padding: 10px 30px;
+    color: gainsboro;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 24px;
+}
+/* course curriculum  */
+.course-curriculum{
+    padding: 100px 200px;
+}
+.start-course {
+    padding: 10px 16px;
+    background: #cb47b0;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px 1px #510040a8;
+}
+.course-instructors-body {
+    background: none;
+    border: 1px solid rgb(229 245 255);
+}
+.instructor {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.instructor img{
+    width: 50px;
+}
+.number {
+    width: 50px;
+    background: #dbe4ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.seo-basics {
+    width: 350px;
+}
+
+.video-info {
+    width: 200px;
+}
+
+@media only screen and (max-width:1000px){
+    .course-curriculum{
+        padding: 100px;
+    }
+}
+@media only screen and (max-width:768px){
+    .course-curriculum{
+        padding: 50px;
+    }
+}
+@media only screen and (max-width:480px){
+    .course-curriculum{
+        padding: 50px 0;
+    }
+}
+@media only screen and (max-width:768px){
+    .seo-details{
+        padding:100px;
+    }
+}
+@media only screen and (max-width:576px){
+    .seo-details{
+        padding:50px;
+    }
+    .skill{
+        font-size: 12px;
+        margin: 3px 2px;
+         padding: 9px 30px;
+
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .seo-banner {
+        padding: 100px 100px;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .seo-banner {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .seo-banner {
+        padding: 20px;
+    }
+}
