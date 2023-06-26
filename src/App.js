@@ -1,5 +1,5 @@
 import "./App.css";
-import React, {useState} from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Home";
@@ -18,8 +18,10 @@ import Signup from "./components/Security/Signup";
 import SeoPage from './components/topics/Seo/SeoPage'
 import Footer from "./components/Footer";
 import Profile from "./components/Security/Profile";
-import LiveVideos from './components/live/LiveVidoes';
-import LiveMeetings from "./components/live/LiveMeetings"
+import JoinTheLiveClass from './components/live/JoinTheLiveClass';
+import JoinTheLiveMeeting from "./components/live/JoinTheLiveMeeting"
+import LiveMeeting from "./components/live/LiveMeeting"
+import LiveVideo from "./components/live/LiveVideo"
 import Service from "./components/Service/Service";
 
 function App() {
@@ -32,38 +34,23 @@ function App() {
                         element={<Home/>}/>
                     <Route path="/digitalMarketing"
                         element={<DigitalMarketing/>}></Route>
-
-
                     <Route path="/appDevelopment"
-
-
                         element={<AppDevelopment/>}></Route>
-
                     <Route path="/seo"
                         element={<SeoPage/>}></Route>
                     <Route path="/service"
                         element={<Service/>}></Route>
-
                     <Route element={<AppDevelopment/>}></Route>
-
                     <Route element={<AppDevelopment/>}></Route>
                     <Route path="/seo"
                         element={<SeoPage/>}></Route>
-
                     <Route path="/seo"
                         element={<SeoPage/>}></Route>
-
                     <Route path="/webDevelopment"
                         element={<WebDevelopment/>}></Route>
                     <Route path="/course"
-
-
                         element={<Course/>}></Route>
-
-
                     <Route element={<Course/>}></Route>
-
-
                     <Route path="/notices"
                         element={<Notices/>}></Route>
                     <Route path="/meeting"
@@ -80,14 +67,18 @@ function App() {
                         element={<PrivateCourse />}></Route> */}
                     <Route path="/publicCourse"
                         element={<PublicCourse/>}></Route>
-                    <Route path="/liveVideos"
-                        element={<LiveVideos/>}></Route>
-                    <Route path="/liveMeetings"
-                        element={<LiveMeetings/>}></Route>
+                    <Route path="/joinTheLiveClass"
+                        element={<JoinTheLiveClass/>}></Route>
+                    <Route path="/joinTheLiveMeeting"
+                        element={<JoinTheLiveMeeting/>}></Route>
                     <Route path="/certificate"
                         element={<Certificate/>}></Route>
                     <Route path="/certificateForm"
                         element={<CertificateForm/>}></Route>
+                    <Route path="/liveVideo"
+                        element={<LiveVideo/>}></Route>
+                    <Route path="/LiveMeeting"
+                        element={<LiveMeeting/>}></Route>
                     <Route path="/signin"
                         element={<SignIn/>}></Route>
                     <Route path="/signup"

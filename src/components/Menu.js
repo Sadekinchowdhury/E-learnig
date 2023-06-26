@@ -113,15 +113,15 @@ export default function Menu() {
                 </li>
                 {/* Live */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
-                        <span className="firstlevel">Live</span>
+                    <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-slate-100">
+                        <span className="firstlevel text-red-600">Live</span>
                     </a>
                     <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a className="px-2 py-1">
                                 <span className="">
                                     {" "}
-                                    <Link to="/liveVideos">Live Videos</Link>
+                                    <Link to="/joinTheLiveClass">Join The Live Class</Link>
                                 </span>
                             </a>
                         </li>
@@ -129,7 +129,7 @@ export default function Menu() {
                             <a className="px-2 py-1">
                                 <span className="">
                                     {" "}
-                                    <Link to="/liveMeetings">Live Meetings</Link>
+                                    <Link to="/joinTheLiveMeeting">Join Live Meetings</Link>
                                 </span>
                             </a>
                         </li>
