@@ -5,7 +5,7 @@ import FeatureImg_2 from './assects/images/12780652_5044055.jpg'
 import FeatureImg_3 from './assects/images/22379569_6597472.jpg'
 import FeatureImg_4 from './assects/images/app-development.jpg'
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import elearningImg_03 from './assects/images/elearning-03.jpg'
 import elearningImg_02 from './assects/images/elearning-02.jpg'
 
@@ -15,8 +15,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
-import { Banner } from './components/Banner/Banner'
+import {Autoplay, Pagination, Navigation} from "swiper";
+import {Banner} from './components/Banner/Banner'
 import Card from './components/Card/Card'
 import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
@@ -27,43 +27,20 @@ export default function Home() {
     return (
         <div>
             <div>
-                <div className="w-screen mx-auto flex justify-center">
-                    <Swiper spaceBetween={30}
-                        centeredSlides={true}
-                        loop={true}
-
-                        speed={800}
-                        autoplay={
-                            { delay: 3000 }
-                        }
-
-
-                        pagination={
-                            { clickable: true }
-                        }
-                        navigation={true}
-                        modules={
-                            [Autoplay, Pagination, Navigation]
-                        }
-                        className="mySwiper">
-                        <SwiperSlide>
-                            <img className="object-fill w-full h-96 "
-                                src={elearningImg_02}
-                                alt="image slide 1" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-
-                            <img className="object-fill w-full h-96"
-                                src={elearningImg_03}
-                                alt="image slide 2" />
-
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className="object-fill w-full h-96"
-                                src={elearningImg_02}
-                                alt="image slide 3" />
-                        </SwiperSlide>
-                    </Swiper>
+                <div className='w-full h-screen flex bg-slate-600'>
+                    <div className='w-2/4'>
+                        <div className='w-4/5'>
+                            <h1 className='text-white w-full text-4xl px-10 pt-16 font-semibold'>Providing amazing
+                                <br/>
+                                online courses</h1>
+                            <p className='text-white flex items-center w-full p-10 font-semibold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                            <a href="#_" class="px-5 p-10 py-2.5 ml-10 rounded group overflow-hidden font-medium bg-slate-100 text-slate-700 inline-block">
+                                <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 group-hover:h-full opacity-90"></span>
+                                <span class="relative group-hover:text-purple-400">Contact Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className='w-2/4 bg-homeBanner bg-cover bg-center m-10'></div>
                 </div>
                 <section class="bg-gray-200 py-12">
                     <div class="container mx-auto px-4">
@@ -87,7 +64,7 @@ export default function Home() {
                             <div class="lg:w-1/2 mt-8 lg:mt-0">
                                 <img src={FeatureImg_1}
                                     alt="Banner Image"
-                                    class="w-full rounded-lg" />
+                                    class="w-full rounded-lg"/>
                             </div>
                         </div>
                     </div>
@@ -100,7 +77,7 @@ export default function Home() {
                                     <div class="bg-white rounded-lg p-6">
                                         <img src={FeatureImg_1}
                                             alt="Feature Image"
-                                            class="w-16 h-16 mb-4 mx-auto" />
+                                            class="w-16 h-16 mb-4 mx-auto"/>
                                         <h3 class="text-xl font-bold mb-2">Flexible Learning</h3>
                                         <p class="text-gray-700">Learn at your own pace and fit your studies around your schedule.</p>
                                     </div>
@@ -109,7 +86,7 @@ export default function Home() {
                                     <div class="bg-white rounded-lg p-6">
                                         <img src={FeatureImg_3}
                                             alt="Feature Image"
-                                            class="w-16 h-16 mb-4 mx-auto" />
+                                            class="w-16 h-16 mb-4 mx-auto"/>
                                         <h3 class="text-xl font-bold mb-2">Expert Instructors</h3>
                                         <p class="text-gray-700">Learn from industry experts with real-world experience in their fields.</p>
                                     </div>
@@ -118,7 +95,7 @@ export default function Home() {
                                     <div class="bg-white rounded-lg p-6">
                                         <img src={FeatureImg_2}
                                             alt="Feature Image"
-                                            class="w-16 h-16 mb-4 mx-auto" />
+                                            class="w-16 h-16 mb-4 mx-auto"/>
                                         <h3 class="text-xl font-bold mb-2">Interactive Courses</h3>
                                         <p class="text-gray-700">Engage with interactive course materials to enhance your learning experience.</p>
                                     </div>
@@ -127,7 +104,7 @@ export default function Home() {
                                     <div class="bg-white rounded-lg p-6">
                                         <img src={FeatureImg_4}
                                             alt="Feature Image"
-                                            class="w-16 h-16 mb-4 mx-auto" />
+                                            class="w-16 h-16 mb-4 mx-auto"/>
                                         <h3 class="text-xl font-bold mb-2">Certification</h3>
                                         <p class="text-gray-700">Earn recognized certifications upon completion of your courses.</p>
                                     </div>
@@ -136,18 +113,16 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                {/* FAQ section */}
+                {/* FAQ section */} </div>
+            <div>
+                <Banner/>
 
             </div>
             <div>
-                <Banner />
-
+                <Statistics/>
             </div>
             <div>
-                <Statistics />
-            </div>
-            <div>
-                <Services />
+                <Services/>
 
             </div>
             {/* <div>

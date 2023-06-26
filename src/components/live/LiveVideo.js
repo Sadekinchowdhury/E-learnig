@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function LiveVidoes() {
+export default function LiveVideo() {
     return (
-        <div> {/* Live Videos */}
+        <div>
             <div class="w-11/12 mx-auto mt-5 mb-5 bg-gray-100 py-8">
                 <h2 class="text-xl font-bold mb-4 ml-8">Live Videos</h2>
                 <div class="container mx-auto px-4 mt-2 mb-10">

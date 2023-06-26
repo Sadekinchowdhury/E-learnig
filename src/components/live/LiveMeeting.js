@@ -1,7 +1,7 @@
 import React from 'react'
 import MeetingInmg from '../../assects/images/elearning-03.jpg'
 
-export default function LiveMeetings() {
+export default function LiveMeeting() {
     return (
         <div>
             <div class="container mx-auto mt-8 px-4 mb-12">
