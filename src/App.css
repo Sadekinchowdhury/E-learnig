@@ -1,3 +1,18 @@
 .group:hover .group-hover\:block {
   display: block !important;
 }
+
+.pricing-card{
+  border:1px solid #091650;
+  transition: .2s;
+  border-radius: 15px;
+}
+.pricing-card img{
+  transition: .4s;
+}
+.pricing-card:hover{
+  border-color: #0ad3ef;
+}
+.pricing-card:hover img{
+  transform: translateY(-15px);
+}
