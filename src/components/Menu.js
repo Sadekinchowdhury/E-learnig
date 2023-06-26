@@ -9,28 +9,29 @@ export default function Menu() {
         <div className="px-2 md:px-0 py-3 space-y-2 md:space-y-0 md:space-x-2 font-medium text-slate-100" id="main_menu">
             <ul className="md:flex p-1 md:p-2 text-sm md:text-base" id="menu_nav">
                 {/* Home */}
-                <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_home">
-                    <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
-                        <span className="last firstlevel">
-                            <Link to="/">Home</Link>
-                        </span>
-                    </a>
+                <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-sharp fa-solid fa-house-user ml-2"></i><br/>
+                    <Link to="/" class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
+                        <span class="firstlevel">Home</span>
+                    </Link>
                 </li>
                 {/* Topics */}
-
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-solid fa-address-book ml-3"></i><br/>
                     <Link to="/service" class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Topics</span>
                     </Link>
                 </li>
                 {/* Notices */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-solid fa-bell ml-4"></i><br/>
                     <Link to="/notices" className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">Notices</span>
                     </Link>
                 </li>
                 {/* Courses */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-solid fa-book-open-reader ml-5"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">
                             <Link to="/course">Courses</Link>
@@ -39,6 +40,7 @@ export default function Menu() {
                 </li>
                 {/* Meeting */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-solid fa-users ml-6"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
                             <Link onClick={
@@ -113,10 +115,11 @@ export default function Menu() {
                 </li>
                 {/* Live */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-solid fa-video ml-2"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-slate-100">
-                        <span className="firstlevel text-red-600">Live</span>
+                        <span className="firstlevel pt-6 text-red-600">Live</span>
                     </a>
-                    <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
+                    <ul className="absolute left-0 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a className="px-2 py-1">
                                 <span className="">
@@ -142,6 +145,7 @@ export default function Menu() {
                 </li>
                 {/* Certificate */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-solid fa-graduation-cap ml-8"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
                             <Link to="/certificateForm">Certification</Link>
@@ -154,10 +158,11 @@ export default function Menu() {
                     </a> */} </li>
                 {/* Login */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <i class="fa-regular fa-user ml-2"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">Login</span>
                     </a>
-                    <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
+                    <ul className="absolute left-0 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a className="px-2 py-1">
                                 <span className="">
