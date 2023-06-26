@@ -17,40 +17,102 @@ export default function Menu() {
                     </a>
                 </li>
                 {/* Topics */}
+ 
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <Link to="/service" class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Topics</span>
                     </Link>
+ 
 
-                </li>
-                {/* Notices */}
+ 
+                    {/* <ul class="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a class="py-1">
+                                <span class="">
+ 
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
-                        <span className="firstlevel">Notice</span>
+                        <span className="firstlevel">Topics</span>
                     </a>
-                    <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
+                    {/* <ul className="absolute left-0 top-0 mt-10 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="px-2 py-1">
+                            <a className="py-1">
                                 <span className="">
+ 
                                     {" "}
-                                    <Link to="/privateNotice">Private Notice</Link>
+                                    <Link to="/digitalMarketing">Digital Marketing</Link>
                                 </span>
                             </a>
                         </li>
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
-                            <a className="px-2 py-1">
+                            <a className="py-1">
                                 <span className="">
                                     {" "}
-                                    <Link to="/publicNotice">Public Notice</Link>
+                                    <Link to="/appDevelopment">App Development</Link>
                                 </span>
                             </a>
                         </li>
+ 
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            {/* <<<<<<< HEAD */}
+                    {/* <a class=" py-1">
+                                <span class="">
+                                    <Link to="/seo" >Seo </Link>
+                                </span>
+                            </a>
+                         
+                    {/* <a class="py-1">
+                                <span class="">
+ 
+                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a className=" py-1">
+                                <span className="">
+                                    <Link to="/seo" >Seo </Link>
+                                </span>
+                                </a>
+                            <a className="py-1">
+                                <span className="">
+ 
+ 
+ 
+                        <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a className=" py-1">
+                                <span className="">
+                                    <Link to="/seo" >Seo </Link>
+                                </span>
+                                </a>
+                            <a className="py-1">
+                                <span className="">
+ 
+ 
+                                    {" "}
+                                    <Link to="/webDevelopment">Web Development</Link>
+                                </span>
+                            </a>
+                        </li>
+ 
+ 
+                        <li class="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
+                            <a class="px-20 py-1">
+                                <span class=""></span> */}
+                    {/* >>>>>>> e2135cf41761257621e0031228d856c48566ca5b */}
+                    {/* </a>
+ 
+ 
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a className="px-20 py-1">
                                 <span className=""></span>
                             </a>
+ 
                         </li>
-                    </ul>
+                    </ul> */}
+ 
+                </li>
+                {/* Notices */}
+                <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
+                    <Link to="/notices" className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
+                        <span className="firstlevel">Notices</span>
+                    </Link>
                 </li>
                 {/* Courses */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
