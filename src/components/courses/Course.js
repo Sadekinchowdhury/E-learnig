@@ -6,8 +6,15 @@ export default function Course() {
     return (
         <div className=''>
 
-            <Filters />
-            <AllCourse />
+            <div className='lg:flex'>
+                <div className='md:w-2/12 mx-auto p-3 w-full '>
+                    <Filters />
+                </div>
+                <div className='md:w-10/12 mx-auto'>
+                    <AllCourse />
+                </div>
+            </div>
+
 
             <div>
                 <div class="w-11/12 mx-auto mt-10 mb-10 bg-gray-100 py-8">

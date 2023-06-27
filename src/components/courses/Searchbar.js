@@ -14,7 +14,7 @@ const SearchBar = () => {
 
     return (
         <div
-            className={`flex lg:w-[550px] w-11/12 mx-auto items-center rounded-full bg-white shadow-md ${isActive ? 'w-full' : ''
+            className={`flex border-2 w-full mx-auto items-center rounded-full bg-white shadow-md ${isActive ? 'w-full' : ''
                 }`}
         >
             <input
@@ -25,8 +25,8 @@ const SearchBar = () => {
                 onFocus={handleFocus}
                 onBlur={handleBlur}
             />
-            <button className="px-4 py-2 bg-blue-500 text-white rounded-r-full">
-                <RiSearchLine size={30} />
+            <button className="px-4 py-2 bg-blue-600   border-[2px] rounded-r-full">
+                <RiSearchLine size={25} />
             </button>
         </div>
     );
