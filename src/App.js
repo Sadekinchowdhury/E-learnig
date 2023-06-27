@@ -23,6 +23,7 @@ import JoinTheLiveMeeting from "./components/live/JoinTheLiveMeeting"
 import LiveMeeting from "./components/live/LiveMeeting"
 import LiveVideo from "./components/live/LiveVideo"
 import Service from "./components/Service/Service";
+import Live from "./components/live/Live";
 
 function App() {
     return (
@@ -75,6 +76,8 @@ function App() {
                         element={<Certificate/>}></Route>
                     <Route path="/certificateForm"
                         element={<CertificateForm/>}></Route>
+                    <Route path="/live"
+                        element={<Live/>}></Route>
                     <Route path="/liveVideo"
                         element={<LiveVideo/>}></Route>
                     <Route path="/LiveMeeting"

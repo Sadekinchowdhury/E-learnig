@@ -117,9 +117,11 @@ export default function Menu() {
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <i class="fa-solid fa-video ml-2"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-slate-100">
-                        <span className="firstlevel pt-6 text-red-600">Live</span>
+                        <span className="firstlevel pt-6 text-red-600">
+                            <Link to="/live">Live</Link>
+                        </span>
                     </a>
-                    <ul className="absolute left-0 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
+                    {/* <ul className="absolute left-0 p-2 rounded-lg shadow-lg bg-white z-10 hidden group-hover:block">
                         <li className="p-1 whitespace-no-wrap text-sm md:text-base text-slate-700 hover:text-gray-800 hover:bg-gray-100">
                             <a className="px-2 py-1">
                                 <span className="">
@@ -141,8 +143,7 @@ export default function Menu() {
                                 <span className=""></span>
                             </a>
                         </li>
-                    </ul>
-                </li>
+                    </ul> */} </li>
                 {/* Certificate */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
                     <i class="fa-solid fa-graduation-cap ml-8"></i><br/>
