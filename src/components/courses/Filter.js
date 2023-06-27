@@ -13,10 +13,10 @@ const Filters = () => {
     const fruits = ['Apple', 'Banana sdfsdfsdfsdf', 'Cherry', 'Grape', 'Lemon', 'Orange'];
 
     return (
-        <div className="container mt-10 mb-8 mx-auto ">
+        <div className="container  mt-10 mb-8 mx-auto ">
 
             <div className=''>
-                <div className='grid grid-cols-1 w-full  mx-auto  lg:gap-6 gap-4 p-5 m-3 '>
+                <div className='grid grid-cols-1 w-full  mx-auto  lg:gap-4 gap-3 p-3 m-3 '>
                     {/* country */}
                     <div>
                         <select value={selects} onChange={e => setSelects(e.target.value)} placeholder='choose' className="px-3 w-full py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'" name="" id="">

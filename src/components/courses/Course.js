@@ -7,10 +7,10 @@ export default function Course() {
         <div className=''>
 
             <div className='lg:flex'>
-                <div className='lg:w-2/12 mx-auto w-full'>
+                <div className='md:w-2/12 mx-auto p-3 w-full '>
                     <Filters />
                 </div>
-                <div className='w-11/12'>
+                <div className='md:w-10/12 mx-auto'>
                     <AllCourse />
                 </div>
             </div>

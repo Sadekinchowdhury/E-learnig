@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import SearchBar from './Searchbar';
+import { Link } from 'react-router-dom';
 
 const AllCourse = () => {
 
@@ -77,13 +78,13 @@ const AllCourse = () => {
         },
     ]
     return (
-        <div className='rounded-xl   px-2 to-[#4586ca]  mt-6 py-5 '>
+        <div className='rounded-xl  mt-6 py-5 '>
             <SearchBar />
-            {/* <h1 className='text-orange-400 text-center lg:text-left text-3xl font-medium px-5 pt-3 '>Your Favourite Category</h1> */}
-            <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 py-6'>
+
+            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-2  py-6'>
                 {
                     Courses.map(course =>
-                        <div className='bg-sky-50  lg:m-auto rounded-xl shadow-2xl ' course={course}>
+                        <Link className='bg-sky-50  rounded-xl shadow-2xl ' course={course}>
                             <div>
                                 <img className='w-full h-48' src={course.picture} alt="" />
                             </div>
@@ -104,7 +105,7 @@ const AllCourse = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     )
                 }
             </div>

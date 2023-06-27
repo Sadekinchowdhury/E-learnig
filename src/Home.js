@@ -46,7 +46,7 @@ export default function Home() {
                     </div>
                     <div className='w-2/4 bg-homeBanner bg-cover bg-center m-10'></div>
                 </div>
-                <section class="bg-gray-200 py-12">
+                {/* <section class="bg-gray-200 py-12">
                     <div class="container mx-auto px-4">
                         <div class="flex items-center justify-center">
                             <div class="w-2/3">
@@ -56,14 +56,14 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section class="bg-slate-700 py-12">
                     <div class="container mx-auto px-4">
                         <div class="flex flex-col lg:flex-row items-center">
                             <div class="lg:w-1/2">
                                 <h2 class="text-4xl font-bold text-white mb-4">Learn and Grow with Online Education</h2>
                                 <p class="text-gray-300 text-lg mb-8">Access a wide range of courses from industry experts and enhance your skills at your own pace.</p>
-                                <a href="#" class="bg-blue-500 text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-600">Get Started</a>
+                                <a href="/" class="bg-blue-500 text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-600">Get Started</a>
                             </div>
                             <div class="lg:w-1/2 mt-8 lg:mt-0">
                                 <img src={FeatureImg_1}
