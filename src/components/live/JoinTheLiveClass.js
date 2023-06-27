@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 export default function JoinTheLiveClass() {
     return (
         <div>
+            
             <div class="h-screen bg-gradient-to-b from-gray-500 to-gray-700">
                 <div className="w-4/5 mx-auto py-4">
                     <h1 className="text-xl font-bold mb-2 text-white">Date of Birth</h1>
