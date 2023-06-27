@@ -6,10 +6,15 @@ export default function Course() {
     return (
         <div className=''>
 
-            <div className='mt-10'>
-                <Filters />
+            <div className='lg:flex'>
+                <div className='lg:w-2/12 mx-auto w-full'>
+                    <Filters />
+                </div>
+                <div className='w-11/12'>
+                    <AllCourse />
+                </div>
             </div>
-            <AllCourse />
+
 
             <div>
                 <div class="w-11/12 mx-auto mt-10 mb-10 bg-gray-100 py-8">
