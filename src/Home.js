@@ -24,7 +24,7 @@ import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
 import ServiceSlider from './components/Service/ServiceSlider'
 import BannerImg from "./assects/images/bg-image.png"
-
+import BackGroundInfinity from './components/BackGroundAnimation/BackGroundAnimation'
 
 export default function Home() {
     return (
@@ -54,10 +54,16 @@ export default function Home() {
                     </div>
                 </section>
                 {/* <div className='w-full h-screen flex bg-slate-600'>
+=======
+                <div>
+                    <BackGroundInfinity />
+                </div>
+                <div className='w-full h-screen flex bg-slate-600'>
+>>>>>>> 08fa12f6841e993d358dd0a375a74ffe46515d09
                     <div className='w-2/4'>
                         <div className='w-4/5'>
                             <h1 className='text-white w-full text-4xl px-10 pt-16 font-semibold'>Providing amazing
-                                <br/>
+                                <br />
                                 online courses</h1>
                             <p className='text-white flex items-center w-full p-10 font-semibold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
                             <a href="#_" class="px-5 p-10 py-2.5 ml-10 rounded group overflow-hidden font-medium bg-slate-100 text-slate-700 inline-block">

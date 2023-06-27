@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export default function Menu() {
 
-    const [showModal, setShowModal] = useState(null);
+    // const [showModal, setShowModal] = useState(null);
 
     return (
         <div className="px-2 md:px-0 py-3 space-y-2 md:space-y-0 md:space-x-2 font-medium text-slate-100" id="main_menu">
@@ -43,13 +43,10 @@ export default function Menu() {
                     <i class="fa-solid fa-users ml-6"></i><br/>
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
-                            <Link onClick={
-                                    () => setShowModal(true)
-                                }
-                                to="/meeting">Meeting
-
+                            <Link to="/meeting">
+                            Meeting
                             </Link>
-                            <div> {
+                            {/* <div> {
                                 showModal && (
                                     <div className="fixed z-10 inset-0 overflow-y-auto">
 
@@ -109,7 +106,7 @@ export default function Menu() {
                                         </div>
                                     </div>
                                 )
-                            } </div>
+                            } </div> */}
                         </span>
                     </a>
                 </li>
