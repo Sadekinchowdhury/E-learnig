@@ -13,7 +13,7 @@ const Filters = () => {
     const fruits = ['Apple', 'Banana sdfsdfsdfsdf', 'Cherry', 'Grape', 'Lemon', 'Orange'];
 
     return (
-        <div className="container  from-violet-600 to-sky-600 bg-gradient-to-t shadow-2xl hover:bg-gradient-to-br    rounded-2xl lg:w-10/12  mx-auto mt-8">
+        <div className="container mb-8  from-violet-600 to-sky-600 bg-gradient-to-t shadow-2xl hover:bg-gradient-to-br    rounded-2xl lg:w-10/12  mx-auto ">
 
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-11/12 mx-auto  lg:gap-6 gap-4 p-5 m-3 '>
                 {/* country */}

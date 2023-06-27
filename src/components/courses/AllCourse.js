@@ -76,12 +76,12 @@ const AllCourse = () => {
         },
     ]
     return (
-        <div className=''>
-
-            <div className='grid w-10/12 py-8   mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
+        <div className='rounded-xl bg-[#1d0909] px-2 to-[#4586ca]  mt-6 py-5 from-slate-900 bg-gradient w-10/12 mx-auto'>
+            <h1 className='text-orange-400 text-center lg:text-left text-3xl font-medium px-5 pt-3 '>Your Favourite Category</h1>
+            <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 py-6'>
                 {
                     Courses.map(course =>
-                        <div className='bg-sky-50 m-1 lg:m-auto rounded-xl shadow-2xl ' course={course}>
+                        <div className='bg-sky-50  lg:m-auto rounded-xl shadow-2xl ' course={course}>
                             <div>
                                 <img className='w-full h-48' src={course.picture} alt="" />
                             </div>

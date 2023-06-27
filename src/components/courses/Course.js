@@ -6,7 +6,9 @@ export default function Course() {
     return (
         <div className=''>
 
-            <Filters />
+            <div className='mt-10'>
+                <Filters />
+            </div>
             <AllCourse />
 
             <div>
