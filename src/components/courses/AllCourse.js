@@ -98,7 +98,7 @@ const AllCourse = () => {
                                         <p>Duration:- {course.C_time}</p>
                                     </div>
                                     <div className=''>
-                                        <button className='flex justify-center items-center py-1 shadow-2xl rounded-[4px] px-4 border-[1px] border-blue-950'>  <span className='mr-2'><FaShoppingCart /></span> <span className='text-sm font-semibold text-blue-800'>Add to cart</span></button>
+                                        <button className='flex justify-center hover:bg-gradient-to-t hover:bg-sky-800 hover:from-gray-500 hover:to-indigo-900 hover:text-white hover:border-none items-center py-1 shadow-2xl rounded-[4px] px-3 transition-transform hover:scale-110 hover:bottom-3 duration-700  border-[1px] border-blue-950'>  <span className='mr-2'><FaShoppingCart /></span> <span className='text-sm font-semibold text-blue-800 hover:text-white'>Add to cart</span></button>
                                     </div>
                                 </div>
                             </div>
