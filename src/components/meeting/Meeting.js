@@ -15,30 +15,30 @@ export default function Meeting() {
         img: begginer,
         title: 'Beginner',
         price: 120,
-        infos: ['Quia voluptas sit asern', 'Exercitationem ullam corois.', 'Modi tempora incidunt', 'Laudantium totam rem aei.', 'Duis aute irure dolor reae.']
+        infos: ['0% transaction fee', '100 products.', '100 funnels', 'Unlimited landing pages.', 'Unlimited marketing emails','100,000 contacts','2000 active customers','3 websites','25 admin users']
     }, {
         img: business,
         title: 'Business',
         price: 180,
-        infos: ['Quia voluptas sit asern', 'Exercitationem ullam corois.', 'Modi tempora incidunt', 'Laudantium totam rem aei.', 'Duis aute irure dolor reae.']
+        infos: ['0% transaction fee', '100 products.', '100 funnels', 'Unlimited landing pages.', 'Unlimited marketing emails','100,000 contacts','2000 active customers','3 websites','25 admin users']
     },
     {
         img: professional,
         title: 'Professional',
         price: 200,
-        infos: ['Quia voluptas sit asern', 'Exercitationem ullam corois.', 'Modi tempora incidunt', 'Laudantium totam rem aei.', 'Duis aute irure dolor reae.']
+        infos: ['0% transaction fee', '100 products.', '100 funnels', 'Unlimited landing pages.', 'Unlimited marketing emails','100,000 contacts','2000 active customers','3 websites','25 admin users']
     },
     {
         img: begginer,
         title: 'Beginner',
         price: 120,
-        infos: ['Quia voluptas sit asern', 'Exercitationem ullam corois.', 'Modi tempora incidunt', 'Laudantium totam rem aei.', 'Duis aute irure dolor reae.']
+        infos: ['0% transaction fee', '100 products.', '100 funnels', 'Unlimited landing pages.', 'Unlimited marketing emails','100,000 contacts','2000 active customers','3 websites','25 admin users']
     },
     {
         img: begginer,
         title: 'Beginner',
         price: 120,
-        infos: ['Quia voluptas sit asern', 'Exercitationem ullam corois.', 'Modi tempora incidunt', 'Laudantium totam rem aei.', 'Duis aute irure dolor reae.']
+        infos: ['0% transaction fee', '100 products.', '100 funnels', 'Unlimited landing pages.', 'Unlimited marketing emails','100,000 contacts','2000 active customers','3 websites','25 admin users']
     },
     {
         img: begginer,
@@ -49,106 +49,6 @@ export default function Meeting() {
     ]
     return (
         <>
-            {/* <div class="container mx-auto mt-8 px-4 mb-12">
-                <section class="mb-8 bg-meeting">
-                    <h2 class="text-xl font-bold mb-4">Upcoming Meeting</h2>
-                    <div class="bg-white border border-gray-300 p-4">
-                        <h3 class="text-lg font-bold mb-2">Title of the Meeting</h3>
-                        <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                        <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                        <img src={MeetingInmg}
-                            style={
-                                { width: "10rem" }
-                            }
-                            alt="Meeting Image"
-                            class="mb-4" />
-                        <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="text-xl font-bold mb-4">Previous Meetings</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        <div class="bg-white border border-gray-300 p-4">
-                            <h3 class="text-lg font-bold mb-2">Meeting 1</h3>
-                            <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                            <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                            <img src={MeetingInmg}
-                                style={
-                                    { width: "10rem" }
-                                }
-                                alt="Meeting Image"
-                                class="mb-4" />
-                            <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        </div>
-
-                        <div class="bg-white border border-gray-300 p-4">
-                            <h3 class="text-lg font-bold mb-2">Meeting 2</h3>
-                            <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                            <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                            <img src={MeetingInmg}
-                                style={
-                                    { width: "10rem" }
-                                }
-                                alt="Meeting Image"
-                                class="mb-4" />
-                            <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        </div>
-
-                        <div class="bg-white border border-gray-300 p-4">
-                            <h3 class="text-lg font-bold mb-2">Meeting 3</h3>
-                            <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                            <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                            <img src={MeetingInmg}
-                                style={
-                                    { width: "10rem" }
-                                }
-                                alt="Meeting Image"
-                                class="mb-4" />
-                            <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div class="bg-white border border-gray-300 p-4">
-                            <h3 class="text-lg font-bold mb-2">Meeting 4</h3>
-                            <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                            <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                            <img src={MeetingInmg}
-                                style={
-                                    { width: "10rem" }
-                                }
-                                alt="Meeting Image"
-                                class="mb-4" />
-                            <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div class="bg-white border border-gray-300 p-4">
-                            <h3 class="text-lg font-bold mb-2">Meeting 5</h3>
-                            <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                            <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                            <img src={MeetingInmg}
-                                style={
-                                    { width: "10rem" }
-                                }
-                                alt="Meeting Image"
-                                class="mb-4" />
-                            <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div class="bg-white border border-gray-300 p-4">
-                            <h3 class="text-lg font-bold mb-2">Meeting 6</h3>
-                            <p class="text-gray-500 mb-2">Date: 26-06-2023</p>
-                            <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
-                            <img src={MeetingInmg}
-                                style={
-                                    { width: "10rem" }
-                                }
-                                alt="Meeting Image"
-                                class="mb-4" />
-                            <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                    </div>
-                </section>
-            </div> */}
 
             <section className='bg-[#091650] py-16 lg:px-[200px] px-4 md:px-8'>
                 <div className='text-center'>
@@ -166,7 +66,7 @@ export default function Meeting() {
                                 <span className='text-lg font-normal text-gray-400 mt-2'>/ Per Month</span>
                             </div>
                             <ul className='list-none mt-5 px-7'>
-                                {item.infos.map((info, i) => <li key={i + 7} className='flex mb-2 gap-2 items-center text-gray-400 text-lg'>
+                                {item.infos.map((info, i) => <li key={i + 7} className={`flex mb-2 gap-2 items-center text-gray-400 text-lg ${i==0 && 'text-bold'}`}>
                                     <span className='text-[#0ad3ef]'><BsFillCheckCircleFill /></span>
                                     {info}
                                 </li>)}
