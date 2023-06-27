@@ -44,7 +44,7 @@ export default function Meeting() {
         img: begginer,
         title: 'Beginner',
         price: 120,
-        infos: ['Quia voluptas sit asern', 'Exercitationem ullam corois.', 'Modi tempora incidunt', 'Laudantium totam rem aei.', 'Duis aute irure dolor reae.']
+        infos: ['0% transaction fee', '100 products.', '100 funnels', 'Unlimited landing pages.', 'Unlimited marketing emails','100,000 contacts','2000 active customers','3 websites','25 admin users']
     }
     ]
     return (
@@ -57,22 +57,22 @@ export default function Meeting() {
                 </div>
                 <div className='pt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
                     {
-                        pricing.map((item, i) => <div key={i * 10} className='pricing-card bg-[#16256e] py-12 px-5'>
+                        pricing.map((item, i) => <div key={i * 10} className='pricing-card bg-[#16256e] py-8 px-5'>
                             <div className='flex flex-col content-center items-center'>
                                 <img className='w-[100px]' src={item.img} />
-                                <h3 className='text-2xl text-white mt-5 mb-4'>{item.title}</h3>
+                                <h3 className='text-2xl text-white mt-4 mb-4'>{item.title}</h3>
                                 <h2 className='text-5xl font-bold text-[#0ad3ef]'>${item.price}
                                 </h2>
                                 <span className='text-lg font-normal text-gray-400 mt-2'>/ Per Month</span>
                             </div>
-                            <ul className='list-none mt-5 px-7'>
+                            <ul className='list-none mt-4 px-7'>
                                 {item.infos.map((info, i) => <li key={i + 7} className={`flex mb-2 gap-2 items-center text-gray-400 text-lg ${i==0 && 'text-bold'}`}>
                                     <span className='text-[#0ad3ef]'><BsFillCheckCircleFill /></span>
                                     {info}
                                 </li>)}
                             </ul>
 
-                            <div className='pt-5 text-center'>
+                            <div className='pt-4 text-center'>
                                 <Link className='mx-auto' to="/payment">
                                     <button className='flex mx-auto items-center content-center btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]'>
                                         Get Started
@@ -135,7 +135,7 @@ export default function Meeting() {
                         <div class="h-full flex flex-col justify-between bg-white shadow-lg rounded overflow-hidden">
                             <img class="w-full h-48 object-cover" src={org} alt="Card image" />
                                 <div className="px-3 pb-4">
-                                <div class="mx-auto py-4 text-center">
+                                <div class="mx-auto py-4 text-center px-3">
                                     <p className='mb-2'>June,13-15-23</p>
                                     <h3 class="font-semibold text-xl mb-2">Building Organizational Resilence</h3>
                                 </div>
@@ -151,7 +151,7 @@ export default function Meeting() {
                     <div className='lg:px-2 h-full'>
                         <div class="h-full flex flex-col justify-between bg-white shadow-lg rounded overflow-hidden">
                             <img class="w-full h-48 object-cover" src={digital} alt="Card image" />
-                                <div class="mx-auto py-4 text-center">
+                                <div class="mx-auto py-4 text-center px-3">
                                     <p className='mb-2'>June,13-15-23</p>
                                     <h3 class="font-semibold text-xl mb-2">Digital Strategies for Transforming Your Business</h3>
                                 </div>
@@ -166,7 +166,7 @@ export default function Meeting() {
                     <div className='lg:px-2 h-full'>
                         <div class="h-full flex flex-col justify-between bg-white shadow-lg rounded overflow-hidden">
                             <img class="w-full h-48 object-cover" src={dataDriven} alt="Card image" />
-                                <div class="mx-auto py-4 text-center">
+                                <div class="mx-auto py-4 text-center px-3">
                                     <p className='mb-2'>June,13-15-23</p>
                                     <h3 class="font-semibold text-xl mb-2">Data-Driven Teams</h3>
                                 </div>
