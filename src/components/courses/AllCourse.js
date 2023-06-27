@@ -1,90 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import SearchBar from './Searchbar';
 import { Link } from 'react-router-dom';
 
 const AllCourse = () => {
+    const [courses,setCourses] = useState([]);
 
-    const Courses = [
-        {
-            name: "Web Development",
-            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_HbOix0HF9SRXTPJCel_5OdIp7NqyRF8fIT1aFES3LX40PkYbZPd6x0AJrxED1KF9AA&usqp=CAU",
-            title: "Start your carryar by web asdfsd",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-        {
-            name: "Web Development",
-            picture: "https://img.freepik.com/free-photo/virtual-classroom-study-space_23-2149178642.jpg?w=740&t=st=1687837434~exp=1687838034~hmac=78596038e87a2262e9b15c069936247a816b445922efa8b9565c823061d470e2",
-            title: "Start your carryar by web",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-        {
-            name: "Web Development",
-            picture: "https://img.freepik.com/free-photo/woman-with-headphones-having-video-call-laptop_23-2148854879.jpg?w=740&t=st=1687837527~exp=1687838127~hmac=cd7f9317c01e30c3a1e22002b7df20e11a76a72953686a6b1e614968e6a8a448",
-            title: "Start your carryar by web",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-        {
-            name: "Web Development",
-            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_HbOix0HF9SRXTPJCel_5OdIp7NqyRF8fIT1aFES3LX40PkYbZPd6x0AJrxED1KF9AA&usqp=CAU",
-            title: "Start your carryar by web",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-        {
-            name: "Web Development",
-            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_HbOix0HF9SRXTPJCel_5OdIp7NqyRF8fIT1aFES3LX40PkYbZPd6x0AJrxED1KF9AA&usqp=CAU",
-            title: "Start your carryar by web",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-        {
-            name: "Web Development",
-            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_HbOix0HF9SRXTPJCel_5OdIp7NqyRF8fIT1aFES3LX40PkYbZPd6x0AJrxED1KF9AA&usqp=CAU",
-            title: "Start your carryar by web",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-        {
-            name: "Web Development",
-            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_HbOix0HF9SRXTPJCel_5OdIp7NqyRF8fIT1aFES3LX40PkYbZPd6x0AJrxED1KF9AA&usqp=CAU",
-            title: "Start your carryar by web",
-            StartDay: "12/03/2023",
-            LastDay: "02/07/2023",
-            Ratting: "werwer",
-            price: "500",
-            C_time: "3 Months"
-        },
-    ]
+    useEffect(()=>{
+        fetch('./AllCourses.json')
+        .then(res => res.json())
+        .then(data => setCourses(data))
+    },[courses]);
+
+    console.log(courses)
     return (
         <div className='rounded-xl  mt-6 py-5 '>
             <SearchBar />
 
             <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-2  py-6'>
                 {
-                    Courses.map(course =>
-                        <Link className='bg-sky-50  rounded-xl shadow-2xl ' course={course}>
+                    courses.map(course =>
+                        <Link key={course.id} className='bg-sky-50  rounded-xl shadow-2xl ' course={course} to={`/course/${course.id}`}>
                             <div>
                                 <img className='w-full h-48' src={course.picture} alt="" />
                             </div>

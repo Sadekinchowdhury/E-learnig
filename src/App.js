@@ -24,6 +24,7 @@ import LiveMeeting from "./components/live/LiveMeeting"
 import LiveVideo from "./components/live/LiveVideo"
 import Service from "./components/Service/Service";
 import Live from "./components/live/Live";
+import CourseDetails from "./components/courses/CourseDetails";
 
 function App() {
     return (
@@ -51,6 +52,8 @@ function App() {
                         element={<WebDevelopment/>}></Route>
                     <Route path="/course"
                         element={<Course/>}></Route>
+                    <Route path="/course/:id"
+                        element={<CourseDetails/>}></Route>
                     <Route element={<Course/>}></Route>
                     <Route path="/notices"
                         element={<Notices/>}></Route>
