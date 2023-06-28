@@ -1,9 +1,14 @@
 import React from 'react'
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import LiveFilters from './LiveFilters';
+import LiveCourse from './LiveCourse';
+import SearchBar from '../courses/Searchbar';
+
+
 
 export default function Live() {
     return (
-        <div>
+        <div className='bg-slate-700'>
             <section class="bg-slate-700 pt-20 pb-20 w-full mx-auto">
                 <div class="container mx-auto px-2 w-4/5">
                     <div class="flex flex-col lg:flex-row items-center">
@@ -31,7 +36,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='course name'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='course name' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center mb-3">
@@ -41,7 +46,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Course ID'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Course ID' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center mb-3">
@@ -51,7 +56,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Username'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Username' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center mb-3">
@@ -61,7 +66,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Password'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Password' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center justify-center">
@@ -84,7 +89,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Meeting ID'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Meeting ID' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center mb-3">
@@ -94,7 +99,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="number" placeholder='Secret Code'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="number" placeholder='Secret Code' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center mb-3">
@@ -104,7 +109,7 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Username'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Username' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center mb-3">
@@ -114,14 +119,14 @@ export default function Live() {
                                         </label>
                                     </div>
                                     <div class="md:w-3/5 sm:w-full">
-                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Password'/>
+                                        <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-300" id="course name" type="text" placeholder='Password' />
                                     </div>
                                 </div>
                                 <div class="md:flex md:items-center justify-center  mt-10">
                                     <a href="#_" class="w-full flex justify-center p-10 py-2 mt-5 rounded group overflow-hidden font-medium bg-slate-300 text-slate-700">
                                         <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 group-hover:h-full opacity-90"></span>
                                         <span class="relative group-hover:text-purple-400">
-                                            <Link to="/liveVideo">Join Now</Link>
+                                            <Link to="/Lives">Join Now</Link>
                                         </span>
                                     </a>
                                 </div>
@@ -130,6 +135,16 @@ export default function Live() {
                     </div>
                 </div>
             </section>
+
+            <div>
+                <LiveFilters />
+            </div>
+            <div className='my-8'>
+                <SearchBar />
+            </div>
+            <div className='lg:w-9/12  w-full mx-auto'>
+                <LiveCourse />
+            </div>
         </div>
     )
 }

@@ -1,15 +1,11 @@
 import React from 'react'
-import img1 from './assects/images/write.png'
 import FeatureImg_1 from './assects/images/12780652_5044055.jpg'
 import FeatureImg_2 from './assects/images/12780652_5044055.jpg'
 import FeatureImg_3 from './assects/images/22379569_6597472.jpg'
 import FeatureImg_4 from './assects/images/app-development.jpg'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import elearningImg_03 from './assects/images/elearning-03.jpg'
-import elearningImg_02 from './assects/images/elearning-02.jpg'
-import { Link } from "react-router-dom";
 
+// Import Swiper React components
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,18 +13,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
 import { Banner } from './components/Banner/Banner'
-import Card from './components/Card/Card'
 import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
-import ServiceSlider from './components/Service/ServiceSlider'
 import BannerImg from "./assects/images/bg-image.png"
-import BackGroundInfinity from './components/BackGroundAnimation/BackGroundAnimation'
 
 export default function Home() {
     return (
-        <div>
+        <div className='bg-slate-700'>
             <div>
                 <section class="bg-slate-700 py-12 w-full mx-auto">
                     <div class="container mx-auto px-4 w-4/5">
@@ -54,12 +46,12 @@ export default function Home() {
                     </div>
                 </section>
                 {/* <div className='w-full h-screen flex bg-slate-600'>
-=======
+ 
                 <div>
                     <BackGroundInfinity />
                 </div>
                 <div className='w-full h-screen flex bg-slate-600'>
->>>>>>> 08fa12f6841e993d358dd0a375a74ffe46515d09
+ 
                     <div className='w-2/4'>
                         <div className='w-4/5'>
                             <h1 className='text-white w-full text-4xl px-10 pt-16 font-semibold'>Providing amazing
@@ -76,9 +68,9 @@ export default function Home() {
  
                 </div>
                 {/* <section class="bg-gray-200 py-12">
-=======
+ 
                 </div> */}
-                <section class="bg-gray-200 py-12">
+                {/* <section class="bg-gray-200 py-12">
 
                     <div class="container mx-auto px-4">
                         <div class="flex items-center justify-center">
@@ -89,8 +81,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="bg-slate-700 py-12">
+                </section> */}
+                {/* <section class="bg-slate-700 py-12">
                     <div class="container mx-auto px-4">
                         <div class="flex flex-col lg:flex-row items-center">
                             <div class="lg:w-1/2">
@@ -105,8 +97,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
-                <div className='w-4/5 mx-auto'>
+                </section> */}
+                <div className='w-4/5 lg:py-20 py-2 mx-auto'>
                     <div class="py-6">
                         <div class="container mx-auto px-4">
                             <div class="flex flex-wrap -mx-4">
@@ -151,15 +143,16 @@ export default function Home() {
                     </div>
                 </div>
                 {/* FAQ section */} </div>
-            <div>
-                <Banner />
 
-            </div>
-            <div>
+            <div className='my-10'>
                 <Statistics />
             </div>
             <div>
                 <Services />
+
+            </div>
+            <div className='py-20'>
+                <Banner />
 
             </div>
             {/* <div>

@@ -31,7 +31,7 @@ const Statistics = () => {
     ]
 
     return (
-        <div className=' to-blue-950 from-red-950 py-24   bg-gradient-to-t'>
+        <div className=' to-zinc-700 from-slate-700 py-24   bg-gradient-to-t'>
 
             <div className='grid w-11/12 mx-auto grid-cols-1 md:grid-cols-2'>
 

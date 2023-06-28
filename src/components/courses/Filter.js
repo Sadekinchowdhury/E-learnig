@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchBar from './Searchbar';
+
 const Filters = () => {
     const [filterValue, setFilterValue] = useState('');
     const [selects, setSelects] = useState("")
