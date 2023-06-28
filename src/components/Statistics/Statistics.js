@@ -38,13 +38,13 @@ const Statistics = () => {
 
                 <div className="grid  gap-5  w-11/12 mx-auto grid-cols-1 md:grid-cols-2">
                     {statistics.map((statics, index) => (
-                        <Link className='text-white transition duration-200 hover:scale-110 cursor-pointer bg-blue-900  hover:border-[1px] hover:border-blue-400  border-[0.01px] border-gray-700 rounded-2xl shadow-2xl p-4 flex-col text-center items-center justify-center'>
+                        <Link className='text-white transition duration-200 hover:scale-110 cursor-pointer via-pink-700 to-blue-700 from-sky-700 bg-gradient-to-r  hover:border-[1px] hover:border-blue-400  border-[0.01px] border-gray-700 rounded-2xl shadow-2xl p-4 flex-col text-center items-center justify-center'>
                             <div className='flex items-center justify-center mb-2 rounded-full'>
                                 {statics.icon.map(Icon =>
                                     <div className='
                                          '>
 
-                                        <Icon className='w-16 hover:transition hover:translate-y-1/4 duration-700  h-16' key={index} />
+                                        <Icon className='w-16 hover:transition hover:translate-y-1/4 duration-700 text-black h-16' key={index} />
 
                                     </div>
                                 )}
@@ -67,7 +67,7 @@ const Statistics = () => {
                         <h1 className='text-4xl text-white font-medium text-left'>Our Large Achievment</h1>
                         <p className=' my-8 text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, fuga Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure saepe ullam quibusdam atque recusandae tenetur animi nobis, eius dicta ad?.</p>
 
-                        <Link className='btn py-3 px-6 rounded-full bg-blue-500 shadow-2xl  font-medium'>Get Started</Link>
+                        <Link className='py-3 px-7 hover:border-[1px]  shadow-2xl  bg-gradient-to-l hover:transform hover:scale-105 duration-500 bg-slate-700 border-blue-400 text-white  from-sky-500 hover:bg-black text-xl font-semibold rounded-full'>Get Started</Link>
                     </div>
                 </div>
             </div>
