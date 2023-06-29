@@ -50,6 +50,7 @@ import React from 'react';
 import Avator from '../../assects/images/avator.jpg'
 import { AiOutlineLogout } from 'react-icons/ai';
 import Sidebar from '../../DashBoard/SidebarMenu';
+import { Outlet } from 'react-router-dom';
 const ProfileDashboard = () => {
     return (
         <div className="flex flex-col lg:flex-row h-screen">
@@ -69,9 +70,9 @@ const ProfileDashboard = () => {
                 </div>
 
                 <div className='py-10'>
-                    <hr className='text-blue-600 ' />
+                    <hr className='border-t-2 border-blue-400"' />
                     <Sidebar></Sidebar>
-                    <hr className='text-blue-600 ' />
+                    <hr color='black' className='text-blue-600 ' />
 
                     <div className="flex items-center justify-center my-8 ">
                         <button className='text-xl font-semibold bg-white text-black px-4 hover:border-[2px] hover:border-blue-700 transition duration-700 hover:bg-slate-800 hover:text-white py-1 rounded'> <AiOutlineLogout className='inline-block' /> Logout</button>
@@ -82,9 +83,10 @@ const ProfileDashboard = () => {
             </div>
 
             {/* Main Content */}
-            <div className="bg-gray-200 flex-grow px-4 py-6">
+            <div className="bg-gray-200 flex-grow ">
                 {/* Main content */}
-                <h2 className="text-2xl font-bold mb-4">Main Content</h2>
+                <Outlet></Outlet>
+
                 {/* Add your main content here */}
             </div>
         </div>

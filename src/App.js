@@ -1,7 +1,7 @@
 import "./App.css";
-import React from "react";
+import React, { Children } from "react";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./Home";
 import DigitalMarketing from "./components/topics/DigitalMarketing";
 import AppDevelopment from "./components/topics/AppDevelopment";
@@ -28,6 +28,11 @@ import Live from "./components/live/Live";
 import Lives from "./components/live/Lives";
 
 import CourseDetails from "./components/courses/CourseDetails";
+import ProfileDashboard from "./DashBoard/ProfileDashboard/ProfileDashboard";
+import Setting from "./DashBoard/Setting/Setting";
+import LiveMettings from "./DashBoard/LiveMettings/LiveMettings";
+import LiveCourse from "./DashBoard/LiveCourse/LiveCourse";
+
 
 
 function App() {
@@ -100,8 +105,28 @@ function App() {
                         element={<SignIn />}></Route>
                     <Route path="/signup"
                         element={<Signup />}></Route>
-                    <Route path="/profile"
-                        element={<Profile />}></Route>
+                    {/* <Route path="/profile"
+                        element={<Profile />}
+                    >
+                        <Route path="/profile/dashboard"
+                            element={<ProfileDashboard />}
+                        >
+
+                        </Route>
+                    </Route> */}
+
+                    <Route path="/profile" element={<Profile />}>
+                        <Route path="/profile/dashboard" element={<ProfileDashboard />} />
+                        <Route path="/profile/setting" element={<Setting />} />
+                        <Route path="/profile/meeting" element={<LiveMettings />} />
+                        <Route path="/profile/livecourse" element={<LiveCourse />} />
+                        {/* <Route path="/profile/" element={ } />
+                        <Route path="/profile/" element={ } />
+                        <Route path="/profile/" element={ } />
+                        <Route path="/profile/" element={ } /> */}
+
+                    </Route>
+
                 </Routes>
                 <Footer />
             </BrowserRouter>
