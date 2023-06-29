@@ -52,7 +52,7 @@ const Lives = () => {
 
     return (
         <div className=''>
-            <div className=" grid grid-cols-12">
+            <div className=" grid lg:h-screen h-[500px] grid-cols-12">
                 <div className="col-span-2 lg:block hidden bg-black from-slate-900 to-gray-800 bg-gradient-to-l">
                     {/* Content for the first column */}
 
@@ -85,20 +85,21 @@ const Lives = () => {
 
                     </div>
 
-                    <div className='h-1/4 bg-black  relative'>
-                        <div className='w-2/6 mx-auto z-10 absolute left-[35%]  bottom-[30%]'  >
-                            <ul className='grid grid-cols-4 gap-4'>
-                                <li className='bg-slate-700 py-2 px-4 rounded-[4px] flex items-center justify-center'>
-                                    <FaCamera color='white' size={30} className='' />
+                    <div className='h-1/4 lg:bg-black bg-none relative'>
+                        <div className='md:w-2/6 w-[95%] lg:mx-auto z-10 absolute lg:left-[35%] justify-center mx-2 bottom-[30%]'  >
+                            <ul className='grid grid-cols-4 lg:gap-4 gap-2'>
+
+                                <li className='bg-slate-700  lg:py-2 lg:px-4   rounded-[4px] flex items-center justify-center'>
+                                    <FaCamera color='white' size={30} className='lg:w-[100%] w-[50%] lg:h-full h-[50%]' />
                                 </li>
-                                <li className='bg-pink-600 py-2 px-4 rounded-[4px] flex items-center justify-center'>
-                                    <BsFillMicFill color='white' size={30} />
+                                <li className='bg-pink-600  lg:py-2 lg:px-4   rounded-[4px] flex items-center justify-center'>
+                                    <BsFillMicFill color='white' size={30} className='lg:w-[100%] w-[50%] lg:h-full h-[50%]' />
                                 </li>
-                                <li className='bg-slate-700 py-2 px-4 rounded-[4px] flex items-center justify-center'>
-                                    <RiComputerLine color='white' size={30} />
+                                <li className='bg-slate-700  lg:py-2 lg:px-4   rounded-[4px] flex items-center justify-center'>
+                                    <RiComputerLine color='white' size={30} className='lg:w-[100%] w-[50%] lg:h-full h-[50%]' />
                                 </li>
-                                <li className='bg-slate-700 py-2 px-4 rounded-[4px] flex items-center justify-center'>
-                                    <FiLogOut color='white' size={30} />
+                                <li className='bg-slate-700  lg:py-2 lg:px-4   rounded-[4px] flex items-center justify-center'>
+                                    <FiLogOut color='white' size={30} className='lg:w-[100%] w-[50%] lg:h-full h-[50%]' />
                                 </li>
                             </ul>
                         </div>

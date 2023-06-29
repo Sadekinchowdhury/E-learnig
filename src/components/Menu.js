@@ -1,37 +1,37 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
 
     // const [showModal, setShowModal] = useState(null);
 
     return (
-        <div className="px-2 md:px-0 py-3 space-y-2 md:space-y-0 md:space-x-2 font-medium text-slate-100" id="main_menu">
+        <div className="px-2  md:px-0 py-3 space-y-2 md:space-y-0 md:space-x-2 font-medium text-slate-100" id="main_menu">
             <ul className="md:flex p-1 md:p-2 text-sm md:text-base" id="menu_nav">
                 {/* Home */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-sharp fa-solid fa-house-user ml-2"></i><br/>
+                    <i class="fa-sharp fa-solid fa-house-user ml-2"></i><br />
                     <Link to="/" class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Home</span>
                     </Link>
                 </li>
                 {/* Topics */}
                 <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-solid fa-address-book ml-3"></i><br/>
+                    <i class="fa-solid fa-address-book ml-3"></i><br />
                     <Link to="/service" class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Topics</span>
                     </Link>
                 </li>
                 {/* Notices */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-solid fa-bell ml-4"></i><br/>
+                    <i class="fa-solid fa-bell ml-4"></i><br />
                     <Link to="/notices" className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">Notices</span>
                     </Link>
                 </li>
                 {/* Courses */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-solid fa-book-open-reader ml-5"></i><br/>
+                    <i class="fa-solid fa-book-open-reader ml-5"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">
                             <Link to="/course">Courses</Link>
@@ -40,11 +40,11 @@ export default function Menu() {
                 </li>
                 {/* Meeting */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-solid fa-users ml-6"></i><br/>
+                    <i class="fa-solid fa-users ml-6"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
                             <Link to="/meeting">
-                            Meeting
+                                Meeting
                             </Link>
                             {/* <div> {
                                 showModal && (
@@ -112,7 +112,7 @@ export default function Menu() {
                 </li>
                 {/* Live */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-solid fa-video ml-2"></i><br/>
+                    <i class="fa-solid fa-video ml-2"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-slate-100">
                         <span className="firstlevel pt-6 text-red-600">
                             <Link to="/live">Live</Link>
@@ -143,7 +143,7 @@ export default function Menu() {
                     </ul> */} </li>
                 {/* Certificate */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-solid fa-graduation-cap ml-8"></i><br/>
+                    <i class="fa-solid fa-graduation-cap ml-8"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
                             <Link to="/certificateForm">Certification</Link>
@@ -156,7 +156,7 @@ export default function Menu() {
                     </a> */} </li>
                 {/* Login */}
                 <li className="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="fa-regular fa-user ml-2"></i><br/>
+                    <i class="fa-regular fa-user ml-2"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">Login</span>
                     </a>
