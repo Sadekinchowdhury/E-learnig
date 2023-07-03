@@ -78,7 +78,6 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const ServiceSlider = () => {
     const settings = {
-        dots: true,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -138,8 +137,8 @@ const ServiceSlider = () => {
     return (
         <Slider {...settings}>
             {data.map((card, index) => (
-                <div key={index} className="p-4 h-full">
-                    <div className='shadow-xl rounded-xl bg-slate-300'>
+                <div key={index} className="p-4 lg:mb-16 mb-4 h-full">
+                    <div className='shadow-xl transition duration-200 hover:scale-110 cursor-pointer   rounded-xl bg-slate-300'>
                         <div>
                             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfEtDj_thLJJrm5glCUbBHDMQAkQ_SOjRRg&usqp=CAU' alt={card.text} className="w-full h-30" />
                         </div>
