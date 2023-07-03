@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Banner = () => {
     return (
-        <div className="w-11/12 my-8 lg:h-[500px] bg-slate-200 shadow-2xl p-2 m-3 grid grid-cols-1 gap-10 md:grid-cols-2 mx-auto">
+        <div className="w-11/12 my-8 lg:h-[500px]  text-white p-2 m-3 grid grid-cols-1 gap-10 md:grid-cols-2 mx-auto">
             <div className="w-full h-full">
                 <img
                     className="rounded-2xl w-full  h-full"

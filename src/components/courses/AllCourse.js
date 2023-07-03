@@ -4,17 +4,17 @@ import SearchBar from './Searchbar';
 import { Link } from 'react-router-dom';
 
 const AllCourse = () => {
-    const [courses,setCourses] = useState([]);
+    const [courses, setCourses] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('./AllCourses.json')
-        .then(res => res.json())
-        .then(data => setCourses(data))
-    },[courses]);
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, [courses]);
 
     console.log(courses)
     return (
-        <div className='rounded-xl  mt-6 py-5 '>
+        <div className='rounded-xl mx-2 mt-6 py-5 '>
             <SearchBar />
 
             <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-2  py-6'>

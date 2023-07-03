@@ -17,6 +17,8 @@ import { Banner } from './components/Banner/Banner'
 import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
 import BannerImg from "./assects/images/bg-image.png"
+import ServiceSlider from './components/Service/ServiceSlider'
+
 
 export default function Home() {
     return (
@@ -143,8 +145,10 @@ export default function Home() {
                     </div>
                 </div>
                 {/* FAQ section */} </div>
-
-            <div className='my-10'>
+            <div>
+                <ServiceSlider />
+            </div>
+            <div className=''>
                 <Statistics />
             </div>
             <div>

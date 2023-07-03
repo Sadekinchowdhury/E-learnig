@@ -51,8 +51,7 @@ const Services = () => {
                 <div className="flex items-center justify-center mb-3 rounded-full">
                   {card.icons.map((Icon) => (
                     <div
-                      className="
-                                        border-[1px] border-blue-400  p-3 rounded-full"
+                      className="border-[1px] border-blue-400  p-3 rounded-full"
                     >
                       <Icon className="w-8 h-8" key={index} />
                     </div>

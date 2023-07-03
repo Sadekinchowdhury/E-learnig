@@ -58,18 +58,19 @@ const ProfileDashboard = () => {
             <div className="bg-gray-900 text-white  shadow-2xl w-full lg:w-1/5 px-4 py-6">
                 {/* Sidebar content */}
 
-                <div className="flex mt-10  text-center items-center justify-center mb-8">
-                    <img src={Avator}
-                        alt=""
-                        className="w-20 border-[6px] border-blue-500 h-20 rounded-full mr-4" />
-
-                </div>
-                <div className='text-center'>
-                    <h2 className="text-xl font-bold">Showkat Ali</h2>
-                    <p className="text-sm"> rumel36@gmail.com </p>
-                </div>
 
                 <div className='py-10'>
+                    <div className="flex mt-10  text-center items-center justify-center mb-8">
+                        <img src={Avator}
+                            alt=""
+                            className="w-20 border-[6px] border-blue-500 h-20 rounded-full mr-4" />
+
+                    </div>
+                    <div className='text-center mb-8'>
+                        <h2 className="text-xl font-bold">Showkat Ali</h2>
+                        <p className="text-sm"> rumel36@gmail.com </p>
+                    </div>
+
                     <hr className='border-t-2 border-blue-400"' />
                     <Sidebar></Sidebar>
                     <hr color='black' className='text-blue-600 ' />
@@ -83,10 +84,10 @@ const ProfileDashboard = () => {
             </div>
 
             {/* Main Content */}
-            <div className="bg-gray-200 flex-grow ">
+            <div className="bg-gray-200  flex-grow ">
                 {/* Main content */}
-                <Outlet></Outlet>
 
+                <Outlet></Outlet>
                 {/* Add your main content here */}
             </div>
         </div>
