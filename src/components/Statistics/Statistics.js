@@ -3,28 +3,28 @@ import { GiEarthAmerica } from 'react-icons/gi';
 import { BsPeopleFill } from 'react-icons/bs';
 import { IoMdPerson } from 'react-icons/io';
 import { IoIosAnalytics } from 'react-icons/io';
-
 import { Link } from 'react-router-dom';
+
 
 const Statistics = () => {
     const statistics = [
         {
-            name: "Global Project",
+            name: "Total Course",
             number: "4329",
             icon: [GiEarthAmerica]
         },
         {
-            name: "Client Project",
+            name: "Total people",
             number: "2545",
             icon: [BsPeopleFill]
         },
         {
-            name: "Service",
+            name: "Total Applicant",
             number: "9349",
             icon: [IoIosAnalytics]
         },
         {
-            name: "Team expert",
+            name: "Upcoming Course",
             number: "4329",
             icon: [IoMdPerson]
         },
@@ -64,14 +64,17 @@ const Statistics = () => {
                 {/* header section right */}
                 <div className='py-10 flex items-center justify-center w-4/5 mx-auto text-white'>
                     <div>
-                        <h1 className='text-4xl text-white font-medium text-left'>Our Large Achievment</h1>
+                        <h1 className='text-4xl text-white font-medium text-left'>Our Courses</h1>
                         <p className=' my-8 text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, fuga Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure saepe ullam quibusdam atque recusandae tenetur animi nobis, eius dicta ad?.</p>
 
                         <Link className='py-3 px-7 hover:border-[1px]  shadow-2xl  bg-gradient-to-l hover:transform hover:scale-105 duration-500 bg-slate-700 border-blue-400 text-white  from-sky-500 hover:bg-black text-xl font-semibold rounded-full'>Get Started</Link>
                     </div>
                 </div>
             </div>
+            <div>
 
+
+            </div>
         </div>
     );
 };

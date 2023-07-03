@@ -74,6 +74,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 
 const ServiceSlider = () => {
@@ -110,21 +111,25 @@ const ServiceSlider = () => {
             imageUrl: 'path/to/image1.jpg',
             text: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad! 1',
             title: "App Development",
+            path: "/appDevelopment",
         },
         {
             imageUrl: 'path/to/image2.jpg',
             text: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad! 2',
             title: "Web Development",
+            path: "/webDevelopment",
         },
         {
             imageUrl: 'path/to/image3.jpg',
             text: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad! 3',
             title: "Digital marketing",
+            path: "/digitalMarketing",
         },
         {
             imageUrl: 'path/to/image4.jpg',
             text: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad! 4',
             title: "Search Engine Optimization",
+            path: "/seo",
         },
         {
             imageUrl: 'path/to/image5.jpg',
@@ -137,16 +142,18 @@ const ServiceSlider = () => {
     return (
         <Slider {...settings}>
             {data.map((card, index) => (
-                <div key={index} className="p-4 lg:mb-16 mb-4 h-full">
-                    <div className='shadow-xl transition duration-200 hover:scale-110 cursor-pointer   rounded-xl bg-slate-300'>
-                        <div>
-                            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfEtDj_thLJJrm5glCUbBHDMQAkQ_SOjRRg&usqp=CAU' alt={card.text} className="w-full h-30" />
+                <div key={index} className="p-4  lg:mb-16 mb-4 h-full">
+                    <Link to={card.path}>
+                        <div className='shadow-xl mx-2 transition duration-300  hover:translate-y-10 hover:scale-110 cursor-pointer   rounded-xl bg-slate-300'>
+                            <div>
+                                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfEtDj_thLJJrm5glCUbBHDMQAkQ_SOjRRg&usqp=CAU' alt={card.text} className="w-full h-30" />
+                            </div>
+                            <div className='p-4'>
+                                <p className='text-xl font-semibold py-2'>{card.title}</p>
+                                <p className="text-left">{card.text}</p>
+                            </div>
                         </div>
-                        <div className='p-4'>
-                            <p className='text-xl font-semibold py-2'>{card.title}</p>
-                            <p className="text-left">{card.text}</p>
-                        </div>
-                    </div>
+                    </Link>
                 </div>
             ))}
         </Slider>
