@@ -83,7 +83,7 @@ const ServiceSlider = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -144,7 +144,8 @@ const ServiceSlider = () => {
             {data.map((card, index) => (
                 <div key={index} className="p-4  lg:mb-16 mb-4 h-full">
                     <Link to={card.path}>
-                        <div className='shadow-xl mx-2 transition duration-300  hover:translate-y-10 hover:scale-110 cursor-pointer   rounded-xl bg-slate-300'>
+                        <div className='shadow-xl mx-2 h-[380px] transition duration-300 
+                         hover:translate-y-10 hover:scale-110 cursor-pointer   rounded-xl bg-slate-300'>
                             <div>
                                 <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfEtDj_thLJJrm5glCUbBHDMQAkQ_SOjRRg&usqp=CAU' alt={card.text} className="w-full h-30" />
                             </div>

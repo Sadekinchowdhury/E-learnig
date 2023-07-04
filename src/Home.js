@@ -105,7 +105,7 @@ export default function Home() {
                         <div class="container mx-auto px-4">
                             <div class="flex flex-wrap -mx-4">
                                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-                                    <div class="bg-white rounded-lg p-6">
+                                    <div class="bg-white h-[280px] rounded-lg p-6">
                                         <img src={FeatureImg_1}
                                             alt="Feature Image"
                                             class="w-16 h-16 mb-4 mx-auto" />
@@ -114,7 +114,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-                                    <div class="bg-white rounded-lg p-6">
+                                    <div class="bg-white h-[280px] rounded-lg p-6">
                                         <img src={FeatureImg_3}
                                             alt="Feature Image"
                                             class="w-16 h-16 mb-4 mx-auto" />
@@ -123,7 +123,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-                                    <div class="bg-white rounded-lg p-6">
+                                    <div class="bg-white h-[280px] rounded-lg p-6">
                                         <img src={FeatureImg_2}
                                             alt="Feature Image"
                                             class="w-16 h-16 mb-4 mx-auto" />
@@ -132,7 +132,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-                                    <div class="bg-white rounded-lg p-6">
+                                    <div class="bg-white h-[280px] rounded-lg p-6">
                                         <img src={FeatureImg_4}
                                             alt="Feature Image"
                                             class="w-16 h-16 mb-4 mx-auto" />
