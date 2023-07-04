@@ -126,7 +126,7 @@ export default function Live() {
                                     <a href="#_" class="w-full flex justify-center p-10 py-2 mt-5 rounded group overflow-hidden font-medium bg-slate-300 text-slate-700">
                                         <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 group-hover:h-full opacity-90"></span>
                                         <span class="relative group-hover:text-purple-400">
-                                            <Link to="/Lives">Join Now</Link>
+                                            <Link to="/lives">Join Now</Link>
                                         </span>
                                     </a>
                                 </div>

@@ -145,8 +145,16 @@ export default function Home() {
                     </div>
                 </div>
                 {/* FAQ section */} </div>
-            <div>
+            <div className='lg:mb-16 mb-3'>
                 <ServiceSlider />
+                <div className="flex items-center justify-center">
+                    <Link
+                        to="/service"
+                        className="py-3 px-7 hover:border-[1px]  shadow-2xl to-amber-700 bg-gradient-to-l hover:transform hover:scale-105 duration-500 border-blue-700 text-white bg-blue-900 hover:bg-black text-xl font-semibold rounded-full"
+                    >
+                        Get Started
+                    </Link>
+                </div>
             </div>
             <div className=''>
                 <Statistics />
