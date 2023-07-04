@@ -10,7 +10,7 @@ import UK from '../assects/images/united-kingdom.png'
 export default function Footer() {
     return (
         <div>
-            <div className='w-full bg-slate-700 mx-auto'>
+            <div className='w-full bg-slate-700 mx-auto pt-5'>
                 <div className='w-4/5 bg-slate-700 mx-auto'>
                     <footer class="bg-slate-700 text-center text-slate-100 dark:bg-slate-700 dark:text-slate-100 lg:text-left">
                         <div class="mx-6 py-5 text-center md:text-left">
