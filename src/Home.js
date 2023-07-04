@@ -33,9 +33,9 @@ export default function Home() {
                             </h2>
                             <p class="text-gray-300 text-lg mb-8">
                                 Lorem Ipsum is simply dummy text of the printing and
-                                                  typesetting industry. Lorem Ipsum has been the industry's
-                                                  standard dummy text ever since the 1500s, when an unknown
-                                                  printer took a galley.
+                                                                                  typesetting industry. Lorem Ipsum has been the industry's
+                                                                                  standard dummy text ever since the 1500s, when an unknown
+                                                                                  printer took a galley.
                             </p>
                             <a href="#_" class="px-5 p-10 py-2.5 rounded group overflow-hidden font-medium bg-slate-100 text-slate-700 inline-block">
                                 <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 group-hover:h-full opacity-90"></span>
@@ -117,7 +117,7 @@ export default function Home() {
                                     <h3 class="text-xl font-bold mb-2">Flexible Learning</h3>
                                     <p class="text-gray-700">
                                         Learn at your own pace and fit your studies around your
-                                                              schedule.
+                                                                                                      schedule.
                                     </p>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ export default function Home() {
                                     <h3 class="text-xl font-bold mb-2">Expert Instructors</h3>
                                     <p class="text-gray-700">
                                         Learn from industry experts with real-world experience in
-                                                              their fields.
+                                                                                                      their fields.
                                     </p>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@ export default function Home() {
                                     <h3 class="text-xl font-bold mb-2">Interactive Courses</h3>
                                     <p class="text-gray-700">
                                         Engage with interactive course materials to enhance your
-                                                              learning experience.
+                                                                                                      learning experience.
                                     </p>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@ export default function Home() {
                                     <h3 class="text-xl font-bold mb-2">Certification</h3>
                                     <p class="text-gray-700">
                                         Earn recognized certifications upon completion of your
-                                                              courses.
+                                                                                                      courses.
                                     </p>
                                 </div>
                             </div>
@@ -203,11 +203,11 @@ export default function Home() {
                                 <details className="w-full rounded-lg ring-1 ring-purple-600">
                                     <summary className="px-1 py-2">
                                         Q. Who can take a Disney Institute professional
-                                                              development course?
+                                                                                                      development course?
                                     </summary>
                                     <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                         Disney Institute courses are open to anyone ages 18 and
-                                                              older.
+                                                                                                      older.
                                     </p>
                                 </details>
                                 <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -216,8 +216,8 @@ export default function Home() {
                                     </summary>
                                     <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                         No. Disney Institute does not offer any financial-aid
-                                                              assistance or scholarships. We are neither a college nor
-                                                              university.
+                                                                                                      assistance or scholarships. We are neither a college nor
+                                                                                                      university.
                                     </p>
                                 </details>
                                 <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -235,11 +235,11 @@ export default function Home() {
                                 <details className="w-full rounded-lg ring-1 ring-purple-600">
                                     <summary className="px-1 py-2">
                                         Q. Who can take a Disney Institute professional
-                                                              development course?
+                                                                                                      development course?
                                     </summary>
                                     <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                         Disney Institute courses are open to anyone ages 18 and
-                                                              older.
+                                                                                                      older.
                                     </p>
                                 </details>
                                 <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -248,8 +248,8 @@ export default function Home() {
                                     </summary>
                                     <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                         No. Disney Institute does not offer any financial-aid
-                                                              assistance or scholarships. We are neither a college nor
-                                                              university.
+                                                                                                      assistance or scholarships. We are neither a college nor
+                                                                                                      university.
                                     </p>
                                 </details>
                                 <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -268,4 +268,4 @@ export default function Home() {
         </div>
     </div>
     );
-    }
+        }
