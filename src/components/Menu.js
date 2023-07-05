@@ -17,21 +17,21 @@ export default function Menu() {
                 </Link>
                 {/* Topics */}
                 <Link to="/service" className="relative lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px] py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="lg:mr-0 mr-2  fa-solid fa-address-book ml-3"></i><br />
+                    <i class="lg:mr-0 mr-2  fa-solid fa-address-book ml-2"></i><br />
                     <li class="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span class="firstlevel">Topics</span>
                     </li>
                 </Link>
                 {/* Notices */}
                 <Link to="/notices" className="relative lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px]  py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="lg:mr-0 mr-2  fa-solid fa-bell ml-4"></i><br />
+                    <i class="lg:mr-0 mr-2  fa-solid fa-bell ml-2"></i><br />
                     <li className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">Notices</span>
                     </li>
                 </Link>
                 {/* Courses */}
                 <Link to="/course" className="relative lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px]  py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="lg:mr-0 mr-2  fa-solid fa-book-open-reader ml-4"></i><br />
+                    <i class="lg:mr-0 mr-2  fa-solid fa-book-open-reader ml-2"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">
                             <li >Courses</li>
@@ -40,7 +40,7 @@ export default function Menu() {
                 </Link>
                 {/* Meeting */}
                 <Link to="/meeting" className="relative lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px]  py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="lg:mr-0 mr-2  fa-solid fa-users ml-6"></i><br />
+                    <i class="lg:mr-0 mr-2  fa-solid fa-users ml-2"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
                             <li >
@@ -61,7 +61,7 @@ export default function Menu() {
                 </Link>
                 {/* Certificate */}
                 <Link to="/certificateForm" className="relative lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px]  py-2 group mb-1 md:mb-0" id="button_admin">
-                    <i class="lg:mr-0 mr-2  fa-solid fa-graduation-cap ml-8"></i><br />
+                    <i class="lg:mr-0 mr-2  fa-solid fa-graduation-cap ml-2"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="last firstlevel">
                             <li>Certification</li>

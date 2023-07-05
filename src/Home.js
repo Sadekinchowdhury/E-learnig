@@ -20,6 +20,7 @@ import BannerImg from "./assects/images/bg-image.png"
 import ServiceSlider from './components/Service/ServiceSlider'
 import PublicStaticks from './components/Statistics/PuplicStaticks'
 import HomePageMeeting from "./components/meeting/HomePageMeeting";
+import Faq from "./components/Faq/Faq";
 
 
 export default function Home() {
@@ -155,6 +156,10 @@ export default function Home() {
         <div className='py-20'>
             <Banner />
         </div>
+
+        {/* <div>
+            <Faq />
+        </div> */}
 
         {/* FQA DESIGN */}
         <div className=" w-4/5 mx-auto bg-white py-5 rounded-md">
