@@ -14,10 +14,10 @@ export default function LiveMeeting() {
                             <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
                             <img src={MeetingInmg}
                                 style={
-                                    {width: "10rem"}
+                                    { width: "10rem" }
                                 }
-                                alt="Meeting Image"
-                                class="mb-4"/>
+                                alt=""
+                                class="mb-4" />
                             <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
                         </div>
@@ -28,10 +28,10 @@ export default function LiveMeeting() {
                             <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
                             <img src={MeetingInmg}
                                 style={
-                                    {width: "10rem"}
+                                    { width: "10rem" }
                                 }
                                 alt="Meeting Image"
-                                class="mb-4"/>
+                                class="mb-4" />
                             <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
                         </div>
@@ -42,10 +42,10 @@ export default function LiveMeeting() {
                             <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
                             <img src={MeetingInmg}
                                 style={
-                                    {width: "10rem"}
+                                    { width: "10rem" }
                                 }
                                 alt="Meeting Image"
-                                class="mb-4"/>
+                                class="mb-4" />
                             <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div class="bg-white border border-gray-300 p-4">
@@ -54,10 +54,10 @@ export default function LiveMeeting() {
                             <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
                             <img src={MeetingInmg}
                                 style={
-                                    {width: "10rem"}
+                                    { width: "10rem" }
                                 }
                                 alt="Meeting Image"
-                                class="mb-4"/>
+                                class="mb-4" />
                             <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div class="bg-white border border-gray-300 p-4">
@@ -66,10 +66,10 @@ export default function LiveMeeting() {
                             <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
                             <img src={MeetingInmg}
                                 style={
-                                    {width: "10rem"}
+                                    { width: "10rem" }
                                 }
                                 alt="Meeting Image"
-                                class="mb-4"/>
+                                class="mb-4" />
                             <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div class="bg-white border border-gray-300 p-4">
@@ -78,10 +78,10 @@ export default function LiveMeeting() {
                             <p class="text-gray-500 mb-4">Time: 10:30:00 pm</p>
                             <img src={MeetingInmg}
                                 style={
-                                    {width: "10rem"}
+                                    { width: "10rem" }
                                 }
                                 alt="Meeting Image"
-                                class="mb-4"/>
+                                class="mb-4" />
                             <p class="text-gray-800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                     </div>
