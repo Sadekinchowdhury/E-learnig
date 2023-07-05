@@ -5,7 +5,7 @@ export default function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
         <div>
-            <div className="container-fluid  bg-slate-700">
+            <div className="container-fluid py-3 bg-slate-700">
                 <nav className="bg-slate-700 w-4/5 mx-auto">
                     <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 border-b border-solid border-slate-600">
                         <div className="flex-shrink-0 font-bold tracking-wider text-slate-100">LOGO</div>

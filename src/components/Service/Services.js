@@ -1,6 +1,13 @@
 import React from "react";
 import { FaCode, FaMobileAlt, FaPaintBrush, FaBlog } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
 const Services = () => {
   const cards = [
     {
@@ -32,6 +39,34 @@ const Services = () => {
       path: "/digitalMarketing",
     },
   ];
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className=" bg-slate-800 lg:py-20 from-orange-950 to-green-800">
       <div className="p-5">

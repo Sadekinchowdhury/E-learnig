@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Banner = () => {
     return (
-        <div className='w-4/5 mx-auto'>
-            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-5 my-10'>
+        <div className='w-4/5 lg:py-7 py-3 mx-auto'>
+            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-8 py-7'>
                 <div className=''>
-                    <img className="rounded-md w-full  h-full" src="https://qph.cf2.quoracdn.net/main-qimg-915b7365383ff59ccf4b651294694c70-pjlq" alt=""/>
+                    <img className="rounded-md w-full  h-full" src="https://qph.cf2.quoracdn.net/main-qimg-915b7365383ff59ccf4b651294694c70-pjlq" alt="" />
                 </div>
                 <div className='text-white'>
                     <h2 className='text-3xl font-semibold my-1'>Our Company Courses</h2>
@@ -32,29 +32,29 @@ export const Banner = () => {
                     </a>
                 </div>
                 <div className=''>
-                    <img className="rounded-md w-full  h-full" src="https://qph.cf2.quoracdn.net/main-qimg-915b7365383ff59ccf4b651294694c70-pjlq" alt=""/>
+                    <img className="rounded-md w-full  h-full" src="https://qph.cf2.quoracdn.net/main-qimg-915b7365383ff59ccf4b651294694c70-pjlq" alt="" />
                 </div>
             </div>
         </div>
-    // <div className="w-4/5 my-2 lg:h-[500px]  text-white grid grid-cols-1 gap-4 md:grid-cols-2 mx-auto">
-    //     <div className="w-full h-full">
-    //         <img className="rounded-2xl w-full  h-2/4" src="https://qph.cf2.quoracdn.net/main-qimg-915b7365383ff59ccf4b651294694c70-pjlq" alt=""/>
-    //     </div>
-    //     {/* <div className="flex items-center justify-center">
-    //         <div className=''>
-    //             <h1 className="text-xl text-center lg:text-2xl">
-    //                 Take the next step
-    //                 <br/>
-    //                 toward your personal and
-    //                 <br/>
-    //                 professional goals with
-    //             </h1>
-    //             <p className="text-xs text-center lg:text-sm font-medium">
-    //                 Join now to receive personalized recommendations from the full Course
-    //             </p>
-    //         </div>
-    //     </div> */}
-    // </div>
+        // <div className="w-4/5 my-2 lg:h-[500px]  text-white grid grid-cols-1 gap-4 md:grid-cols-2 mx-auto">
+        //     <div className="w-full h-full">
+        //         <img className="rounded-2xl w-full  h-2/4" src="https://qph.cf2.quoracdn.net/main-qimg-915b7365383ff59ccf4b651294694c70-pjlq" alt=""/>
+        //     </div>
+        //     {/* <div className="flex items-center justify-center">
+        //         <div className=''>
+        //             <h1 className="text-xl text-center lg:text-2xl">
+        //                 Take the next step
+        //                 <br/>
+        //                 toward your personal and
+        //                 <br/>
+        //                 professional goals with
+        //             </h1>
+        //             <p className="text-xs text-center lg:text-sm font-medium">
+        //                 Join now to receive personalized recommendations from the full Course
+        //             </p>
+        //         </div>
+        //     </div> */}
+        // </div>
 
     )
 }
