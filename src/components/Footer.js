@@ -6,6 +6,7 @@ import Nagad from '../assects/images/nagad.webp'
 import Bkash from '../assects/images/BKash-Logo.wine.png'
 import USA from '../assects/images/united-states.png'
 import UK from '../assects/images/united-kingdom.png'
+import {Link} from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -107,22 +108,29 @@ export default function Footer() {
                                         Useful links
                                     </h6>
                                     <p class="mb-1">
-                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">Help</a>
+                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">
+                                            <Link to="/help">Help</Link>
+                                        </a>
                                     </p>
                                     <p class="mb-1">
-                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">About Us</a>
-                                    </p>
-                                    <p class="mb-1">
-                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">Private</a>
-                                    </p>
-                                    <p>
-                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">Privacy & Policy</a>
+                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">
+                                            <Link to="/aboutUs">About Us</Link>
+                                        </a>
                                     </p>
                                     <p>
-                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">Terms & Conditions</a>
+                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">
+                                            <Link to="/privacyAndPolicy">Privacy & Policy</Link>
+                                        </a>
                                     </p>
                                     <p>
-                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">Return Policy</a>
+                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">
+                                            <Link to="/termsAndConditions">Terms & Conditions</Link>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-slate-100 dark:text-neutral-200">
+                                            <Link to="/returnPolicy">Return Policy</Link>
+                                        </a>
                                     </p>
                                 </div>
                             </div>

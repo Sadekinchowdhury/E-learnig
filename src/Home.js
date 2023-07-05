@@ -160,7 +160,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                ======= {/* FAQ section */}
+                {/* FAQ section */}
                 {" "} </div>
             <div className="lg:mb-16 mb-3">
                 <ServiceSlider/>
