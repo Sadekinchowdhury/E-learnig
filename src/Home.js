@@ -162,8 +162,9 @@ export default function Home() {
         </div> */}
 
         {/* FQA DESIGN */}
-        <div className=" w-4/5 mx-auto bg-white py-5 rounded-md">
-            <div className="">
+        <div className="w-4/5 mx-auto ">
+            <div className="  bg-white  rounded-md">
+
                 <h2 className="text-2xl font-semibold flex justify-center">
                     Frequently Asked Questions
                 </h2>
@@ -235,6 +236,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
