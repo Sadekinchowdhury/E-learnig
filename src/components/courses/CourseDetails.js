@@ -11,29 +11,32 @@ const CourseDetails = () => {
   return (
     <div>
       {/* course details banner */}
-      <section className="bg-[#f6f6f6] py-16">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 w-4/5 mx-auto my-5">
+      <section className="bg-[#f6f6f6] lg:py-16 py-6">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 w-4/5 mx-auto lg:my-5">
           <div className="flex flex-col justify-center">
-            <h1 className="text-6xl font-bold">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold">
               Introduction to User Experience Design
             </h1>
-            <div className="flex gap-3 py-12">
-              <p className="flex items-center gap-1">
+            <div className="flex lg:gap-3 md:gap-2 gap-1 lg:py-12 md:py-8 py-5">
+              <p className="flex items-center lg:text-lg md:text-lg text-sm gap-1">
                 <BsCalendarDate className="text-[#ffe800]" /> 12/03/23
               </p>
               <span>-</span>
-              <p className="flex items-center gap-1">
+              <p className="flex items-center lg:text-lg md:text-lg text-sm gap-1">
                 <BsCalendarDate className="text-[#ffe800]" /> 12/03/23
               </p>
-              <p className="flex items-center gap-1">
+              <p className="flex items-center lg:text-lg md:text-lg text-sm gap-1">
                 <BsClockFill className="text-[#ffe800]" /> 3 months
               </p>
             </div>
 
-            <div className="flex gap-5">
-              <h2 className="text-5xl font-semibold">$19.99</h2>
-              <button className="bg-[#181818] text-white font-bold py-4 px-12 rounded hover:bg-[#303030] flex items-center gap-2">
-                <FaShoppingCart className="text-[#ffe800]" /> ADD TO CART{" "}
+            <div className="flex lg:gap-5 gap-3">
+              <h2 className="lg:text-5xl md:text-4xl text-3xl font-semibold">
+                $19.99
+              </h2>
+              <button className="bg-[#181818] text-white text-small font-bold py-4 lg:px-12 md:px-12 px-6 rounded hover:bg-[#303030] flex items-center gap-2 lg:text-lg text-sm">
+                <FaShoppingCart className="text-[#ffe800]" />
+                ADD TO CART
               </button>
             </div>
           </div>
@@ -47,10 +50,12 @@ const CourseDetails = () => {
       </section>
 
       {/* course details lear info */}
-      <section className="py-16">
+      <section className="lg:py-16 md:py-12 py-6">
         <div className="grid lg:grid-cols-2 gap-10  w-4/5 mx-auto">
           <div>
-            <h2 className="text-5xl font-bold">What You will Learn</h2>
+            <h2 className="lg:text-5xl md:text-5xl sm:text-4xl text-3xl font-bold">
+              What You will Learn
+            </h2>
             <ul className="list-none mt-10">
               <li className="flex mb-2 gap-3 items-center text-gray-700 text-lg">
                 <span className="text-[#ffe800]">
@@ -83,7 +88,7 @@ const CourseDetails = () => {
               </li>
             </ul>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 mg:grid-cols-2 gap-8">
             <div class="bg-white rounded-lg shadow-lg p-6">
               <div className="text-5xl pb-5 pl-5 text-center">
                 <BiDesktop />
@@ -155,16 +160,22 @@ const CourseDetails = () => {
       </section>
 
       {/* course instructor */}
-      <section className="py-16">
+      <section className="lg:py-16 md:py-12 py-6">
         <div className="grid lg:grid-cols-2 gap-12 w-4/5 mx-auto">
           <div>
             <img className="w-full" src={mentor}></img>
           </div>
           <div className="flex items-center">
             <div>
-              <h2 className="text-5xl mb-5 font-bold">Course Instructor</h2>
-              <h2 className="text-5xl mb-8 font-bold">Alex Edwards</h2>
-              <p className="text-2xl font-semibold">Fullstack developer</p>
+              <h2 className="lg:text-5xl sm:text-4xl text-3xl lg:mb-5 md:mb-5 mb-2 font-bold">
+                Course Instructor
+              </h2>
+              <h2 className="lg:text-5xl sm:text-4xl text-3xl lg:mb-8 md:mb-5 mb-2 font-bold">
+                Alex Edwards
+              </h2>
+              <p className="lg:text-2xl md:text-2xl text-xl font-semibold">
+                Fullstack developer
+              </p>
               <p className="text-gray-700 font-medium pt-3">
                 Scelerisque viverra mauris in aliquam. Mauris pharetra et
                 ultrices neque ornare aenean. Diam quis enim lobortis
@@ -173,7 +184,7 @@ const CourseDetails = () => {
                 tincidunt augue interdum velit euismod in. Blandit volutpat
                 maecenas volutpat blandit aliquam etiam erat velit
               </p>
-              <div className="mt-8 grid lg:grid-cols-3 gap-8">
+              <div className="mt-8 grid lg:grid-cols-3 lg:gap-8 md:gap:5 gap-3">
                 <div className="p-5 shadow rounded text-center bg-[#dcdcdc]">
                   <h1 className="text-6xl font-bold mb-4">18 +</h1>
                   <p className="text-gray-800 font-medium">Persons Mentored</p>
