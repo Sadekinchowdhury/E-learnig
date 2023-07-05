@@ -18,6 +18,7 @@ import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
 import BannerImg from "./assects/images/bg-image.png"
 import ServiceSlider from './components/Service/ServiceSlider'
+import PublicStaticks from './components/Statistics/PuplicStaticks'
 
 
 export default function Home() {
@@ -100,7 +101,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section> */}
-                <div className='w-4/5 lg:py-20 py-2 mx-auto'>
+                <div className='w-4/5 lg:py-16 py-2 mx-auto'>
                     <div class="py-6">
                         <div class="container mx-auto px-4">
                             <div class="flex flex-wrap -mx-4">
@@ -146,8 +147,13 @@ export default function Home() {
                 </div>
                 {/* FAQ section */} </div>
             <div className='lg:mb-16 mb-3'>
+                <div className="lg:my-10 my-5">
+                    <h1 className="text-3xl text-white font-medium text-center">
+                        Our Topics
+                    </h1>
+                </div>
                 <ServiceSlider />
-                <div className="flex items-center justify-center">
+                <div className="flex  my-4 items-center justify-center">
                     <Link
                         to="/service"
                         className="py-3 px-7 hover:border-[1px]  shadow-2xl to-amber-700 bg-gradient-to-l hover:transform hover:scale-105 duration-500 border-blue-700 text-white bg-blue-900 hover:bg-black text-xl font-semibold rounded-full"
@@ -158,14 +164,14 @@ export default function Home() {
             </div>
             <div className=''>
                 <Statistics />
+                <PublicStaticks />
             </div>
-            <div>
+            {/* <div>
                 <Services />
 
-            </div>
+            </div> */}
             <div className='py-20'>
                 <Banner />
-
             </div>
             {/* <div>
                 <Card />
