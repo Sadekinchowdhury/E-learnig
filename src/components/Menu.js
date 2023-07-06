@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import DarkModeToggle from "./DarkMode/DarkMode";
 
 export default function Menu() {
 
@@ -93,6 +94,8 @@ export default function Menu() {
                     </a>
 
                 </Link>
+
+
             </ul>
 
         </div>

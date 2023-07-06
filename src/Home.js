@@ -21,6 +21,7 @@ import ServiceSlider from './components/Service/ServiceSlider'
 import PublicStaticks from './components/Statistics/PuplicStaticks'
 import HomePageMeeting from "./components/meeting/HomePageMeeting";
 import Faq from "./components/Faq/Faq";
+import DarkModeToggle from "./components/DarkMode/DarkMode";
 
 
 export default function Home() {
