@@ -10,6 +10,8 @@ import Services from './components/Service/Services'
 import Statistics from './components/Statistics/Statistics'
 import BannerImg from "./assects/images/bg-image.png"
 import ServiceSlider from './components/Service/ServiceSlider'
+import HomePageMeeting from './components/meeting/HomePageMeeting'
+import PublicStaticks from './components/Statistics/PuplicStaticks'
 
 
 export default function Home() {
@@ -25,9 +27,9 @@ export default function Home() {
                                 </h2>
                                 <p class="text-gray-300 text-lg mb-8 text-justify mr-10">
                                     Lorem Ipsum is simply dummy text of the printing and
-                                                                                                                                                                                                                                                                                                                                    typesetting industry. Lorem Ipsum has been the industry's
-                                                                                                                                                                                                                                                                                                                                    standard dummy text ever since the 1500s, when an unknown
-                                                                                                                                                                                                                                                                                                                                    printer took a galley.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    standard dummy text ever since the 1500s, when an unknown
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    printer took a galley.
                                 </p>
                                 <div className='py-2'>
                                     <a href="#_" class="relative inline-flex items-center justify-start py-2 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
@@ -64,6 +66,12 @@ export default function Home() {
                             Get Started
                         </Link>
                     </div>
+                </div>
+                <div>
+                    <HomePageMeeting/>
+                </div>
+                <div>
+                    <PublicStaticks/>
                 </div>
                 <div className="">
                     <Statistics/>
@@ -206,6 +214,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
             <div className="py-20">
                 <Banner/>
             </div>
@@ -221,11 +230,11 @@ export default function Home() {
                                     <details className="w-full rounded-lg ring-1 ring-purple-600">
                                         <summary className="px-1 py-2">
                                             Q. Who can take a Disney Institute professional
-                                                                                                                                                                                                                                                                                                                                                                                                            development course?
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            development course?
                                         </summary>
                                         <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                             Disney Institute courses are open to anyone ages 18 and
-                                                                                                                                                                                                                                                                                                                                                                                                            older.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            older.
                                         </p>
                                     </details>
                                     <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -234,8 +243,8 @@ export default function Home() {
                                         </summary>
                                         <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                             No. Disney Institute does not offer any financial-aid
-                                                                                                                                                                                                                                                                                                                                                                                                            assistance or scholarships. We are neither a college nor
-                                                                                                                                                                                                                                                                                                                                                                                                            university.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            assistance or scholarships. We are neither a college nor
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            university.
                                         </p>
                                     </details>
                                     <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -253,11 +262,11 @@ export default function Home() {
                                     <details className="w-full rounded-lg ring-1 ring-purple-600">
                                         <summary className="px-1 py-2">
                                             Q. Who can take a Disney Institute professional
-                                                                                                                                                                                                                                                                                                                                                                                                            development course?
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            development course?
                                         </summary>
                                         <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                             Disney Institute courses are open to anyone ages 18 and
-                                                                                                                                                                                                                                                                                                                                                                                                            older.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            older.
                                         </p>
                                     </details>
                                     <details className="w-full rounded-lg ring-1 ring-purple-600">
@@ -266,8 +275,8 @@ export default function Home() {
                                         </summary>
                                         <p className="px-1 py-2 pt-0 ml-4 -mt-4 text-gray-600">
                                             No. Disney Institute does not offer any financial-aid
-                                                                                                                                                                                                                                                                                                                                                                                                            assistance or scholarships. We are neither a college nor
-                                                                                                                                                                                                                                                                                                                                                                                                            university.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            assistance or scholarships. We are neither a college nor
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            university.
                                         </p>
                                     </details>
                                     <details className="w-full rounded-lg ring-1 ring-purple-600">
