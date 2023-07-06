@@ -1,7 +1,7 @@
 import "./App.css";
-import React, { Children } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Home";
 import DigitalMarketing from "./components/topics/DigitalMarketing";
 import AppDevelopment from "./components/topics/AppDevelopment";
@@ -24,111 +24,104 @@ import LiveMeeting from "./components/live/LiveMeeting"
 import LiveVideo from "./components/live/LiveVideo"
 import Service from "./components/Service/Service";
 import Live from "./components/live/Live";
-
 import Lives from "./components/live/Lives";
-
 import CourseDetails from "./components/courses/CourseDetails";
 import ProfileDashboard from "./DashBoard/ProfileDashboard/ProfileDashboard";
 import Setting from "./DashBoard/Setting/Setting";
 import LiveMettings from "./DashBoard/LiveMettings/LiveMettings";
 import LiveCourse from "./DashBoard/LiveCourse/LiveCourse";
-
+import TermsAndConditions from './components/usefull-links/TermsAndConditions'
+import Help from "./components/usefull-links/Help";
+import AboutUs from "./components/usefull-links/AboutUs";
+import PrivacyAndPolicy from "./components/usefull-links/PrivacyAndPolicy";
+import ReturnPolicy from "./components/usefull-links/ReturnPolicy";
 
 
 function App() {
     return (
         <div>
             <BrowserRouter>
-                <Navbar />
+                <Navbar/>
                 <Routes>
                     <Route index
-                        element={<Home />} />
+                        element={<Home/>}/>
                     <Route path="/digitalMarketing"
-                        element={<DigitalMarketing />}></Route>
+                        element={<DigitalMarketing/>}></Route>
                     <Route path="/appDevelopment"
-                        element={<AppDevelopment />}></Route>
+                        element={<AppDevelopment/>}></Route>
                     <Route path="/seo"
-                        element={<SeoPage />}></Route>
+                        element={<SeoPage/>}></Route>
                     <Route path="/service"
-                        element={<Service />}></Route>
-                    <Route element={<AppDevelopment />}></Route>
-                    <Route element={<AppDevelopment />}></Route>
+                        element={<Service/>}></Route>
+                    <Route element={<AppDevelopment/>}></Route>
+                    <Route element={<AppDevelopment/>}></Route>
                     <Route path="/seo"
-                        element={<SeoPage />}></Route>
+                        element={<SeoPage/>}></Route>
                     <Route path="/seo"
-                        element={<SeoPage />}></Route>
+                        element={<SeoPage/>}></Route>
                     <Route path="/webDevelopment"
-                        element={<WebDevelopment />}></Route>
+                        element={<WebDevelopment/>}></Route>
                     <Route path="/course"
-
-                        element={<Course />}></Route>
-                    <Route element={<Course />}></Route>
-
-                    <Route element={<Course />}></Route>
+                        element={<Course/>}></Route>
+                    <Route element={<Course/>}></Route>
+                    <Route element={<Course/>}></Route>
                     <Route path="/course/:id"
-                        element={<CourseDetails />}></Route>
-                    <Route element={<Course />}></Route>
-
+                        element={<CourseDetails/>}></Route>
+                    <Route element={<Course/>}></Route>
                     <Route path="/notices"
-                        element={<Notices />}></Route>
+                        element={<Notices/>}></Route>
                     <Route path="/meeting"
-                        element={<Meeting />}></Route>
+                        element={<Meeting/>}></Route>
                     <Route path="/notices"
-                        element={<Notices />}></Route>
+                        element={<Notices/>}></Route>
                     <Route path="/contact"
-                        element={<Contact />}></Route>
+                        element={<Contact/>}></Route>
                     <Route path="/meeting"
-                        element={<Meeting />}></Route>
-                    {/* <Route path="/publicNotice"
-                        element={<PublicNotice />}></Route>
-                    <Route path="/privateCourse"
-                        element={<PrivateCourse />}></Route> */}
+                        element={<Meeting/>}></Route>
                     <Route path="/publicCourse"
-                        element={<PublicCourse />}></Route>
+                        element={<PublicCourse/>}></Route>
                     <Route path="/joinTheLiveClass"
-                        element={<JoinTheLiveClass />}></Route>
+                        element={<JoinTheLiveClass/>}></Route>
                     <Route path="/joinTheLiveMeeting"
-                        element={<JoinTheLiveMeeting />}></Route>
+                        element={<JoinTheLiveMeeting/>}></Route>
                     <Route path="/certificate"
-                        element={<Certificate />}></Route>
+                        element={<Certificate/>}></Route>
                     <Route path="/certificateForm"
-                        element={<CertificateForm />}></Route>
+                        element={<CertificateForm/>}></Route>
                     <Route path="/live"
-                        element={<Live />}></Route>
+                        element={<Live/>}></Route>
                     <Route path="/liveVideo"
-                        element={<LiveVideo />}></Route>
-                    <Route path="/lives" element={<Lives />} ></Route>
-
+                        element={<LiveVideo/>}></Route>
+                    <Route path="/lives"
+                        element={<Lives/>}></Route>
                     <Route path="/LiveMeeting"
-                        element={<LiveMeeting />}></Route>
+                        element={<LiveMeeting/>}></Route>
                     <Route path="/signin"
-                        element={<SignIn />}></Route>
+                        element={<SignIn/>}></Route>
                     <Route path="/signup"
-                        element={<Signup />}></Route>
-                    {/* <Route path="/profile"
-                        element={<Profile />}
-                    >
+                        element={<Signup/>}></Route>
+                    <Route path="/help"
+                        element={<Help/>}></Route>
+                    <Route path="/termsAndConditions"
+                        element={<TermsAndConditions/>}></Route>
+                    <Route path="/aboutUs"
+                        element={<AboutUs/>}></Route>
+                    <Route path="/privacyAndPolicy"
+                        element={<PrivacyAndPolicy/>}></Route>
+                    <Route path="/returnPolicy"
+                        element={<ReturnPolicy/>}></Route>
+                    <Route path="/profile"
+                        element={<Profile/>}>
                         <Route path="/profile/dashboard"
-                            element={<ProfileDashboard />}
-                        >
-
-                        </Route>
-                    </Route> */}
-
-                    <Route path="/profile" element={<Profile />}>
-                        <Route path="/profile/dashboard" element={<ProfileDashboard />} />
-                        <Route path="/profile/setting" element={<Setting />} />
-                        <Route path="/profile/meeting" element={<LiveMettings />} />
-                        <Route path="/profile/livecourse" element={<LiveCourse />} />
-                        {/* <Route path="/profile/" element={ } />
-                        <Route path="/profile/" element={ } />
-                        <Route path="/profile/" element={ } />
-                        <Route path="/profile/" element={ } /> */}
-
-                    </Route>
-
+                            element={<ProfileDashboard/>}/>
+                        <Route path="/profile/setting"
+                            element={<Setting/>}/>
+                        <Route path="/profile/meeting"
+                            element={<LiveMettings/>}/>
+                        <Route path="/profile/livecourse"
+                            element={<LiveCourse/>}/></Route>
                 </Routes>
-                <Footer />
+                <Footer/>
             </BrowserRouter>
         </div>
 
