@@ -119,19 +119,19 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
+                <div>
+                    <HomePageMeeting />
+                </div>
+                <div>
+                    <PublicStaticks />
+                </div>
                 <div className="">
                     <Statistics />
                 </div>
             </div>
-            <div>
-                <ServiceSlider />
-            </div>
-            <div className="">
-                <Statistics />
-            </div>
-            <div>
-                <Services />
-            </div>
+
+
+
             <div className="py-20">
                 <Banner />
             </div>
