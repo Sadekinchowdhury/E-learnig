@@ -6,8 +6,7 @@ import {Link} from "react-router-dom";
 export default function Help() {
     return (
         <div>
-            <div className='w-full bg-support h-96 bg-no-repeat bg-cover'>
-                {/* <h2 className='text-center text-6xl text-white font-semibold pt-28'>Our Retun Policy</h2> */} </div>
+            <div className='w-full bg-support h-96 bg-no-repeat bg-cover'></div>
             <div className="w-4/5 mx-auto py-10">
                 <div class="py-6">
                     <div class="w-full mx-auto px-4">

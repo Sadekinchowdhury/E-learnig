@@ -1,7 +1,7 @@
 import "./App.css";
-import React, {Children} from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
-import {BrowserRouter, Routes, Route, Outlet} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Home";
 import DigitalMarketing from "./components/topics/DigitalMarketing";
 import AppDevelopment from "./components/topics/AppDevelopment";
@@ -24,9 +24,7 @@ import LiveMeeting from "./components/live/LiveMeeting"
 import LiveVideo from "./components/live/LiveVideo"
 import Service from "./components/Service/Service";
 import Live from "./components/live/Live";
-
 import Lives from "./components/live/Lives";
-
 import CourseDetails from "./components/courses/CourseDetails";
 import ProfileDashboard from "./DashBoard/ProfileDashboard/ProfileDashboard";
 import Setting from "./DashBoard/Setting/Setting";
@@ -64,15 +62,12 @@ function App() {
                     <Route path="/webDevelopment"
                         element={<WebDevelopment/>}></Route>
                     <Route path="/course"
-
                         element={<Course/>}></Route>
                     <Route element={<Course/>}></Route>
-
                     <Route element={<Course/>}></Route>
                     <Route path="/course/:id"
                         element={<CourseDetails/>}></Route>
                     <Route element={<Course/>}></Route>
-
                     <Route path="/notices"
                         element={<Notices/>}></Route>
                     <Route path="/meeting"
@@ -83,10 +78,6 @@ function App() {
                         element={<Contact/>}></Route>
                     <Route path="/meeting"
                         element={<Meeting/>}></Route>
-                    {/* <Route path="/publicNotice"
-                        element={<PublicNotice />}></Route>
-                    <Route path="/privateCourse"
-                        element={<PrivateCourse />}></Route> */}
                     <Route path="/publicCourse"
                         element={<PublicCourse/>}></Route>
                     <Route path="/joinTheLiveClass"
@@ -103,7 +94,6 @@ function App() {
                         element={<LiveVideo/>}></Route>
                     <Route path="/lives"
                         element={<Lives/>}></Route>
-
                     <Route path="/LiveMeeting"
                         element={<LiveMeeting/>}></Route>
                     <Route path="/signin"
@@ -120,16 +110,6 @@ function App() {
                         element={<PrivacyAndPolicy/>}></Route>
                     <Route path="/returnPolicy"
                         element={<ReturnPolicy/>}></Route>
-                    {/* <Route path="/profile"
-                        element={<Profile />}
-                    >
-                        <Route path="/profile/dashboard"
-                            element={<ProfileDashboard />}
-                        >
-
-                        </Route>
-                    </Route> */}
-
                     <Route path="/profile"
                         element={<Profile/>}>
                         <Route path="/profile/dashboard"
@@ -139,11 +119,7 @@ function App() {
                         <Route path="/profile/meeting"
                             element={<LiveMettings/>}/>
                         <Route path="/profile/livecourse"
-                            element={<LiveCourse/>}/> {/* <Route path="/profile/" element={ } />
-                        <Route path="/profile/" element={ } />
-                        <Route path="/profile/" element={ } />
-                        <Route path="/profile/" element={ } /> */} </Route>
-
+                            element={<LiveCourse/>}/></Route>
                 </Routes>
                 <Footer/>
             </BrowserRouter>

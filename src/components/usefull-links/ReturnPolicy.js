@@ -1,5 +1,4 @@
 import React from 'react'
-import ReturnPolicyImg from '../../assects/images/return-policy.jpeg'
 
 export default function ReturnPolicy() {
     return (

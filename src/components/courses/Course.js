@@ -8,10 +8,10 @@ export default function Course() {
 
             <div className='lg:flex'>
                 <div className='md:w-2/12 mx-auto p-3 w-full '>
-                    <Filters />
+                    <Filters/>
                 </div>
                 <div className='md:w-10/12 mx-auto'>
-                    <AllCourse />
+                    <AllCourse/>
                 </div>
             </div>
 
@@ -51,7 +51,6 @@ export default function Course() {
                         </div>
                     </div>
                 </div>
-                {/* Populer Courses */}
                 <div class="w-11/12 mx-auto mt-5 mb-5 bg-gray-100 py-8">
                     <h2 class="text-xl font-bold mb-4 ml-8">Populer Courses</h2>
                     <div class="container mx-auto px-4">
@@ -86,7 +85,6 @@ export default function Course() {
                         </div>
                     </div>
                 </div>
-                {/* Free Courses */}
                 <div class="w-11/12 mx-auto mt-5 mb-5 bg-gray-100 py-8">
                     <h2 class="text-xl font-bold mb-4 ml-8">Fee Courses</h2>
                     <div class="container mx-auto px-4">
