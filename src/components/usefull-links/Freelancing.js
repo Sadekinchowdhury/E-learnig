@@ -17,7 +17,7 @@ const Freelancing = () => {
     <>
       <section className="w-full bg-returnPolicy h-96 bg-no-repeat bg-cover">
         <h2 className="text-center text-6xl text-white font-semibold pt-28">
-          Courses & Work in Freelance Marketplace
+          Work in Freelance Marketplace
         </h2>
       </section>
       <div>
