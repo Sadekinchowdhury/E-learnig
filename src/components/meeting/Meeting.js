@@ -34,7 +34,6 @@ export default function Meeting() {
             <div key={i * 10} className="pricing-card bg-[#16256e] py-8 px-5">
               <div className="flex flex-col content-center items-center">
                 <img className="w-[100px]" src={item.img} />
-                {console.log(item.img)}
                 <h3 className="text-2xl text-white mt-4 mb-4">{item.title}</h3>
                 <h2 className="text-5xl font-bold text-[#0ad3ef]">
                   ${item.price}
