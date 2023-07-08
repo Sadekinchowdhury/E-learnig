@@ -1,7 +1,13 @@
 import React from 'react';
 import { AiOutlineEdit } from 'react-icons/ai'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import ProfileModal from './ProfileModal';
+import { useState } from 'react';
 const ProfileEdit = () => {
+
+    const [open, setOpen] = useState(false)
+
+
     return (
 
         <div className='bg-pink-700 from-blue-700 to-slate-700 via-orange-700 bg-gradient-to-t  mt-3 rounded-xl w-11/12 mx-auto p-3 '>
@@ -11,7 +17,7 @@ const ProfileEdit = () => {
                     <h1 className='text-3xl text-white font-semibold'>Profile</h1>
                 </div>
                 <div>
-                    <AiOutlineEdit size={30} color='white' />
+                    <ProfileModal />
                 </div>
             </div>
 
@@ -65,6 +71,10 @@ const ProfileEdit = () => {
                         <p className='text-xl font-medium'> Bangladesh</p>
                     </div>
                     <div className='text-left text-white mb-3'>
+                        <label htmlFor="" className=' font-normal'>Contact Info</label>
+                        <p className='text-xl font-medium'> +8801720985568</p>
+                    </div>
+                    <div className='text-left text-white mb-3'>
                         <label htmlFor="" className=' font-normal'> City</label>
                         <p className='text-xl font-medium'> Sylhet</p>
                     </div>
@@ -75,6 +85,8 @@ const ProfileEdit = () => {
 
                 </div>
             </div>
+
+
         </div>
 
     );
