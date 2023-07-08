@@ -76,7 +76,7 @@ export default function Menu() {
                     </a>
                 </Link>
 
-                <Link to='/profile' className="relative text-center lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px]  py-2 group mb-1 md:mb-0" id="button_admin">
+                <Link to='/profile/profileEdit' className="relative text-center lg:block flex  lg:px-2  lg:py-1 duration-1000 hover:scale-105 hover:text-pink-700 transition rounded-xl    lg:hover:border-sky-500 lg:hover:border-[2px]  py-2 group mb-1 md:mb-0" id="button_admin">
                     <i class="lg:mr-0 mr-2  fa-regular fa-user ml-2"></i><br />
                     <a className="font-semibold whitespace-no-wrap text-slate-100 hover:text-yellow-300">
                         <span className="firstlevel">Profile</span>
