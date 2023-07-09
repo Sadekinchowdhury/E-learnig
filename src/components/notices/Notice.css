@@ -8,80 +8,15 @@
   background: #000000;
   border-color: #00ba57;
 }
-.notifications h3 {
-    text-align: center;
-    font-size: 34px;
-  }
-  .notice-container{
-    max-width: 1080px;
-    margin: auto;
-  }
-  .notice {
-    background-color: #00234a;
-    position: relative;
-    margin-top: 35px;
-    box-shadow: 0px 0px 1px 0px #ffffff;
-    border-radius: 6px;
-}
-  .notice-info {
-    width: calc(100% - 300px);
-  }
-  .notice-img {
-    width: 300px;
-  }
-  .notice-img img {
-    height: 100%;
-  }
+
   .notice-btn {
     background: #1b1b1b;
     color: white;
-    padding: 7px 23px;
+    padding: 4px 12px;
     border-radius: 7px;
     display: flex;
+    font-size: 13px;
     align-items: center;
     justify-content: center;
   }
   
-  .seriul {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    background: #05994a;
-    color: white;
-    font-size: 30px;
-    border-radius: 7px;
-}
-  
-  
-  /* Responsive designs */
-  
-  /* it works when the screen size is under 768px */
-  @media only screen and (max-width: 768px) {
-  
-    .notice-info {
-      width: 100%;
-    }
-    .notice-img {
-      width: 250px;
-      margin: auto;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .notice-img {
-      width: 100%;
-      margin: auto;
-    }
-    .notice-info p{
-      font-size: 12px;
-    }
-    .notice-btn {
-      padding: 5px 13px;
-      font-size: 13px;
-  }
-  }

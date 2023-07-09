@@ -35,6 +35,8 @@ import Help from "./components/usefull-links/Help";
 import AboutUs from "./components/usefull-links/AboutUs";
 import PrivacyAndPolicy from "./components/usefull-links/PrivacyAndPolicy";
 import ReturnPolicy from "./components/usefull-links/ReturnPolicy";
+import Freelancing from "./components/usefull-links/Freelancing";
+import Speaking from "./components/usefull-links/Speaking";
 import ProfileEdit from "./DashBoard/EditProfile/ProfileEdit";
 
 
@@ -111,6 +113,10 @@ function App() {
                         element={<PrivacyAndPolicy />}></Route>
                     <Route path="/returnPolicy"
                         element={<ReturnPolicy />}></Route>
+                    <Route path="/freelancing"
+                        element={<Freelancing />}></Route>
+                    <Route path="/speaking"
+                        element={<Speaking />}></Route>
 
                     <Route path="/profile"
                         element={<Profile />}>
