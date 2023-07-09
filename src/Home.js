@@ -20,7 +20,6 @@ export default function Home() {
       <MeatingHome />
       <PublicStaticks />
       <Statistics />
-      <Services />
       <Features />
       <Banner />
       <HomeFaq />
