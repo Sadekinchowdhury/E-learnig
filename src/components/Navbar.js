@@ -1,5 +1,6 @@
 import Menu from "./Menu";
 import React, {useState} from "react";
+import Logo from "../assects/images/OIP.jpg"
 
 export default function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -8,7 +9,9 @@ export default function Navbar() {
             <div className="container-fluid py-3 bg-slate-700">
                 <nav className="bg-slate-700 w-4/5 mx-auto">
                     <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 border-b border-solid border-slate-600">
-                        <div className="flex-shrink-0 font-bold tracking-wider text-slate-100">LOGO</div>
+                        <div className="flex-shrink-0 font-bold tracking-wider text-slate-100"><img src={Logo}
+                                className="img-fluid w-16"
+                                alt=""/></div>
                         <div className="hidden md:block">
                             <Menu/>
                         </div>
