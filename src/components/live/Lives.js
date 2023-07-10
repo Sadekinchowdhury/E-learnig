@@ -77,7 +77,7 @@ const Lives = () => {
 
                         </button>
 
-                        <span className={`${user ? 'bg-green-700' : 'bg-red-400'} text-white px-2 rounded-full bg-slate-800`}>{
+                        <span className={`${user ? 'bg-green-700' : 'bg-red-400'}  text-white px-2 rounded-full `}>{
                             user ?
 
                                 onlinUser.length : OfflineUser.length}</span>
