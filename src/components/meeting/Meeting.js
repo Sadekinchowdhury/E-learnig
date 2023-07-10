@@ -24,7 +24,6 @@ export default function Meeting() {
     <>
       <section className="bg-[#091650] py-16 lg:px-[200px] px-4 md:px-8">
         <div className="text-center">
-          <h3 className="text-xl text-[#0ad3ef]">WHAT WE OFFER</h3>
           <h1 className="text-5xl font-bold text-white mt-4">
             Our Flexible Pricing Plans
           </h1>
