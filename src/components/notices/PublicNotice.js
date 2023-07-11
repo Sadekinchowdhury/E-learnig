@@ -72,14 +72,14 @@ const PublicNotice = () => {
       <tbody className="divide-y divide-gray-200">
         {notices.map((notice) => (
           <tr className="mt-2 bg-white">
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="flex items-center bg-[#00234a] content-center">
-                <div className="text-sm py-2 px-3 rounded font-medium text-white flex items-center bg-[#00234a] justify-center">
+            <td className="px-4 py-2 lg:px-8 lg:py-4 md:px-8 md:px-4 whitespace-nowrap">
+              <div className="flex items-center content-center">
+                <div className="w-[40px] h-[40px] text-xsm flex items-center justify-center rounded font-medium text-white bg-[#00234a]">
                   {notice.sl}
                 </div>
               </div>
             </td>
-            <td className="px-6 py-4 whitespace-nowrap">
+            <td className="px-6 py-4 text-xsm whitespace-nowrap">
               <div className="font-bold text-[#00397b]">{notice.title}</div>
             </td>
             <td className="px-6 py-4 whitespace-nowrap">
@@ -87,7 +87,7 @@ const PublicNotice = () => {
                 {notice.date}
               </span>
             </td>
-            <td className="px-6 py-4 whitespace-nowrap">
+            <td className="px-6  py-4 whitespace-nowrap">
               <button className="notice-btn">
                 <span className="mr-3">
                   <HiDownload />

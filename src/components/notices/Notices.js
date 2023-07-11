@@ -20,16 +20,16 @@ const Notices = () => {
   };
   return (
     <section className="py-8 bg-[#001030] overflow-hidded">
-      <h2 className="text-4xl text-center text-white font-bold">
+      <h2 className="lg:text-4xl md:text-3xl text-xm text-center text-white font-bold">
         {" "}
-        <IoIosNotifications className="inline text-5xl text-[#00ba57]" />{" "}
+        <IoIosNotifications className="inline lg:text-5xl md:text-4xl sm:text-3xl text-[#00ba57]" />{" "}
         Notifications
       </h2>
-      <ul className="mt-8 flex items-center justify-center">
+      <ul className="lg:mt-8 md:mt-6 mt-4 flex items-center justify-center">
         <li>
           <button
             onClick={showPublicNotice}
-            className={`notice-toggle-btn btn btn-lg bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
+            className={`notice-toggle-btn btn lg:btn-lg btn-sm bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
               publicNotice && "active-notice"
             }`}
             to="/notices/public"
@@ -40,7 +40,7 @@ const Notices = () => {
         <li>
           <button
             onClick={showPrivateNotice}
-            className={`notice-toggle-btn btn btn-lg bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
+            className={`notice-toggle-btn btn lg:btn-lg btn-xsm text-sm bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
               privateNotice && "active-notice"
             }`}
           >
@@ -48,7 +48,7 @@ const Notices = () => {
           </button>
         </li>
       </ul>
-      <div className="max-w-[1000px] mx-auto mt-3">
+      <div className="lg:max-w-[1000px] mx-auto mt-3">
         <div className="overflow-x-scroll">
           {privateNotice && <PrivateNotice />}
           {publicNotice && <PublicNotice />}
