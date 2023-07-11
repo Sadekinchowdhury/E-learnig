@@ -7,6 +7,7 @@ import { RiComputerLine } from 'react-icons/ri';
 import { FiLogOut } from 'react-icons/fi';
 import { FaPaperPlane } from 'react-icons/fa';
 import { FaExpand } from 'react-icons/fa';
+import { useState } from 'react';
 
 const Lives = () => {
 
@@ -16,57 +17,76 @@ const Lives = () => {
             icons: [FaCircle],
             color: "text-green-700"
         },
-        {
-            name: "Rumel",
-            icons: [FaCircle],
-            color: "text-red-300"
-        },
+
         {
             name: "Chowdhury",
             icons: [FaCircle],
             color: "text-green-700"
         },
-        {
-            name: "Rumel",
-            icons: [FaCircle],
-            color: "text-red-300"
-        },
-        {
-            name: "karim",
-            icons: [FaCircle],
-            color: "text-green-700"
-        },
-        {
-            name: "Rumel",
-            icons: [FaCircle],
-            color: "text-red-300"
-        },
-        {
-            name: "Sojib",
-            icons: [FaCircle],
-            color: "text-green-700"
-        },
-        {
-            name: "Rumel",
-            icons: [FaCircle],
-            color: "text-red-300"
-        },
+
 
 
 
     ]
+    const OfflineUser = [
+        {
+            name: "Sadekin",
+            icons: [FaCircle],
+            color: "text-red-300"
+        },
 
+        {
+            name: "Chowdhury",
+            icons: [FaCircle],
+            color: "text-red-300"
+        },
+
+        {
+            name: "karim",
+            icons: [FaCircle],
+            color: "text-red-300"
+        },
+
+        {
+            name: "Sojib",
+            icons: [FaCircle],
+            color: "text-red-300"
+        },
+
+
+    ]
+
+    const [user, setUser] = useState(false)
+
+    const userCondition = () => {
+        setUser(!user)
+    }
     return (
         <div className=''>
             <div className="lg:h-screen grid  h-[500px] grid-cols-12">
-                <div className="col-span-2 lg:block hidden bg-black from-slate-900 to-gray-800 bg-gradient-to-l">
+                <div className="col-span-2 lg:block hidden bg-black from-slate-900  to-gray-800 bg-gradient-to-l">
                     {/* Content for the first column */}
 
-                    <div className='bg-purple-900 items-center shadow-2xl flex justify-between px-6 py-3'>
-                        <h1 className='text-white font-semibold text-xl'>Participant </h1><span className='text-white px-2 bg-slate-800'>30</span>
+                    <div className='bg-purple-900 items-center shadow-2xl flex justify-between gap-2 px-6 py-3'>
+                        <button onClick={userCondition} className='text-white font-semibold  bg-green-700 py-1 px-2 rounded-2xl '>
+                            Active
+                        </button>
+                        <button onClick={userCondition} className='text-white font-semibold  bg-red-400 py-1 px-2 rounded-2xl '>
+
+                            Offline
+
+                        </button>
+
+                        <span className={`${user ? 'bg-green-700' : 'bg-red-400'}  text-white px-2 rounded-full `}>{
+                            user ?
+
+                                onlinUser.length : OfflineUser.length}</span>
+
+
+
                     </div>
                     <div>
-                        {
+                        {user &&
                             onlinUser.map(online =>
                                 <div>
                                     <ul className='flex'>
@@ -81,6 +101,32 @@ const Lives = () => {
 
                                                 >
                                                     <Icon size={10} className={`${online.color}`} key={index} />
+                                                </div>
+                                            ))}
+
+
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            )
+                        }
+                        {!user &&
+                            OfflineUser.map(offline =>
+                                <div>
+                                    <ul className='flex'>
+
+                                        <li className='flex items-center px-2'>
+
+                                            <img className='w-7 h-7 rounded-full' src="" alt="" />
+                                            <h1 className='text-white p-3'>{offline.name}</h1>
+
+                                            {offline.icons.map((Icon, index) => (
+                                                <div
+
+                                                >
+                                                    <Icon size={10} className={`${offline.color}`} key={index} />
                                                 </div>
                                             ))}
 
@@ -134,11 +180,24 @@ const Lives = () => {
                 {/* right side */}
                 <div className="col-span-3 relative lg:block hidden bg-slate-800">
 
-                    <div className='p-6'>
+                    <div className='p-6 relative'>
 
-                        <div className='bg-white w-[80%] shadow-[4px] rounded-2xl p-2 px-2'>
+
+                        <div className=' mt-5 shadow-[4px] rounded-2xl'>
+
                             <p className='font-semibold text-sky-400'>Md Mursalin</p>
-                            <p className='text-black'>How to go your won way?</p>
+                            <div className='bg-white py-2 px-3  rounded-lg   border-blue-400'>
+
+                                <p className='text-black'>How to go your won way?</p>
+                            </div>
+                        </div>
+                        <div className='absolute right-2 mt-5 shadow-[4px] rounded-2xl'>
+
+                            <p className='font-semibold text-sky-400 text-right'>Md Mursalin</p>
+                            <div className='bg-white py-2 px-3  rounded-lg   border-blue-400'>
+
+                                <p className='text-black'>How to go your won way?</p>
+                            </div>
                         </div>
 
                     </div>

@@ -2,8 +2,7 @@ import React from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import {Banner} from "./components/Banner/Banner";
-import Services from "./components/Service/Services";
+import { Banner } from "./components/Banner/Banner";
 import Statistics from "./components/Statistics/Statistics";
 import ServiceSlider from "./components/Home/ServiceSlider";
 import PublicStaticks from "./components/Statistics/PuplicStaticks";
@@ -13,17 +12,16 @@ import HomeFaq from "./components/Home/HomeFaq";
 import Features from "./components/Home/Features";
 
 export default function Home() {
-    return (
-        <div className="bg-slate-700">
-            <HomeBanner/>
-            <ServiceSlider/>
-            <MeatingHome/>
-            <PublicStaticks/>
-            <Statistics/>
-            <Services/>
-            <Features/>
-            <Banner/>
-            <HomeFaq/>
-        </div>
-    );
+  return (
+    <div className="bg-slate-700">
+      <HomeBanner />
+      <ServiceSlider />
+      <MeatingHome />
+      <PublicStaticks />
+      <Statistics />
+      <Features />
+      <Banner />
+      <HomeFaq />
+    </div>
+  );
 }
