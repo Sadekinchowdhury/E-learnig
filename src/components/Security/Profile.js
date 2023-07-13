@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 const ProfileDashboard = () => {
     return (
         <div className="flex flex-col lg:flex-row">
-            <div className="bg-gray-900 text-white  shadow-2xl w-full lg:w-1/5 px-4 mx-2 my-2 rounded-xl py-6">
+            <div className="bg-gray-900 text-white  shadow-2xl w-full lg:w-2/12 px-4 m-2 my-2 rounded-xl py-6">
                 <div className=''>
                     <div className="flex mt-10  text-center items-center justify-center mb-8">
                         <img src={Avator}
@@ -33,7 +33,7 @@ const ProfileDashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-200  flex-grow ">
+            <div className="bg-slate-700 w-full lg:w-10/12 m-3 rounded-xl flex-grow ">
 
                 <Outlet></Outlet>
             </div>

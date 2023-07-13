@@ -27,7 +27,7 @@ import Live from "./components/live/Live";
 import Lives from "./components/live/Lives";
 import CourseDetails from "./components/courses/CourseDetails";
 import ProfileDashboard from "./DashBoard/ProfileDashboard/ProfileDashboard";
-import Setting from "./DashBoard/TeacherRegistration/Setting";
+import Setting from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import LiveCourse from "./DashBoard/LiveCourse/LiveCourse";
 import TermsAndConditions from "./components/usefull-links/TermsAndConditions";
 import Help from "./components/usefull-links/Help";
@@ -38,7 +38,9 @@ import Freelancing from "./components/usefull-links/Freelancing";
 import Speaking from "./components/usefull-links/Speaking";
 import ProfileEdit from "./DashBoard/EditProfile/ProfileEdit";
 import PersonalMeeting from "./DashBoard/PersonalMeeting/PersonalMeeting";
-import TeacherRegistration from "./DashBoard/TeacherRegistration/Setting";
+import TeacherRegistration from "./DashBoard/TeacherRegistration/TeacherRegistration";
+import MissingClassToday from "./DashBoard/MissingClass/MissingClassToday";
+
 
 function App() {
     return (
@@ -107,7 +109,7 @@ function App() {
 
                         <Route path="/profile/teacherregistration" element={<TeacherRegistration />} />
 
-                        <Route path="/profile/missingclass" element={<TeacherRegistration />} />
+                        <Route path="/profile/missingclass" element={<MissingClassToday />} />
 
                         <Route path="/profile/coursehistory" element={<TeacherRegistration />} />
                         <Route
