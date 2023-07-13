@@ -40,6 +40,7 @@ import ProfileEdit from "./DashBoard/EditProfile/ProfileEdit";
 import PersonalMeeting from "./DashBoard/PersonalMeeting/PersonalMeeting";
 import TeacherRegistration from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import MissingClassToday from "./DashBoard/MissingClass/MissingClassToday";
+import CourseHistory from "./DashBoard/CourseHistory/CourseHistory";
 
 
 function App() {
@@ -111,7 +112,7 @@ function App() {
 
                         <Route path="/profile/missingclass" element={<MissingClassToday />} />
 
-                        <Route path="/profile/coursehistory" element={<TeacherRegistration />} />
+                        <Route path="/profile/coursehistory" element={<CourseHistory />} />
                         <Route
                             path="/profile/personal-meeting-admin"
                             element={<PersonalMeeting />}
