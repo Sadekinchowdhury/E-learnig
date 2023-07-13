@@ -38,9 +38,8 @@ import Freelancing from "./components/usefull-links/Freelancing";
 import Speaking from "./components/usefull-links/Speaking";
 import ProfileEdit from "./DashBoard/EditProfile/ProfileEdit";
 import PersonalMeeting from "./DashBoard/PersonalMeeting/PersonalMeeting";
-
+import CourseHistory from "./DashBoard/CourseHistory/CourseHistory";
 function App() {
-<<<<<<< HEAD
   return (
     <div>
       <BrowserRouter>
@@ -99,108 +98,10 @@ function App() {
           <Route path="/returnPolicy" element={<ReturnPolicy />}></Route>
           <Route path="/freelancing" element={<Freelancing />}></Route>
           <Route path="/speaking" element={<Speaking />}></Route>
-=======
-    return (
-        <div>
-            <BrowserRouter>
-                <Navbar />
-                <Routes>
-                    <Route index
-                        element={<Home />} />
-                    <Route path="/digitalMarketing"
-                        element={<DigitalMarketing />}></Route>
-                    <Route path="/appDevelopment"
-                        element={<AppDevelopment />}></Route>
-                    <Route path="/seo"
-                        element={<SeoPage />}></Route>
-                    <Route path="/service"
-                        element={<Service />}></Route>
-                    <Route element={<AppDevelopment />}></Route>
-                    <Route element={<AppDevelopment />}></Route>
-                    <Route path="/seo"
-                        element={<SeoPage />}></Route>
-                    <Route path="/seo"
-                        element={<SeoPage />}></Route>
-                    <Route path="/webDevelopment"
-                        element={<WebDevelopment />}></Route>
-                    <Route path="/course"
-                        element={<Course />}></Route>
-                    <Route element={<Course />}></Route>
-                    <Route element={<Course />}></Route>
-                    <Route path="/course/:id"
-                        element={<CourseDetails />}></Route>
-                    <Route element={<Course />}></Route>
-                    <Route path="/notices"
-                        element={<Notices />}></Route>
-                    <Route path="/meeting"
-                        element={<Meeting />}></Route>
-                    <Route path="/notices"
-                        element={<Notices />}></Route>
-                    <Route path="/contact"
-                        element={<Contact />}></Route>
-                    <Route path="/meeting"
-                        element={<Meeting />}></Route>
-                    <Route path="/publicCourse"
-                        element={<PublicCourse />}></Route>
-                    <Route path="/joinTheLiveClass"
-                        element={<JoinTheLiveClass />}></Route>
-                    <Route path="/joinTheLiveMeeting"
-                        element={<JoinTheLiveMeeting />}></Route>
-                    <Route path="/certificate"
-                        element={<Certificate />}></Route>
-                    <Route path="/certificateForm"
-                        element={<CertificateForm />}></Route>
-                    <Route path="/live"
-                        element={<Live />}></Route>
-                    <Route path="/liveVideo"
-                        element={<LiveVideo />}></Route>
-                    <Route path="/lives"
-                        element={<Lives />}></Route>
-                    <Route path="/LiveMeeting"
-                        element={<LiveMeeting />}></Route>
-                    <Route path="/signin"
-                        element={<SignIn />}></Route>
-                    <Route path="/signup"
-                        element={<Signup />}></Route>
-                    <Route path="/help"
-                        element={<Help />}></Route>
-                    <Route path="/termsAndConditions"
-                        element={<TermsAndConditions />}></Route>
-                    <Route path="/aboutUs"
-                        element={<AboutUs />}></Route>
-                    <Route path="/privacyAndPolicy"
-                        element={<PrivacyAndPolicy />}></Route>
-                    <Route path="/returnPolicy"
-                        element={<ReturnPolicy />}></Route>
-                    <Route path="/freelancing"
-                        element={<Freelancing />}></Route>
-                    <Route path="/speaking"
-                        element={<Speaking />}></Route>
-
-                    <Route path="/profile"
-                        element={<Profile />}>
-                        <Route path="/profile/profileEdit"
-                            element={<ProfileEdit />} />
-                        <Route path="/profile/dashboard"
-                            element={<ProfileEdit />} />
-                        <Route path="/profile/setting"
-                            element={<Setting />} />
-                        <Route path="/profile/meeting"
-                            element={<LiveMettings />} />
-                        <Route path="/profile/livecourse"
-                            element={<LiveCourse />} />
-
-                    </Route>
-                </Routes>
-                <Footer />
-            </BrowserRouter>
-        </div>
-
-    );
->>>>>>> 187bb5954110432cc87f3b5fe9ddf65d3dafb897
 
           <Route path="/profile" element={<Profile />}>
             <Route path="/profile/profileEdit" element={<ProfileEdit />} />
+            <Route path="/profile/courseHistory" element={<CourseHistory />} />
             <Route path="/profile/dashboard" element={<ProfileEdit />} />
             <Route path="/profile/setting" element={<Setting />} />
             <Route
