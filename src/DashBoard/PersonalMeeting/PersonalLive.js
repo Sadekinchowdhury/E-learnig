@@ -1,3 +1,14 @@
+// import React from 'react';
+
+// const PersonalLive = () => {
+//     return (
+//         <div>
+
+//         </div>
+//     );
+// };
+
+// export default PersonalLive;
 import React from 'react';
 import { FaGlobe } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
@@ -9,7 +20,7 @@ import { FaPaperPlane } from 'react-icons/fa';
 import { FaExpand } from 'react-icons/fa';
 import { useState } from 'react';
 
-const Lives = () => {
+const PersonalLive = () => {
 
     const onlinUser = [
         {
@@ -181,6 +192,8 @@ const Lives = () => {
                 <div className="col-span-3 relative lg:block hidden bg-slate-800">
 
                     <div className='p-3'>
+
+
                         <div className='py-4 shadow-[4px]'>
 
                             <p className='font-semibold text-sky-400'>Md Mursalin</p>
@@ -201,6 +214,8 @@ const Lives = () => {
                             </div>
 
                         </div>
+
+
                     </div>
 
                     <div className='absolute bottom-0 bg-slate-900 p-3 w-full flex'>
@@ -224,4 +239,4 @@ const Lives = () => {
     );
 };
 
-export default Lives;
+export default PersonalLive;

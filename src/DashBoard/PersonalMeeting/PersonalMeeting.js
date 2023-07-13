@@ -3,6 +3,8 @@ import { AiFillDelete } from "react-icons/ai";
 import { AiFillEdit } from "react-icons/ai";
 import EditPersonalMeeting from "./EditePersonalMeeting";
 import CreateNewMeeting from "./CreateNewMeeting";
+import PersonalLive from "./PersonalLive";
+import { Link } from "react-router-dom";
 const PersonalMeeting = () => {
   const users = [
     {
@@ -107,9 +109,10 @@ const PersonalMeeting = () => {
           <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
             <span>{30 - users.length}</span>
           </div>
-          <div className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white">
-            <button>Live</button>
-          </div>
+          <Link to='/personallive' className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white">
+            <button>Live
+            </button>
+          </Link>
           <button className="bg-[#00234a] font-bold text-xm lg:text-sm text-white">
             <CreateNewMeeting />
           </button>

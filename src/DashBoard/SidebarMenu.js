@@ -29,7 +29,7 @@ const Sidebar = () => {
               <IconContext.Provider value={{ className: "inline-block mr-2" }}>
                 <AiOutlineUser size={20} />
               </IconContext.Provider>
-              profile
+              Profile
             </Link>
             <Link
               to="/profile/dashboard"

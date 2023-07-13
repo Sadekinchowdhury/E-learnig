@@ -41,6 +41,7 @@ import PersonalMeeting from "./DashBoard/PersonalMeeting/PersonalMeeting";
 import TeacherRegistration from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import MissingClassToday from "./DashBoard/MissingClass/MissingClassToday";
 import CourseHistory from "./DashBoard/CourseHistory/CourseHistory";
+import PersonalLive from "./DashBoard/PersonalMeeting/PersonalLive";
 
 
 function App() {
@@ -103,6 +104,12 @@ function App() {
                     <Route path="/freelancing" element={<Freelancing />}></Route>
                     <Route path="/speaking" element={<Speaking />}></Route>
 
+                    <Route
+                        path="/personallive"
+                        element={<PersonalLive />}
+                    />
+
+
                     <Route path="/profile" element={<Profile />}>
                         <Route path="/profile/profileEdit" element={<ProfileEdit />} />
 
@@ -118,6 +125,7 @@ function App() {
                             element={<PersonalMeeting />}
                         />
                         <Route path="/profile/livecourse" element={<LiveCourse />} />
+
                     </Route>
                 </Routes>
                 <Footer />
