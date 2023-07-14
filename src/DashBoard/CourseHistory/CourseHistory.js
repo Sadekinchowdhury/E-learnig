@@ -69,11 +69,11 @@ const CourseHistory = () => {
                     <tbody className="bg-white divide-y divide-gray-200">
                         {courses.map((course) => (
                             <tr key={course.id}>
-                                <td className="px-6 py-4 whitespace-nowrap">{course.id}</td>
+                                <td className="px-6 py-4 whitespace-nowrap ">{course.id}</td>
                                 <td className="px-6 py-4 whitespace-nowrap bg-sky-700 text-white">{course.title}</td>
                                 <td className="px-6 py-4 whitespace-nowrap bg-indigo-700 text-white">{course.country}</td>
-                                <td className="px-6 py-4 whitespace-nowrap bg-lime-700 text-white">{course.applyLastDate}</td>
-                                <td className="px-6 py-4 whitespace-nowrap bg-pink-700 text-white">{course.classStartDate}</td>
+                                <td className="px-6 py-4 whitespace-nowrap bg-pink-700 text-white">{course.applyLastDate}</td>
+                                <td className="px-6 py-4 whitespace-nowrap bg-green-800 text-white">{course.classStartDate}</td>
                                 <td className="px-6 py-4 whitespace-nowrap bg-orange-500 text-white">{course.courseCompleteDate}</td>
                                 <td className="px-6 bg-purple-900 text-white py-4 whitespace-nowrap">{course.language}</td>
                             </tr>

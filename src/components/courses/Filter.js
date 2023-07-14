@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const Filters = () => {
     const [filterValue] = useState('');
@@ -9,6 +9,7 @@ const Filters = () => {
     const [selects4, setSelects4] = useState("")
     const [selects5, setSelects5] = useState("")
     const [selects6, setSelects6] = useState("")
+    const [date, setDate] = useState("")
 
     const fruits = [
         'Apple',
@@ -17,6 +18,35 @@ const Filters = () => {
         'Grape',
         'Lemon',
         'Orange'
+    ];
+    const skillsAndCourses = [
+        "Web Development",
+        "Web Design",
+        "Android App Development",
+        "Flutter Android & IOS App Dev.",
+        "WPT Theme Development",
+        "WordPress Theme Customization",
+        "Laravel",
+        "Graphic Design",
+        "T-SHIRT DESIGN COURSE",
+        "Complete Digital Marketing Advance SEO (Search Engine Opt.) CPA Marketing",
+        "Affiliate Marketing",
+        "Social Media Marketing",
+        "Data Entry",
+        "Computer+IT Specialist for Office work YouTube Marketing",
+        "Ecommerce Business Development(With Learn Logo Design with Professional Designer website building)",
+        "UI/UX Design",
+        "Video Editing",
+        "Motion Graphic",
+        "3D Studio Max and VFX",
+        "IELTS",
+        "AutoCad 2D and 3D",
+        "Spoken English",
+        "Ethical Hacking",
+        "CCNA",
+        "MikroTik",
+        "Complete Python Programming",
+        "Freelancing Masterclass for Skilled People Complete Java"
     ];
 
     return (
@@ -34,11 +64,24 @@ const Filters = () => {
                             name=""
                             id="">
                             <option disabled hidden value="">Choose Country</option>
-                            {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
+                            <option value="Bangladesh">
+                                Bangladesh
+                            </option>
+                            <option value="India">
+                                India
+                            </option>
+                            <option value="Pakistan">
+                                Pakistan
+                            </option>
+                            <option value="Nepal">
+                                Nepal
+                            </option>
+                            <option value="Myanmar">
+                                Mayanmar
+                            </option>
+
+
+                        </select>
                     </div>
                     <div>
                         <select value={selects1}
@@ -50,11 +93,15 @@ const Filters = () => {
                             name=""
                             id="">
                             <option disabled hidden value="">Course Type</option>
-                            {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
+
+                            <option value="Paid">
+                                Paid
+                            </option>
+                            <option value='Free'>
+                                Free
+                            </option>
+
+                        </select>
                     </div>
                     <div>
                         <select value={selects2}
@@ -66,11 +113,15 @@ const Filters = () => {
                             name=""
                             id="">
                             <option disabled hidden value="">Choose Language</option>
-                            {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
+                            <option value="Bangla">
+                                Bangla
+                            </option>
+                            <option value='Hindi'>
+                                Bangla
+                            </option>
+                            <option value='English'>
+                                English
+                            </option></select>
                     </div>
                     <div>
                         <select value={selects3}
@@ -83,10 +134,15 @@ const Filters = () => {
                             id="">
                             <option disabled hidden value="">Course Category</option>
                             {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
+                                skillsAndCourses.map(skill =>
+                                    <option value={skill}>
+
+                                        {skill}
+                                    </option>
+                                )
+                            }
+
+                        </select>
                     </div>
                     <div>
                         <select value={selects4}
@@ -98,44 +154,42 @@ const Filters = () => {
                             name=""
                             id="">
                             <option disabled hidden value="">Course Duration</option>
-                            {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
+                            <option value="1 Month">
+                                1 Month
+                            </option>
+                            <option value="2 Month">
+                                2 Month
+                            </option>
+                            <option value="3 Month">
+                                3 Month
+                            </option>
+                            <option value="4 Month">
+                                4 Month
+                            </option>
+                            <option value="5 Month">
+                                5 Month
+                            </option>
+                            <option value="6 Month">
+                                6 Month
+                            </option>
+                            <option value="12 Month">
+                                12 Month
+                            </option></select>
                     </div>
-                    <div>
-                        <select value={selects5}
-                            onChange={
-                                e => setSelects5(e.target.value)
-                            }
-                            placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
-                            name=""
-                            id="">
-                            <option disabled hidden value="">Course Start Day</option>
-                            {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
+
+                    <div className="mb-4">
+                        <label className='text-white font-semibold' htmlFor="dateOfBirth">Start Day</label>
+                        <input
+                            type="date"
+                            id="dateOfBirth"
+                            value={date}
+                            onChange={(e) => setDate(e.target.value)}
+                            required
+                            className="w-full border rounded py-2 px-3"
+                        />
                     </div>
-                    <div>
-                        <select value={selects6}
-                            onChange={
-                                e => setSelects6(e.target.value)
-                            }
-                            placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
-                            name=""
-                            id="">
-                            <option disabled hidden value="">Course start time</option>
-                            {
-                            fruits.filter((fruit) => fruit.toLowerCase().includes(filterValue.toLowerCase())).map((fruit) => (
-                                <option> {fruit} </option>
-                            ))
-                        } </select>
-                    </div>
+
+
 
                 </div>
 

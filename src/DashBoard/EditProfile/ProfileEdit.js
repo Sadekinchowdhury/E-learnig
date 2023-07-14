@@ -10,7 +10,7 @@ const ProfileEdit = () => {
 
     return (
 
-        <div className='bg-pink-700 from-blue-700 to-slate-700 via-orange-700 bg-gradient-to-t  mt-3 rounded-xl w-11/12 mx-auto p-3 '>
+        <div className='bg-pink-700 from-blue-700 to-slate-700 via-orange-700 bg-gradient-to-t shadow-2xl mt-3 rounded-xl w-11/12 mx-auto p-3 '>
 
             <div className='flex justify-between p-10'>
                 <div>
