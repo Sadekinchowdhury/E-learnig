@@ -41,7 +41,7 @@ const Sidebar = () => {
               Dashboard
             </Link>
             <Link
-              to="/profile/teacherregistration"
+              to="/profile/teacherragistration"
               className="p-4 mt-4 hover:rounded-lg  hover:border-blue-700 hover:border-[0.5px] transition duration-300 hover:scale-110 hover:bg-gray-800"
             >
               <IconContext.Provider value={{ className: "inline-block mr-2" }}>
@@ -68,11 +68,7 @@ const Sidebar = () => {
               Missing Class today
             </Link>
             <Link
-<<<<<<< HEAD
               to="/profile/courseHistory"
-=======
-              to="/profile/coursehistory"
->>>>>>> 433d4145619fc03843ea491c13dfa2a7771258a4
               className="p-4 mt-4 hover:rounded-lg  hover:border-blue-700 hover:border-[0.5px] transition duration-300 hover:scale-110 hover:bg-gray-800"
             >
               <IconContext.Provider value={{ className: "inline-block mr-2" }}>

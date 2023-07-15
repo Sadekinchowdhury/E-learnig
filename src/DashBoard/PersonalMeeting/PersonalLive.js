@@ -192,8 +192,6 @@ const PersonalLive = () => {
                 <div className="col-span-3 relative lg:block hidden bg-slate-800">
 
                     <div className='p-3'>
-
-
                         <div className='py-4 shadow-[4px]'>
 
                             <p className='font-semibold text-sky-400'>Md Mursalin</p>
@@ -214,8 +212,6 @@ const PersonalLive = () => {
                             </div>
 
                         </div>
-
-
                     </div>
 
                     <div className='absolute bottom-0 bg-slate-900 p-3 w-full flex'>
