@@ -45,8 +45,17 @@ import TeacherRegistrationForm from "./DashBoard/TeacherRegistration/TeacherRegi
 import PersonalLive from "./DashBoard/PersonalMeeting/PersonalLive";
 import TeacherLive from "./DashBoard/CourseTeacherAdmin/TeacherLive";
 function App() {
-  return (
-    <div>
+  const disableRightClick = (e) => {
+    e.preventDefault();
+};
+return (
+
+    <div onContextMenu={disableRightClick}
+        onCopy={
+            (e) => {
+                e.preventDefault();
+            }
+    }>
       <BrowserRouter>
         <Navbar />
         <Routes>
