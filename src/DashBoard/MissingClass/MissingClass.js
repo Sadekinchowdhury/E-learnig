@@ -59,7 +59,7 @@ const MissingClass = () => {
   ];
   return (
     <div>
-      <div className="py-10 overflow-x-scroll">
+      <div className="py-10">
         {/* <div className="flex items-center justify-between">
           <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
             <span>Live Meeting</span>
@@ -130,12 +130,14 @@ const MissingClass = () => {
                 <th
                   scope="col"
                   className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >{" "}</th>
+                >
+                  {" "}
+                </th>
                 <th
                   scope="col"
                   className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
                 >
-                    {" "}
+                  {" "}
                 </th>
               </tr>
             </thead>
