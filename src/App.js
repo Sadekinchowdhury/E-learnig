@@ -39,13 +39,10 @@ import Speaking from "./components/usefull-links/Speaking";
 import ProfileEdit from "./DashBoard/EditProfile/ProfileEdit";
 import PersonalMeeting from "./DashBoard/PersonalMeeting/PersonalMeeting";
 import CourseHistory from "./DashBoard/CourseHistory/CourseHistory";
-<<<<<<< HEAD
 import MissingClass from "./DashBoard/MissingClass/MissingClass";
 import CourseTeacherAdmin from "./DashBoard/CourseTeacherAdmin/CourseTeacherAdmin";
-=======
 import TeacherRegistrationForm from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import PersonalLive from "./DashBoard/PersonalMeeting/PersonalLive";
->>>>>>> c3e8cf275b057dc521756b8e22af13106d055137
 function App() {
   return (
     <div>
@@ -112,14 +109,7 @@ function App() {
             <Route path="/profile/teacherragistration" element={<TeacherRegistrationForm />} />
 
             <Route path="/profile/courseHistory" element={<CourseHistory />} />
-<<<<<<< HEAD
             <Route path="/profile/missingclass" element={<MissingClass />} />
-=======
-
-
-
-
->>>>>>> c3e8cf275b057dc521756b8e22af13106d055137
             <Route path="/profile/dashboard" element={<ProfileEdit />} />
             <Route path="/profile/setting" element={<Setting />} />
             <Route

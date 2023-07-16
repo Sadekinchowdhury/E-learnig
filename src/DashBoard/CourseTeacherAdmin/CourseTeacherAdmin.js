@@ -35,7 +35,7 @@ const CourseTeacherAdmin = () => {
     console.log("Deleted", i);
   };
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <div className="py-10">
         <div className="flex items-center justify-between">
           <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">

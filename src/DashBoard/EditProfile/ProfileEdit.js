@@ -1,19 +1,28 @@
 import React from 'react';
-import { AiOutlineEdit } from 'react-icons/ai'
+import { AiOutlineCamera, AiOutlineEdit } from 'react-icons/ai'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
-import ProfileModal from './ProfileModal';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const ProfileEdit = () => {
 
-    const [open, setOpen] = useState(false)
-    const showModal = () => {
+    const [social, setSosial] = useState('')
 
+    const [formData, setFormData] = useState({
+        fieldName1: '',
+        fieldName2: '',
+    });
+    console.log(formData)
+    const handleChange = (event) => {
+        const { name, value } = event.target;
 
-    }
-
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
     return (
 
-        <div className='bg-pink-700 from-blue-700 to-slate-700 via-orange-700 bg-gradient-to-t shadow-2xl mt-3 rounded-xl w-11/12 mx-auto p-3 '>
+        <div className='bg-pink-900 from-blue-900 to-slate-800 via-orange-900 bg-gradient-to-t shadow-2xl mt-3 rounded-xl w-11/12 mx-auto p-3 '>
 
             <div className='flex justify-between p-10'>
                 <div>
@@ -24,38 +33,44 @@ const ProfileEdit = () => {
                     <button onClick={() => window.my_modal_3.showModal()} className="btn">Edit</button>
                     {
                         <dialog id="my_modal_3" className="modal">
-                            <form method="dialog" className="modal-box">
+
+                            <form method="dialog" className="modal-box p-2 lg:px-8">
+                                <div className='flex justify-center items-center py-6'>
+                                    <AiOutlineCamera className='p-3 rounded-full border-[1px] border-black  bg-black' color='white' size={70} />
+                                </div>
                                 <button onClick={() => window.my_modal_3.close()} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                 <div className=''>
-                                    <div>
-                                        <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
-                                            Full Name
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="fullName"
-                                            id="fullName"
-                                            autoComplete="name"
+                                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
+                                        <div className=''>
+                                            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
+                                                Full Name
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="fullName"
+                                                id="fullName"
+                                                autoComplete="name"
 
 
-                                            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
+                                                className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                                                Email
+                                            </label>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                autoComplete="email"
+
+
+                                                className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                        </div>
                                     </div>
-                                    <div>
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                                            Email
-                                        </label>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            autoComplete="email"
-
-
-                                            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
-                                    </div>
-                                    <div>
+                                    <div className='w-full lg:w-1/2'>
                                         <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
                                             Phone Number
                                         </label>
@@ -97,82 +112,91 @@ const ProfileEdit = () => {
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
                                     </div>
-                                    <div>
-                                        <label htmlFor="dateOfBirth" className="block text-sm font-medium text-gray-700">
-                                            Date of Birth
-                                        </label>
-                                        <input
-                                            type="date"
-                                            name="dateOfBirth"
-                                            id="dateOfBirth"
+                                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
+                                        <div>
+                                            <label htmlFor="dateOfBirth" className="block text-sm font-medium text-gray-700">
+                                                Date of Birth
+                                            </label>
+                                            <input
+                                                type="date"
+                                                name="dateOfBirth"
+                                                id="dateOfBirth"
 
 
 
-                                            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
+                                                className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                                                Country
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="country"
+                                                id="country"
+                                                autoComplete="country"
+
+
+                                                className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                        </div>
                                     </div>
-                                    <div>
-                                        <label htmlFor="country" className="block text-sm font-medium text-gray-700">
-                                            Country
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="country"
-                                            id="country"
-                                            autoComplete="country"
+                                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
+                                        <div>
+                                            <label htmlFor="city" className="block text-sm font-medium text-gray-700">
+                                                City
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="city"
+                                                id="city"
+                                                autoComplete="address-level2"
 
 
-                                            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="city" className="block text-sm font-medium text-gray-700">
-                                            City
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="city"
-                                            id="city"
-                                            autoComplete="address-level2"
+                                                className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="zipCode" className="block text-sm font-medium text-gray-700">
+                                                Zip Code
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="zipCode"
+                                                id="zipCode"
+                                                autoComplete="postal-code"
 
 
-                                            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="zipCode" className="block text-sm font-medium text-gray-700">
-                                            Zip Code
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="zipCode"
-                                            id="zipCode"
-                                            autoComplete="postal-code"
-
-
-                                            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
+                                                className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                        </div>
                                     </div>
                                     <div className="col-span-2 flex items-center py-4 space-x-2">
-                                        <input
-                                            type="text"
-                                            name="zipCode"
-                                            id="zipCode"
-                                            placeholder="Add social media"
-                                            autoComplete="postal-code"
+                                        <form className='flex items-center py-4 space-x-2' onChange={handleChange} >
+                                            <input
+                                                type="text"
+                                                name="social"
+                                                id="zipCode"
+                                                value={formData.social}
+                                                placeholder="Add social media"
+                                                autoComplete="postal-code"
 
 
-                                            className="mt-1 relative p-2 block w-3/4 sm:w-[70%] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                        />
-                                        <select id="social-media" name="social-media" className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-                                            <option value="facebook">Facebook</option>
-                                            <option value="twitter">Twitter</option>
-                                            <option value="instagram">Instagram</option>
-                                            <option value="linkedin">LinkedIn</option>
-                                        </select>
-                                        <div className="bg-blue-800 py-1 px-2 text-white rounded-[5px]">
-                                            <button>Add</button>
-                                        </div>
+                                                className="mt-1 relative p-2 block w-1/3 sm:w-[70%] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                            />
+                                            <select id="social-media" name="social-media" className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                                <option value="facebook">Facebook</option>
+                                                <option value="twitter">Twitter</option>
+                                                <option value="instagram">Instagram</option>
+                                                <option value="linkedin">LinkedIn</option>
+                                            </select>
+                                            <div className="bg-blue-800 py-1 px-2 text-white rounded-[5px]">
+                                                <button
+
+                                                    type='submit'>Add</button>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div className="col-span-2">
                                         <label htmlFor="education" className="block text-sm font-medium text-gray-700">
@@ -214,7 +238,7 @@ const ProfileEdit = () => {
 
 
                         <div className='flex justify-center my-10 gap-4 text-yellow-400'>
-                            <FaFacebookSquare size={24} />
+                            <Link to={formData.social}> <FaFacebookSquare size={24} /></Link>
                             <FaInstagramSquare size={24} />
                             <FaTwitterSquare size={24} />
                             <FaLinkedin size={24} />

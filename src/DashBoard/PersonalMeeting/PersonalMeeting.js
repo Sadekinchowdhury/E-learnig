@@ -91,9 +91,9 @@ const PersonalMeeting = () => {
     console.log("Deleted", i);
   };
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <div className="py-10 overflow-x-scroll">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center gap-x-2 justify-between">
           <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
             <span>Live Meeting</span>
           </div>
