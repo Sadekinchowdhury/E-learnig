@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiFillEdit } from 'react-icons/ai';
 
+
 const ProfileModal = () => {
     const [showModal, setShowModal] = useState(false);
     const [formData, setFormData] = useState({
@@ -53,7 +54,7 @@ const ProfileModal = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto">
+        <div className="max-w-md  mx-auto">
             <button
                 onClick={openModal}
                 className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -62,7 +63,7 @@ const ProfileModal = () => {
             </button>
 
             {showModal && (
-                <div className="fixed inset-0  flex items-center justify-center z-50">
+                <div className="fixed inset-0  flex items-center justify-center z-50 ">
                     <div className="bg-white p-4 sm:p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16 lg:w-6/12 w-11/12  max-w-screen-lg mx-auto rounded-md  shadow-lg">
                         <h2 className="text-lg font-semibold mb-4">Edit Form</h2>
                         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 lg:h-full h-1/3 gap-4">
@@ -199,6 +200,28 @@ const ProfileModal = () => {
                                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                 />
                             </div>
+                            <div className="col-span-2 flex items-center py-4 space-x-2">
+                                <input
+                                    type="text"
+                                    name="zipCode"
+                                    id="zipCode"
+                                    placeholder="Add social media"
+                                    autoComplete="postal-code"
+                                    required
+                                    value={formData.zipCode}
+                                    onChange={handleChange}
+                                    className="mt-1 relative p-2 block w-3/4 sm:w-[70%] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                />
+                                <select id="social-media" name="social-media" className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                    <option value="facebook">Facebook</option>
+                                    <option value="twitter">Twitter</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="linkedin">LinkedIn</option>
+                                </select>
+                                <div className="bg-blue-800 py-1 px-2 text-white rounded-[5px]">
+                                    <button>Add</button>
+                                </div>
+                            </div>
                             <div className="col-span-2">
                                 <label htmlFor="education" className="block text-sm font-medium text-gray-700">
                                     Educational Qualification
@@ -213,6 +236,7 @@ const ProfileModal = () => {
                                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                 ></textarea>
                             </div>
+
                             <div className="col-span-2 flex justify-end">
                                 <button
                                     type="button"
@@ -233,6 +257,7 @@ const ProfileModal = () => {
                 </div>
             )}
         </div>
+
     );
 };
 

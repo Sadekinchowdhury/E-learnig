@@ -109,7 +109,7 @@ const PersonalMeeting = () => {
           <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
             <span>{30 - users.length}</span>
           </div>
-          <Link to='/personallive' className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white">
+          <Link to='/profile/personallive' className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white">
             <button>Live
             </button>
           </Link>

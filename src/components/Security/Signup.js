@@ -215,148 +215,154 @@ const Signup = () => {
     };
 
     return (
-        <div className="bg-gray-100 min-h-screen flex justify-center items-center">
-            <div className="bg-white shadow-md rounded px-10 py-8 md:max-w-md w-full">
+        <div
+            className="bg-slate-700 min-h-screen flex justify-center items-center">
+            <div className="bg-white shadow-md rounded px-3 md:px-10 py-8 md:w-5/12 w-full">
                 <h2 className="text-2xl font-bold text-center mb-6">Sign Up for an Online Course</h2>
-                <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                            Name
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="name"
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder="Enter your name"
-                        />
+                <form onSubmit={handleSubmit} className="">
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                                Name
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="name"
+                                type="text"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                placeholder="Enter your name"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                                Email Address
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="email"
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder="Enter your email address"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                                Password
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="password"
+                                type="password"
+                                name="password"
+                                value={formData.password}
+                                onChange={handleChange}
+                                placeholder="Enter your password (1 uppercase, 1 lowercase, and 1 number)"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="country">
+                                Country
+                            </label>
+                            <Select
+                                options={countries}
+                                className="react-select-container"
+                                classNamePrefix="react-select"
+                                value={formData.country}
+                                onChange={handleCountryChange}
+                                placeholder="Select your country"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="zip">
+                                ZIP Code
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="zip"
+                                type="text"
+                                name="zip"
+                                value={formData.zip}
+                                onChange={handleChange}
+                                placeholder="Enter your ZIP code"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="address">
+                                Address
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="address"
+                                type="text"
+                                name="address"
+                                value={formData.address}
+                                onChange={handleChange}
+                                placeholder="Enter your address"
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                            Email Address
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="email"
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="Enter your email address"
-                        />
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="city">
+                                City
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="city"
+                                type="text"
+                                name="city"
+                                value={formData.city}
+                                onChange={handleChange}
+                                placeholder="Enter your city"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
+                                Phone Number
+                            </label>
+                            <PhoneInput
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="phone"
+                                name="phoneNumber"
+                                value={formData.phoneNumber}
+                                onChange={handlePhoneChange}
+                                placeholder="Enter your phone number"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="course">
+                                Course Category
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="course"
+                                type="text"
+                                name="courseCategory"
+                                value={formData.courseCategory}
+                                onChange={handleChange}
+                                placeholder="Enter your course category"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="date">
+                                Date
+                            </label>
+                            <input
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="date"
+                                type="date"
+                                name="date"
+                                value={formData.date}
+                                onChange={handleChange}
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                            Password
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="password"
-                            type="password"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                            placeholder="Enter your password (1 uppercase, 1 lowercase, and 1 number)"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="country">
-                            Country
-                        </label>
-                        <Select
-                            options={countries}
-                            className="react-select-container"
-                            classNamePrefix="react-select"
-                            value={formData.country}
-                            onChange={handleCountryChange}
-                            placeholder="Select your country"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="zip">
-                            ZIP Code
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="zip"
-                            type="text"
-                            name="zip"
-                            value={formData.zip}
-                            onChange={handleChange}
-                            placeholder="Enter your ZIP code"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="address">
-                            Address
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="address"
-                            type="text"
-                            name="address"
-                            value={formData.address}
-                            onChange={handleChange}
-                            placeholder="Enter your address"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="city">
-                            City
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="city"
-                            type="text"
-                            name="city"
-                            value={formData.city}
-                            onChange={handleChange}
-                            placeholder="Enter your city"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-                            Phone Number
-                        </label>
-                        <PhoneInput
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="phone"
-                            name="phoneNumber"
-                            value={formData.phoneNumber}
-                            onChange={handlePhoneChange}
-                            placeholder="Enter your phone number"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="course">
-                            Course Category
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="course"
-                            type="text"
-                            name="courseCategory"
-                            value={formData.courseCategory}
-                            onChange={handleChange}
-                            placeholder="Enter your course category"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="date">
-                            Date
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="date"
-                            type="date"
-                            name="date"
-                            value={formData.date}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div className="flex items-center justify-between col-span-2">
+
+                    <div className="flex py-6 items-center justify-between col-span-2">
                         <div>
                             <input
                                 type="checkbox"
