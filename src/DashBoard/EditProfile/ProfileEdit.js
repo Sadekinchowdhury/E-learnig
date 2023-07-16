@@ -19,7 +19,7 @@ const ProfileEdit = () => {
                 <div>
                     <h1 className='text-3xl text-white font-semibold'>Profile</h1>
                 </div>
-                <div className='w-11/12 mx-auto'>
+                <div className='flex justify-between'>
 
                     <button onClick={() => window.my_modal_3.showModal()} className="btn">Edit</button>
                     {
@@ -50,7 +50,7 @@ const ProfileEdit = () => {
                                             name="email"
                                             id="email"
                                             autoComplete="email"
-                                            required
+
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
@@ -64,7 +64,7 @@ const ProfileEdit = () => {
                                             name="phoneNumber"
                                             id="phoneNumber"
                                             autoComplete="tel"
-                                            required
+
 
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
@@ -79,7 +79,7 @@ const ProfileEdit = () => {
                                             name="address1"
                                             id="address1"
                                             autoComplete="address-line1"
-                                            required
+
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
@@ -105,7 +105,7 @@ const ProfileEdit = () => {
                                             type="date"
                                             name="dateOfBirth"
                                             id="dateOfBirth"
-                                            required
+
 
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
@@ -120,7 +120,7 @@ const ProfileEdit = () => {
                                             name="country"
                                             id="country"
                                             autoComplete="country"
-                                            required
+
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
@@ -134,7 +134,7 @@ const ProfileEdit = () => {
                                             name="city"
                                             id="city"
                                             autoComplete="address-level2"
-                                            required
+
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
@@ -148,7 +148,7 @@ const ProfileEdit = () => {
                                             name="zipCode"
                                             id="zipCode"
                                             autoComplete="postal-code"
-                                            required
+
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
@@ -160,7 +160,7 @@ const ProfileEdit = () => {
                                             id="zipCode"
                                             placeholder="Add social media"
                                             autoComplete="postal-code"
-                                            required
+
 
                                             className="mt-1 relative p-2 block w-3/4 sm:w-[70%] border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                                         />
@@ -182,7 +182,7 @@ const ProfileEdit = () => {
                                             name="education"
                                             id="education"
                                             rows="3"
-                                            required
+
 
 
                                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
