@@ -29,8 +29,8 @@ const ProfileEdit = () => {
                     <h1 className='text-3xl text-white font-semibold'>Profile</h1>
                 </div>
                 <div className='flex justify-between'>
+                    <AiOutlineEdit className='' onClick={() => window.my_modal_3.showModal()} size={35} color='white' />
 
-                    <button onClick={() => window.my_modal_3.showModal()} className="btn">Edit</button>
                     {
                         <dialog id="my_modal_3" className="modal">
 
@@ -248,49 +248,51 @@ const ProfileEdit = () => {
 
                 </div>
                 <div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-                        <div className='text-left text-white mb-3'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-3 '>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
                             <label htmlFor="" className=' font-normal'>Full Name</label>
                             <p className='text-xl font-medium'>Sadekin Chowdhury</p>
                         </div>
-                        <div className='text-left text-white mb-3'>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
                             <label htmlFor="" className=' font-normal'>Email Adress</label>
                             <p className='text-xl font-medium'>Sadek124@gmail.com</p>
                         </div>
-                        <div className='text-left text-white mb-3'>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
                             <label htmlFor="" className=' font-normal'>Date of birth</label>
                             <p className='text-xl font-medium'> 11/12/2000</p>
                         </div>
-                        <div className='text-left text-white mb-3'>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
                             <label htmlFor="" className=' font-normal'> Educational Qualification</label>
                             <p className='text-xl font-medium'>Bachalor Of Science</p>
                         </div>
                     </div>
 
 
-                    <div className='text-left text-white mb-3'>
+                    <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
                         <label htmlFor="" className=' font-normal'>Streat Adress line 1</label>
                         <p className='text-xl font-medium'> </p>
                     </div>
-                    <div className='text-left text-white mb-3'>
+                    <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
                         <label htmlFor="" className=' font-normal'>Streat Adress line 2</label>
                         <p className='text-xl font-medium'> </p>
                     </div>
-                    <div className='text-left text-white mb-3'>
-                        <label htmlFor="" className=' font-normal'>Country</label>
-                        <p className='text-xl font-medium'> Bangladesh</p>
-                    </div>
-                    <div className='text-left text-white mb-3'>
-                        <label htmlFor="" className=' font-normal'>Contact Info</label>
-                        <p className='text-xl font-medium'> +8801720985568</p>
-                    </div>
-                    <div className='text-left text-white mb-3'>
-                        <label htmlFor="" className=' font-normal'> City</label>
-                        <p className='text-xl font-medium'> Sylhet</p>
-                    </div>
-                    <div className='text-left text-white mb-3'>
-                        <label htmlFor="" className=' font-normal'> Zip Code</label>
-                        <p className='text-xl font-medium'> 3040</p>
+                    <div className='grid grid-cols-1 md:grid-cols-2'>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
+                            <label htmlFor="" className=' font-normal'>Country</label>
+                            <p className='text-xl font-medium'> Bangladesh</p>
+                        </div>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
+                            <label htmlFor="" className=' font-normal'>Contact Info</label>
+                            <p className='text-xl font-medium'> +8801720985568</p>
+                        </div>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
+                            <label htmlFor="" className=' font-normal'> City</label>
+                            <p className='text-xl font-medium'> Sylhet</p>
+                        </div>
+                        <div className='lg:text-left pl-8 lg:pl-0 text-white mb-3'>
+                            <label htmlFor="" className=' font-normal'> Zip Code</label>
+                            <p className='text-xl font-medium'> 3040</p>
+                        </div>
                     </div>
 
                 </div>

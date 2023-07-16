@@ -19,6 +19,24 @@ const courses = [
     courseCompleteDate: "2024-01-15",
     language: "French",
   },
+  {
+    id: 3,
+    title: "Course 2",
+    country: "Canada",
+    applyLastDate: "2023-08-20",
+    classStartDate: "2023-09-05",
+    courseCompleteDate: "2024-01-15",
+    language: "French",
+  },
+  {
+    id: 4,
+    title: "Course 2",
+    country: "Canada",
+    applyLastDate: "2023-08-20",
+    classStartDate: "2023-09-05",
+    courseCompleteDate: "2024-01-15",
+    language: "French",
+  },
   // Add more courses as needed
 ];
 
@@ -61,31 +79,34 @@ const CourseHistory = () => {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {courses.map((course, index) => (
-              <tr key={course.id}>
-                <td className="px-6 py-4 whitespace-nowrap bg-emerald-950 text-white">{index + 1}</td>
+            {
 
-                <td className="px-6 py-4 whitespace-nowrap bg-zinc-700 text-white">{course.id}</td>
-                <td className="px-6 py-4 whitespace-nowrap bg-sky-700 text-white">
-                  {course.title}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap bg-indigo-700 text-white">
-                  {course.country}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap bg-lime-700 text-white">
-                  {course.applyLastDate}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap bg-pink-700 text-white">
-                  {course.classStartDate}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap bg-orange-500 text-white">
-                  {course.courseCompleteDate}
-                </td>
-                <td className="px-6 bg-purple-900 text-white py-4 whitespace-nowrap">
-                  {course.language}
-                </td>
-              </tr>
-            ))}
+
+              courses.map((course, index) => (
+                <tr key={course.id}>
+                  <td className="px-6 py-4 whitespace-nowrap bg-emerald-950 text-white">{index + 1}</td>
+
+                  <td className="px-6 py-4 whitespace-nowrap bg-zinc-700 text-white">{course.id}</td>
+                  <td className="px-6 py-4 whitespace-nowrap bg-sky-700 text-white">
+                    {course.title}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap bg-indigo-700 text-white">
+                    {course.country}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap bg-lime-700 text-white">
+                    {course.applyLastDate}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap bg-pink-700 text-white">
+                    {course.classStartDate}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap bg-orange-500 text-white">
+                    {course.courseCompleteDate}
+                  </td>
+                  <td className="px-6 bg-purple-900 text-white py-4 whitespace-nowrap">
+                    {course.language}
+                  </td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </div>

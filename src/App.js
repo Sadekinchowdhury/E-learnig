@@ -110,7 +110,7 @@ function App() {
 
             <Route path="/profile/courseHistory" element={<CourseHistory />} />
             <Route path="/profile/missingclass" element={<MissingClass />} />
-            <Route path="/profile/dashboard" element={<ProfileEdit />} />
+            <Route path="/profile/dashboard" element={<ProfileDashboard />} />
             <Route path="/profile/setting" element={<Setting />} />
             <Route
               path="/profile/course-teacher-admin"
