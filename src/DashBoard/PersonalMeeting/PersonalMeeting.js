@@ -91,8 +91,11 @@ const PersonalMeeting = () => {
     console.log("Deleted", i);
   };
   return (
-    <div className="w-11/12 mx-auto">
-      <div className="py-10 overflow-x-scroll">
+    <div className="p-5">
+      <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-center text-white pt-5 pb-7">
+        Course Teacher Admin Panel
+      </h1>
+      <div className="">
         <div className="flex items-center gap-x-2 justify-between">
           <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
             <span>Live Meeting</span>
@@ -109,88 +112,90 @@ const PersonalMeeting = () => {
           <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
             <span>{30 - users.length}</span>
           </div>
-          <Link to='/profile/personallive' className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white">
-            <button>Live
-            </button>
+          <Link
+            to="/profile/personallive"
+            className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white"
+          >
+            <button>Live</button>
           </Link>
           <button className="bg-[#00234a] font-bold text-xm lg:text-sm text-white">
             <CreateNewMeeting />
           </button>
         </div>
         <div className="overflow-x-scroll">
-          <table className="min-w-full mt-5 divide-y divide-gray-200 border-2">
+          <table className="min-w-full mt-5 divide-y divide-gray-200">
             <thead className="">
               <tr className="">
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   No
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Course ID
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] mx-1 border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider tracking-wider"
                 >
                   Name
                 </th>
 
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Country
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Title
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Meating ID
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Secret Code
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Username
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Password
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Active Status
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Online Status
                 </th>
                 <th
                   scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
+                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
                   Action
                 </th>
@@ -198,46 +203,49 @@ const PersonalMeeting = () => {
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {users.map((user, i) => (
-                <tr
-                  className={i % 2 === 0 ? "bg-gray-100" : "bg-gray-200"}
-                  key={user.meaingId}
-                >
-                  <td className=" px-6 py-4 whitespace-nowrap">{user.sl}</td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                <tr key={user.meaingId}>
+                  <td className="bg-emerald-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                    {user.sl}
+                  </td>
+                  <td className="bg-zinc-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.courseId}
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">{user.name}</td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                  <td className="bg-sky-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                    {user.name}
+                  </td>
+                  <td className="bg-indigo-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.country}
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">{user.title}</td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                  <td className="bg-lime-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                    {user.title}
+                  </td>
+                  <td className="bg-pink-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.meaingId}
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                  <td className="bg-orange-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.secret}
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                  <td className="bg-purple-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.userName}
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                  <td className="bg-indigo-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.password}//
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
+                  <td className="bg-red-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.ative ? (
                       <span className="text-[green] font-bold">Active</span>
                     ) : (
                       <span className="text-[red] font-bold">Inactive</span>
                     )}
                   </td>
-                  <td className=" px-6 py-4 whitespace-nowrap border-2">
+                  <td className="bg-gray-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.online ? (
                       <span className="text-[green] font-bold">Online</span>
                     ) : (
                       <span className="text-[red] font-bold">Offline</span>
                     )}
                   </td>
-                  <td className="flex items-center justify-between px-6 py-4 whitespace-nowrap ">
+                  <td className="bg-sky-950 px-6 py-3 text-xsm text-white whitespace-nowrap flex items-center justify-between">
                     <EditPersonalMeeting />
 
                     <button

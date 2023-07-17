@@ -1,6 +1,7 @@
 import React from "react";
-import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import CreateTeacherAdmin from "./CreateTeacherAdmin";
+import EditTeacherAdmin from "./EditTeacherAdmin";
 const CourseTeacherAdmin = () => {
   const users = [
     {
@@ -29,185 +30,219 @@ const CourseTeacherAdmin = () => {
       totalRs: 19900,
       onlineStats: false,
     },
+    {
+      sl: "1",
+      title: "SEO",
+      country: "Canada",
+      startDate: "22/05/2023",
+      applyLastDate: "22/05/2023",
+      compleationDate: "22/11/2023",
+      language: "Banlga",
+      classDay: "Saturday-2pm Monday-2pm",
+      appUser: "1340",
+      totalRs: 19900,
+      onlineStats: true,
+    },
+    {
+      sl: "1",
+      title: "App Development",
+      country: "USA",
+      startDate: "22/05/2023",
+      applyLastDate: "22/05/2023",
+      compleationDate: "22/11/2023",
+      language: "Banlga",
+      classDay: "Saturday-2pm Monday-2pm",
+      appUser: "1340",
+      totalRs: 19900,
+      onlineStats: false,
+    },
   ];
 
-  const handleDelete = (i) => {
-    console.log("Deleted", i);
-  };
   return (
-    <div className="w-11/12 mx-auto">
-      <div className="py-10">
-        <div className="flex items-center justify-between">
-          <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
-            <span>Live Meeting</span>
-          </div>
-          <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
-            <span>Account Mode</span>
-          </div>
-          <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
-            <span>1</span>
-          </div>
-          <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
-            <span>Account Creation Pending</span>
-          </div>
-          <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
-            <span>{30 - users.length}</span>
-          </div>
-          <Link
-            to="/personallive"
-            className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white"
-          >
-            <button>Live</button>
-          </Link>
-          <button className="bg-[#00234a] font-bold text-xm lg:text-sm text-white">
-            {/* <CreateNewMeeting /> */}
-          </button>
+    <div className="p-5">
+      <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-center text-white pt-5 pb-7">
+        Course Teacher Admin Panel
+      </h1>
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+        <div className="bg-sky-700 shadow-2xl rounded-lg px-4 py-6 text-center text-white">
+          <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">
+            02
+          </h2>
+          <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+            Total Active Courses
+          </h2>
         </div>
-        <div className="overflow-x-scroll">
-          <table className="min-w-full mt-5 divide-y divide-gray-200 border-2">
-            <thead className="">
-              <tr className="">
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  No
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Title
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] mx-1 border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Country
-                </th>
+        <div className="bg-pink-700 shadow-2xl rounded-lg px-4 py-6 text-center text-white">
+          <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">
+            02
+          </h2>
+          <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+            Total Deactive Courses
+          </h2>
+        </div>
+        <div className="bg-purple-900 shadow-2xl rounded-lg px-4 py-6 text-center text-white">
+          <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">
+            15
+          </h2>
+          <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+            Completed Courses
+          </h2>
+        </div>
+        <CreateTeacherAdmin />
+      </div>
+      <h3 className="font-semibold lg:text-2xl md:text-2xl text-xl text-white mt-3">
+        Live Courses
+      </h3>
+      <div className="overflow-x-scroll">
+        <table className="min-w-full mt-3 divide-y divide-gray-200 rounded-2xl">
+          <thead className="">
+            <tr className="">
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                No
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Title
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Country
+              </th>
 
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Apply Last Date
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Class Start Date
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Course Compleation Date
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Course Language
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Class day of the week, time
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Application user
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Course Status
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Total Rs
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Online Status
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Live
-                </th>
-                <th
-                  scope="col"
-                  className="bg-[#00234a] border-2 text-center font-bold px-6 py-3 text-xs font-semibold text-gray-200 uppercase tracking-wider"
-                >
-                  Edit
-                </th>
-              </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              {users.map((user, i) => (
-                <tr
-                  className={i % 2 === 0 ? "bg-gray-100" : "bg-gray-200"}
-                  key={i}
-                >
-                  <td className=" px-6 py-4 whitespace-nowrap">{user.sl}</td>
-                  <td className=" px-6 py-4 whitespace-nowrap">{user.title}</td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.country}
-                  </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.applyLastDate}
-                  </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.startDate}
-                  </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.compleationDate}
-                  </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.language}
-                  </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.classDay}
-                  </td>
-                  <td className=" px-6 py-4 whitespace-nowrap">
-                    {user.appUser}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    Active,Inactive,Complete
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    {user.totalRs}
-                  </td>
-                  <td className="flex items-center justify-between px-6 py-4 whitespace-nowrap ">
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Apply Last Date
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Class Start Date
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Course Compleation Date
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Course Language
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Class day of the week, time
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Application user
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Course Status
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Total Rs
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Online Status
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              >
+                Live
+              </th>
+              <th
+                scope="col"
+                className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
+              ></th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {users.map((user, i) => (
+              <tr key={i}>
+                <td className="bg-emerald-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.sl}
+                </td>
+                <td className="bg-zinc-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.title}
+                </td>
+                <td className="bg-sky-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.country}
+                </td>
+                <td className="bg-indigo-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.applyLastDate}
+                </td>
+                <td className="bg-lime-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.startDate}
+                </td>
+                <td className="bg-pink-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.compleationDate}
+                </td>
+                <td className="bg-orange-500 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.language}
+                </td>
+                <td className="bg-purple-900 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.classDay}
+                </td>
+                <td className="bg-indigo-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.appUser}
+                </td>
+                <td className="bg-red-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  Active,Inactive,Complete
+                </td>
+                <td className="bg-sky-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  {user.totalRs}
+                </td>
+                <td className="bg-gray-900 px-6 py-3 text-xsm whitespace-nowrap ">
+                  <div className="flex items-center text-white justify-between">
                     {user.onlineStats ? (
                       <span className="text-[green] font-bold">Online</span>
                     ) : (
                       <span className="text-[red] font-bold">Offline</span>
                     )}
-                  </td>
+                  </div>
+                </td>
 
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <button className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white">
-                      Live
-                    </button>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">Edit</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                <td className="bg-lime-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  <Link
+                    to="/profile/teacherLive"
+                    className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white"
+                  >
+                    Live
+                  </Link>
+                </td>
+                <td className="bg-pink-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  <EditTeacherAdmin />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

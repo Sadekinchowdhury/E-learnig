@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import { AiFillEdit } from "react-icons/ai";
 
-const EditPersonalMeeting = () => {
+const CreateTeacherAdmin = () => {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
-    courseId: "",
-    name: "",
-    country: "",
     title: "",
-    meetingId: "",
-    secretCode: "",
-    userName: "",
-    password: "",
-    onlineStats: "",
+    country: "",
+    startDate: "",
+    applyLastDate: "",
+    compleationDate: "",
+    language: "",
+    classDay: "",
+    appUser: "",
+    totalRs: "",
   });
 
   const handleChange = (e) => {
@@ -28,15 +27,15 @@ const EditPersonalMeeting = () => {
     console.log(formData);
     // Reset the form
     setFormData({
-      courseId: "",
-      name: "",
-      country: "",
       title: "",
-      meetingId: "",
-      secretCode: "",
-      userName: "",
-      password: "",
-      onlineStats: "",
+      country: "",
+      startDate: "",
+      applyLastDate: "",
+      compleationDate: "",
+      language: "",
+      classDay: "",
+      appUser: "",
+      totalRs: "",
     });
     // Close the modal
     setShowModal(false);
@@ -52,77 +51,26 @@ const EditPersonalMeeting = () => {
 
   return (
     <>
-      <button
+      <div
         onClick={openModal}
-        className="mr-2 inline-flex items-center justify-center text-lg font-medium text-white hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white-500"
+        className="bg-zinc-700 hover:cursor-pointer shadow-2xl rounded-lg px-4 py-6 text-center text-white"
       >
-        <AiFillEdit size={22} />
-      </button>
+        <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">+</h2>
+        <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+          Create A New Course
+        </h2>
+      </div>
       <div className="max-w-md pt-2">
         {showModal && (
           <div className="fixed inset-0  flex items-center justify-center z-50">
             <div className="bg-white p-4 sm:p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16 lg:w-6/12 w-11/12  max-w-screen-lg mx-auto rounded-md  shadow-lg">
               <h2 className="text-lg font-semibold mb-4">
-                Edit Personal Meeting
+                Create A New Course
               </h2>
               <form
                 onSubmit={handleSubmit}
                 className="grid grid-cols-1 md:grid-cols-2 lg:h-full h-1/3 gap-4"
               >
-                <div>
-                  <label
-                    htmlFor="courseId"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Course ID
-                  </label>
-                  <input
-                    type="text"
-                    name="courseId"
-                    id="courseId"
-                    autoComplete="name"
-                    required
-                    value={formData.courseId}
-                    onChange={handleChange}
-                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="Name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    name="Name"
-                    id="Name"
-                    autoComplete="Name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="country"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Country
-                  </label>
-                  <input
-                    type="text"
-                    name="country"
-                    id="phoneNumber"
-                    autoComplete="country"
-                    required
-                    value={formData.country}
-                    onChange={handleChange}
-                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                  />
-                </div>
                 <div>
                   <label
                     htmlFor="title"
@@ -143,85 +91,139 @@ const EditPersonalMeeting = () => {
                 </div>
                 <div>
                   <label
-                    htmlFor="meetingId"
+                    htmlFor="country"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Meeting ID
+                    Country
                   </label>
                   <input
                     type="text"
-                    name="meetingId"
-                    id="meetingId"
-                    autoComplete="meetingId"
-                    value={formData.meetingId}
+                    name="country"
+                    id="country"
+                    autoComplete="country"
+                    required
+                    value={formData.country}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   />
                 </div>
                 <div>
                   <label
-                    htmlFor="secretCode"
+                    htmlFor="startDate"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Secret Code
+                    Course Start Date
                   </label>
                   <input
                     type="text"
-                    name="secretCode"
-                    id="secretCode"
-                    value={formData.secretCode}
+                    name="startDate"
+                    id="startDate"
+                    autoComplete="startDate"
+                    required
+                    value={formData.startDate}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   />
                 </div>
                 <div>
                   <label
-                    htmlFor="userName"
+                    htmlFor="applyLastDate"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    User Name
+                    Apply LastDate
                   </label>
                   <input
                     type="text"
-                    name="userName"
-                    id="userName"
-                    autoComplete="userName"
+                    name="applyLastDate"
+                    id="applyLastDate"
+                    autoComplete="applyLastDate"
                     required
-                    value={formData.userName}
+                    value={formData.applyLastDate}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   />
                 </div>
                 <div>
                   <label
-                    htmlFor="zipCode"
+                    htmlFor="compleationDate"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Password
+                    Course Compleation Date
                   </label>
                   <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    autoComplete="password"
-                    required
-                    value={formData.password}
+                    type="text"
+                    name="compleationDate"
+                    id="compleationDate"
+                    autoComplete="compleationDate"
+                    value={formData.compleationDate}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   />
                 </div>
                 <div>
                   <label
-                    htmlFor="onlineStats"
+                    htmlFor="language"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Online Status
+                    Course Language
                   </label>
                   <input
-                    name="onlineStats"
-                    id="onlineStats"
+                    type="text"
+                    name="language"
+                    id="language"
+                    value={formData.language}
+                    onChange={handleChange}
+                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="classDay"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Class Start Date
+                  </label>
+                  <input
+                    type="text"
+                    name="classDay"
+                    id="classDay"
+                    autoComplete="classDay"
                     required
-                    value={formData.onlineStats}
+                    value={formData.classDay}
+                    onChange={handleChange}
+                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="appUser"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Application User
+                  </label>
+                  <input
+                    type="text"
+                    name="appUser"
+                    id="appUser"
+                    autoComplete="appUser"
+                    required
+                    value={formData.appUser}
+                    onChange={handleChange}
+                    className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="totalRs"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Total Rs
+                  </label>
+                  <input
+                    name="totalRs"
+                    id="totalRs"
+                    required
+                    value={formData.totalRs}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   ></input>
@@ -250,4 +252,4 @@ const EditPersonalMeeting = () => {
   );
 };
 
-export default EditPersonalMeeting;
+export default CreateTeacherAdmin;

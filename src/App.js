@@ -43,9 +43,19 @@ import MissingClass from "./DashBoard/MissingClass/MissingClass";
 import CourseTeacherAdmin from "./DashBoard/CourseTeacherAdmin/CourseTeacherAdmin";
 import TeacherRegistrationForm from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import PersonalLive from "./DashBoard/PersonalMeeting/PersonalLive";
+import TeacherLive from "./DashBoard/CourseTeacherAdmin/TeacherLive";
 function App() {
-  return (
-    <div>
+  const disableRightClick = (e) => {
+    e.preventDefault();
+};
+return (
+
+    <div onContextMenu={disableRightClick}
+        onCopy={
+            (e) => {
+                e.preventDefault();
+            }
+    }>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -106,7 +116,10 @@ function App() {
           <Route path="/profile" element={<Profile />}>
             <Route path="/profile/profileEdit" element={<ProfileEdit />} />
 
-            <Route path="/profile/teacherragistration" element={<TeacherRegistrationForm />} />
+            <Route
+              path="/profile/teacherragistration"
+              element={<TeacherRegistrationForm />}
+            />
 
             <Route path="/profile/courseHistory" element={<CourseHistory />} />
             <Route path="/profile/missingclass" element={<MissingClass />} />
@@ -123,9 +136,8 @@ function App() {
             <Route path="/profile/livecourse" element={<LiveCourse />} />
           </Route>
 
-
-
           <Route path="/profile/personallive" element={<PersonalLive />} />
+          <Route path="/profile/teacherLive" element={<TeacherLive />} />
         </Routes>
         <Footer />
       </BrowserRouter>
