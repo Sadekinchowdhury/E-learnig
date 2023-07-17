@@ -6,10 +6,10 @@ import { PieChart, Pie, Sector, Cell } from 'recharts';
 const ProfilepiChart = () => {
 
     const data = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 300 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
+        { name: 'Complete', value: 400 },
+        { name: 'Payout', value: 300 },
+        { name: 'User', value: 300 },
+        { name: 'Deactive', value: 200 },
     ];
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
@@ -44,15 +44,15 @@ const ProfilepiChart = () => {
                     ))}
                 </Pie>
             </PieChart>
-            <div className='w-3/4 mx-auto'>
-                <div className='grid grid-cols-4 gap-7'>
+            <div className='w-full lg:w-3/4 mx-auto'>
+                <div className='grid w-11/12 mx-auto grid-cols-4 gap-7'>
                     {
                         data.map(item => <div className=''>
-                            <p className='text-white'>{item.name}</p>
+                            <p className='text-white text-left'>{item.name}</p>
                         </div>)
                     }
                 </div>
-                <div className='grid grid-cols-4 gap-7'>
+                <div className='grid w-11/12 mx-auto grid-cols-4 gap-7'>
                     {
                         COLORS.map(color => <div style={{
                             backgroundColor: color

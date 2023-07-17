@@ -2,29 +2,30 @@ import React from 'react';
 import { FaEnvelope, FaRegBell, FaRegCalendarMinus, FaSearch, FaLinkedin, FaFillDrip, FaEllipsisV } from 'react-icons/fa';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import ProfilepiChart from './ProfilepiChart';
+import { Progress } from 'antd';
 
 const ProfileDashboard = () => {
     const data = [
         {
-            name: 'Page A',
+            name: 'Complete',
             uv: 4000,
             pv: 2400,
             amt: 2400,
         },
         {
-            name: 'Page B',
+            name: 'Pending',
             uv: 3000,
             pv: 1398,
             amt: 2210,
         },
         {
-            name: 'Page C',
+            name: 'Running',
             uv: 2000,
             pv: 9800,
             amt: 2290,
         },
         {
-            name: 'Page D',
+            name: 'user',
             uv: 2780,
             pv: 3908,
             amt: 2000,
@@ -109,38 +110,7 @@ const ProfileDashboard = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='flex mt-[22px] lg:w-[99%] w-full mx-auto gap-[30px]'>
-                <div className='lg:w-8/12 w-full border rounded-xl '>
-                    <div className='flex lg:pl-10 pl-0 px-3 py-6 justify-between items-center'>
-                        <h1 className='font-semibold'>Course Overview</h1>
-                        <FaEllipsisV />
-                    </div>
-                    <div className='flex justify-center items-center'>
-                        <LineChart
-                            width={700}
-                            height={450}
-                            data={data}
-                            margin={{
-                                top: 5,
-                                right: 40,
-                                left: 20,
-                                bottom: 5,
-                            }}
-                        >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" />
-                            <YAxis />
-                            <Tooltip />
-                            <Legend />
-                            <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-                        </LineChart>
-                    </div>
-                </div>
-                <div className='flex w-4/12 items-center justify-center'>
-                    <ProfilepiChart />
-                </div>
-            </div> */}
+
             <div className='flex flex-col w-[90%]  mx-auto lg:flex-row mt-[22px] gap-[30px]'>
                 <div className='lg:w-8/12 w-full border rounded-xl mb-4 lg:mb-0'>
                     <div className='flex w-11/12 mx-auto lg:pl-10 pl-3 py-6 justify-between items-center'>
@@ -177,12 +147,55 @@ const ProfileDashboard = () => {
 
                     <div>
                         <div className='flex justify-center items-center'>
-                            <div className='flex w-9/12 items-center mx-auto justify-between'>
+                            <div className='flex w-full lg:w-9/12 items-center mx-auto justify-between'>
                                 <h1 className='font-semibold text-white'>course</h1>
                                 <FaEllipsisV color='white' size={20} />
                             </div>
                         </div>
                         <ProfilepiChart />
+                    </div>
+                </div>
+            </div>
+            <div className='flex w-11/12 lg:flex-row flex-col  mx-auto my-20   gap-[30px]'>
+                <div className=' bg-[#F8F9FC] w-full lg:w-1/2 mx-auto border cursor-pointer rounded-lg p-4 items-center'>
+                    <div className='py-4 flex justify-between'>
+                        <h1 className='font-semibold'>Course Overview</h1>
+                        <FaEllipsisV color='gray' className='cursor-pointer' size={16} />
+                    </div>
+                    <div className=''>
+                        <>
+                            <div>
+                                <h1 className='text-sm'>Server migration</h1>
+                                <Progress percent={30} />
+                            </div>
+                            <div>
+                                <h1 className='text-sm'>users</h1>
+                                <Progress percent={50} status="active" />
+                            </div>
+                            <div>
+                                <h1 className='text-sm'>Payout Disable</h1>
+
+                                <Progress percent={70} status="exception" />
+                            </div>
+                            <div>
+                                <h1 className='text-sm'>Account Setup</h1>
+                                <Progress percent={100} />
+                            </div>
+                            {/* <div>
+                                <h1 className='text-sm'>Server migration</h1>
+                                <Progress percent={50} showInfo={false} />
+                            </div> */}
+
+                        </>
+                    </div>
+                </div>
+                <div className=' bg-[#F8F9FC] w-full lg:w-1/2 mx-auto border cursor-pointer rounded-lg p-4 items-center'>
+                    <div className='py-4 flex justify-between'>
+                        <h1 className='font-semibold'>Resourses</h1>
+                        <FaEllipsisV color='gray' className='cursor-pointer' size={16} />
+                    </div>
+                    <div className=''>
+                        <img className='w-full h-52' src="https://img.freepik.com/free-vector/no-data-concept-illustration_114360-536.jpg?w=2000" alt="" />
                     </div>
                 </div>
             </div>

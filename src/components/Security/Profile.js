@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Avator from '../../assects/images/avator.jpg'
-import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineLogout } from 'react-icons/ai';
+import { AiFillLeftCircle, AiFillRightCircle, AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineLogout } from 'react-icons/ai';
 
 import Sidebar from '../../DashBoard/SidebarMenu';
 import { Outlet } from 'react-router-dom';
@@ -9,7 +9,7 @@ const ProfileDashboard = () => {
     console.log(open)
     return (
         <div className="flex flex-col w-full lg:flex-row">
-            <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:hidden block relative lg:static  lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl rounded-b-lg py-6 ${!open && 'w-[1px] transform duration-1000   mt-2  z-50'} `}>
+            <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:hidden block relative lg:static  lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl  py-6 ${!open && 'w-0 transform duration-1000   mt-20  z-50'} `}>
                 {
                     open && <div className=''>
                         <div className="flex mt-10  text-center items-center justify-center mb-8">
@@ -31,6 +31,7 @@ const ProfileDashboard = () => {
 
                         <div className="flex items-center justify-center my-8  ">
                             <button className='text-xl font-semibold bg-white text-black px-4 hover:border-[2px] hover:border-blue-700 transition duration-700 hover:bg-slate-800 hover:text-white py-1 rounded'>
+
                                 <AiOutlineLogout className='inline-block' />
                                 Logout</button>
                         </div>
@@ -39,9 +40,9 @@ const ProfileDashboard = () => {
                 <div className='-right-4  bg-gray-900 rounded-r-full top-0 w-10 h-[46px] flex justify-center items-center absolute lg:static lg:hidden'>
 
                     {
-                        open ? <AiOutlineArrowLeft onClick={() => setOpen(!open)} size={30} color='white' className='cursor-pointer' /> :
+                        open ? <AiFillLeftCircle onClick={() => setOpen(!open)} size={30} color='white' className='cursor-pointer' /> :
 
-                            <AiOutlineArrowRight onClick={() => setOpen(!open)} size={30} color='white' className='cursor-pointer' />
+                            <AiFillRightCircle onClick={() => setOpen(!open)} size={30} color='white' className='cursor-pointer' />
                     }
 
                 </div>
