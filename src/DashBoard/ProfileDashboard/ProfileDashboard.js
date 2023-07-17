@@ -2,7 +2,8 @@ import React from 'react';
 import { FaEnvelope, FaRegBell, FaRegCalendarMinus, FaSearch, FaLinkedin, FaFillDrip, FaEllipsisV } from 'react-icons/fa';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import ProfilepiChart from './ProfilepiChart';
-import { Progress } from 'antd';
+import { Empty, Progress } from 'antd';
+
 
 const ProfileDashboard = () => {
     const data = [
@@ -195,7 +196,8 @@ const ProfileDashboard = () => {
                         <FaEllipsisV color='gray' className='cursor-pointer' size={16} />
                     </div>
                     <div className=''>
-                        <img className='w-full h-52' src="https://img.freepik.com/free-vector/no-data-concept-illustration_114360-536.jpg?w=2000" alt="" />
+                        {/* <img className='w-full h-52' src="https://img.freepik.com/free-vector/no-data-concept-illustration_114360-536.jpg?w=2000" alt="" /> */}
+                        <Empty />
                     </div>
                 </div>
             </div>
