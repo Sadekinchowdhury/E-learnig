@@ -63,7 +63,7 @@ const Lives = () => {
     }
     return (
         <div className=''>
-            <div className="h-[100%] grid  grid-cols-12">
+            <div className="min-h-screen grid  grid-cols-12">
                 <div className="col-span-2 lg:block hidden bg-black from-slate-900  to-gray-800 bg-gradient-to-l">
                     {/* Content for the first column */}
 

@@ -54,20 +54,20 @@ const ProfileDashboard = () => {
             <div className='flex h-[60px] shadow-2xl  px-[25px] items-center justify-between rounded'>
                 <div className='flex items-center w-1/3 border-none'>
 
-                    <input type="text" color='black' placeholder="Search..." className="flex-1 -[300px] bg-slate-100 pl-[2px] rounded-l-lg py-1 h-[35px] bg-transparent outline-none text-white placeholder-gray-500" />
+                    <input type="text" color='black' placeholder="Search..." className="flex-1 w-[150px] lg:w-[300px] bg-slate-100 pl-[2px] rounded-l-lg py-1 h-[35px] bg-transparent outline-none text-white placeholder-gray-500" />
                     <button class="p-2 rounded-r-lg bg-blue-500 text-black hover:bg-blue-600 focus:outline-none focus:bg-blue-600 h-[35px] px-3">
                         <i class="fas fa-search"></i>
                     </button>
 
 
                 </div>
-                <div className='flex items-center relative gap-10'>
-                    <div className='flex items-center gap-5 '>
+                <div className='flex items-center relative gap-4 lg:gap-10'>
+                    <div className='flex items-center gap-2 lg:gap-5 '>
                         <FaRegBell className='cursor-pointer' color='white' />
                         <FaEnvelope className='cursor-pointer' color='white' />
                     </div>
                     <div className='flex items-center gap-4'>
-                        <p className='text-white cursor-pointer'>Rumel</p>
+                        <p className='text-white cursor-pointer lg:block hidden'>Rumel</p>
                         <img className='w-9 cursor-pointer bg-slate-400 h-9 rounded-full' src="" alt="" />
                     </div>
                 </div>

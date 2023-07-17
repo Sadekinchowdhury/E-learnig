@@ -44,18 +44,24 @@ import CourseTeacherAdmin from "./DashBoard/CourseTeacherAdmin/CourseTeacherAdmi
 import TeacherRegistrationForm from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import PersonalLive from "./DashBoard/PersonalMeeting/PersonalLive";
 import TeacherLive from "./DashBoard/CourseTeacherAdmin/TeacherLive";
+
 function App() {
   const disableRightClick = (e) => {
     e.preventDefault();
-};
-return (
+  };
 
-    <div onContextMenu={disableRightClick}
-        onCopy={
-            (e) => {
-                e.preventDefault();
-            }
-    }>
+
+  // onContextMenu={disableRightClick}
+  //     onCopy={
+  //       (e) => {
+  //         e.preventDefault();
+  //       }
+  //     }
+  return (
+
+    <div className="overflow-hidden w-full">
+
+
       <BrowserRouter>
         <Navbar />
         <Routes>

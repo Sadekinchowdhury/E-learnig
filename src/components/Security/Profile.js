@@ -9,7 +9,7 @@ const ProfileDashboard = () => {
     console.log(open)
     return (
         <div className="flex flex-col w-full lg:flex-row">
-            <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:hidden block relative lg:static  lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl  py-6 ${!open && 'w-0 transform duration-1000   mt-20  z-50'} `}>
+            <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:hidden block relative lg:static  lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl  py-6 ${!open && 'w-1/12 ml-1 rounded-l-full transform duration-1000   mt-20  z-50'} `}>
                 {
                     open && <div className=''>
                         <div className="flex mt-10  text-center items-center justify-center mb-8">
