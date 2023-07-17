@@ -53,7 +53,28 @@ const Filters = () => {
         <div className="container  mt-10 mb-8 mx-auto ">
 
             <div className=''>
-                <div className='grid grid-cols-1 w-full  mx-auto  lg:gap-4 gap-3 p-3 m-3 '>
+                <div className='grid lg:w-10/12 w-full  grid-cols-1 lg:grid-cols-5   mx-auto  lg:gap-4 gap-3 p-3 m-3 '>
+                    <div>
+                        <select value={selects1}
+                            onChange={
+                                e => setSelects1(e.target.value)
+                            }
+                            placeholder='choose'
+                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            name=""
+                            id="">
+                            <option disabled hidden value="">Course Type</option>
+
+                            <option value="Paid">
+                                Paid
+                            </option>
+                            <option value='Free'>
+                                Free
+                            </option>
+
+                        </select>
+                    </div>
+
                     <div>
                         <select value={selects}
                             onChange={
@@ -83,26 +104,7 @@ const Filters = () => {
 
                         </select>
                     </div>
-                    <div>
-                        <select value={selects1}
-                            onChange={
-                                e => setSelects1(e.target.value)
-                            }
-                            placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
-                            name=""
-                            id="">
-                            <option disabled hidden value="">Course Type</option>
 
-                            <option value="Paid">
-                                Paid
-                            </option>
-                            <option value='Free'>
-                                Free
-                            </option>
-
-                        </select>
-                    </div>
                     <div>
                         <select value={selects2}
                             onChange={

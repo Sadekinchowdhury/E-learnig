@@ -5,19 +5,13 @@ import AllCourse from './AllCourse'
 export default function Course() {
     return (
         <div className=''>
-
-            <div className='lg:flex'>
-                <div className='md:w-2/12  bg-slate-600 from-blue-950 to-sky-950 bg-gradient-to-tr m-2  rounded-lg shadow-2xl p-3 w-full '>
+            {/* <div className='md:w-2/12  bg-slate-600 from-blue-950 to-sky-950 bg-gradient-to-tr m-2  rounded-lg shadow-2xl p-3 w-full '>
                     <Filters />
-                </div>
-                <div className='md:w-10/12'>
-                    <div className='w-[98%] bg-slate-600 from-blue-950 to-sky-950 bg-gradient-to-tr rounded-lg shadow-2xl  mx-auto'>
-                        <AllCourse />
-                    </div>
-                </div>
+                </div> */}
+
+            <div className='w-full bg-light  shadow-2xl  '>
+                <AllCourse />
             </div>
-
-
             {/* <div>
                 <div class="w-11/12 mx-auto mt-10 mb-10 bg-gray-100 py-8">
                     <h2 class="text-xl font-bold mb-4 ml-8">Regular Courses</h2>
