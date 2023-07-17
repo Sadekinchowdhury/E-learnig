@@ -20,6 +20,7 @@
     "react-select-country-list": "^2.2.3",
     "react-slick": "^0.29.0",
     "react-three-fiber": "^6.0.13",
+    "recharts": "^2.7.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^9.4.1",
     "three": "^0.153.0",
