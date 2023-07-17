@@ -50,17 +50,17 @@ const Filters = () => {
     ];
 
     return (
-        <div className="container  mt-10 mb-8 mx-auto ">
+        <div className="container pb-8 mx-auto ">
 
             <div className=''>
-                <div className='grid lg:w-11/12 w-full mx-auto  grid-cols-1 lg:grid-cols-7    lg:gap-4 gap-3 p-3 m-3 '>
+                <div className='grid lg:w-[95%] w-full mx-auto  grid-cols-1 lg:grid-cols-8    lg:gap-4 gap-1 p-3 m-3 '>
                     <div>
                         <select value={selects1}
                             onChange={
                                 e => setSelects1(e.target.value)
                             }
                             placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
                             <option disabled hidden value="">Course Type</option>
@@ -131,7 +131,7 @@ const Filters = () => {
                                 e => setSelects2(e.target.value)
                             }
                             placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
                             <option disabled hidden value="">Choose Language</option>
@@ -153,7 +153,7 @@ const Filters = () => {
                                 e => setSelects3(e.target.value)
                             }
                             placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
                             <option disabled hidden value="">Course Category</option>
@@ -175,7 +175,7 @@ const Filters = () => {
                                 e => setSelects4(e.target.value)
                             }
                             placeholder='choose'
-                            className='w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
                             <option disabled hidden value="">Course Duration</option>
@@ -202,6 +202,20 @@ const Filters = () => {
                             </option></select>
                     </div>
 
+
+                    <div className="flex   w-full   items-center ">
+                        {/* <label className='text-white w-full lg:w-1/4  font-semibold ' htmlFor="dateOfBirth">Start Day</label> */}
+                        <input
+                            type="date"
+                            id="dateOfBirth"
+                            value={date}
+                            onChange={(e) => setDate(e.target.value)}
+                            required
+                            className="lg:w-full w-[600px] border rounded py-2 px-6 lg:px-3"
+                        />
+                        <h1 className='ml-3'>To</h1>
+                    </div>
+
                     <div className="flex   w-full   items-center ">
                         {/* <label className='text-white w-full lg:w-1/4  font-semibold ' htmlFor="dateOfBirth">Start Day</label> */}
                         <input
@@ -213,6 +227,7 @@ const Filters = () => {
                             className="lg:w-full w-[600px] border rounded py-2 px-6 lg:px-3"
                         />
                     </div>
+
 
 
                 </div>

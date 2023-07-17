@@ -14,7 +14,7 @@ const SearchBar = () => {
 
     return (
         <div
-            className={`flex  lg:w-3/6  w-11/12 mx-auto items-center rounded-full bg-white  ${isActive ? 'w-full' : ''
+            className={`flex  lg:w-3/6 border w-11/12 mx-auto items-center rounded-full bg-white  ${isActive ? 'w-full' : ''
                 }`}
         >
             <input

@@ -18,12 +18,12 @@ const AllCourse = () => {
         <div className='rounded-xl mx-2  py-5 '>
             <SearchBar />
             <Filters />
-            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-2  py-6'>
+            <div className='grid w-11/12 mx-auto  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
                 {
                     courses.map(course =>
-                        <Link key={course.id} className='bg-sky-50  rounded-[1px_1px_1px_20px] border border-gray-300 shadow-2xl ' course={course} to={`/course/${course.id}`}>
+                        <Link key={course.id} className='bg-sky-50  rounded-lg border border-gray-300 shadow-2xl ' course={course} to={`/course/${course.id}`}>
                             <div className='relative'>
-                                <img className='w-full  h-48' src={course.picture} alt="" />
+                                <img className='w-full rounded-t-lg  h-48' src={course.picture} alt="" />
                                 <div className='absolute top-2 left-2'>
                                     <img className='h-9 w-9 rounded-full border-black border-[1px] py-1' src="" alt="" />
                                 </div>
