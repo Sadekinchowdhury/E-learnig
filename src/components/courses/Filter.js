@@ -53,7 +53,7 @@ const Filters = () => {
         <div className="container  mt-10 mb-8 mx-auto ">
 
             <div className=''>
-                <div className='grid lg:w-10/12 w-full  grid-cols-1 lg:grid-cols-5   mx-auto  lg:gap-4 gap-3 p-3 m-3 '>
+                <div className='grid lg:w-11/12 w-full mx-auto  grid-cols-1 lg:grid-cols-7    lg:gap-4 gap-3 p-3 m-3 '>
                     <div>
                         <select value={selects1}
                             onChange={
@@ -76,7 +76,27 @@ const Filters = () => {
                     </div>
 
                     <div>
-                        <select value={selects}
+                        <select value={selects5}
+                            onChange={
+                                e => setSelects(e.target.value)
+                            }
+                            placeholder='choose'
+                            className="px-3 w-full py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'"
+                            name=""
+                            id="">
+                            <option disabled hidden value="">Course</option>
+                            <option value="Company">
+                                Company
+                            </option>
+                            <option value="Public">
+                                Public
+                            </option>
+
+
+                        </select>
+                    </div>
+                    <div>
+                        <select value={selects6}
                             onChange={
                                 e => setSelects(e.target.value)
                             }
@@ -125,6 +145,8 @@ const Filters = () => {
                                 English
                             </option></select>
                     </div>
+
+
                     <div>
                         <select value={selects3}
                             onChange={
@@ -146,6 +168,7 @@ const Filters = () => {
 
                         </select>
                     </div>
+
                     <div>
                         <select value={selects4}
                             onChange={
@@ -179,18 +202,17 @@ const Filters = () => {
                             </option></select>
                     </div>
 
-                    <div className="mb-4">
-                        <label className='text-white font-semibold' htmlFor="dateOfBirth">Start Day</label>
+                    <div className="flex   w-full   items-center ">
+                        {/* <label className='text-white w-full lg:w-1/4  font-semibold ' htmlFor="dateOfBirth">Start Day</label> */}
                         <input
                             type="date"
                             id="dateOfBirth"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
                             required
-                            className="w-full border rounded py-2 px-3"
+                            className="lg:w-full w-[600px] border rounded py-2 px-6 lg:px-3"
                         />
                     </div>
-
 
 
                 </div>

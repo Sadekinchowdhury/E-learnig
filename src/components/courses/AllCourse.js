@@ -18,7 +18,7 @@ const AllCourse = () => {
         <div className='rounded-xl mx-2  py-5 '>
             <SearchBar />
             <Filters />
-            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-2  py-6'>
+            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-2  py-6'>
                 {
                     courses.map(course =>
                         <Link key={course.id} className='bg-sky-50  rounded-[1px_1px_1px_20px] border border-gray-300 shadow-2xl ' course={course} to={`/course/${course.id}`}>
@@ -28,7 +28,7 @@ const AllCourse = () => {
                                     <img className='h-9 w-9 rounded-full border-black border-[1px] py-1' src="" alt="" />
                                 </div>
                                 <div>
-                                    <p className='font-bold absolute bottom-0 text-[16px] right-2 text-black'>{course.course_name}</p>
+                                    <p className='font-bold absolute bottom-0 text-[16px] right-2 text-black bg-slate-400 py-[5px] mb-1 rounded-[5px] px-[4px]'>{course.course_name}</p>
                                 </div>
                             </div>
                             <div className='p-3'>
