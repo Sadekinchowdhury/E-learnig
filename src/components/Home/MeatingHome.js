@@ -4,8 +4,108 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { BsFillCheckCircleFill } from "react-icons/bs";
+import begginer from "../../assects/images/pricing-box-img1.png";
+import business from "../../assects/images/pricing-box-img2.png";
+import professional from "../../assects/images/pricing-box-img3.png";
 const MeatingHome = () => {
-  const [pricing, setPricing] = useState([]);
+  const pricing = [
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: business,
+      title: "Business",
+      price: 180,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: professional,
+      title: "Professional",
+      price: 200,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+  ];
 
   const settings = {
     infinite: true,
@@ -35,11 +135,6 @@ const MeatingHome = () => {
     ],
   };
 
-  useEffect(() => {
-    fetch("./Pricing.json")
-      .then((res) => res.json())
-      .then((data) => setPricing(data));
-  }, []);
   return (
     <section className="bg-[#091650] py-12 lg:px-[200px] px-4 md:px-8">
       <div className="text-center">
@@ -82,7 +177,7 @@ const MeatingHome = () => {
 
                 <div className="pt-4 text-center">
                   <Link className="mx-auto" to="/payment">
-                    <button className="flex mx-auto items-center content-center btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
+                    <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                       Get Started
                     </button>
                   </Link>

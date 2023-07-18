@@ -52,13 +52,15 @@ const CreateNewMeeting = () => {
 
   return (
     <>
-      <span
+      <div
         onClick={openModal}
-        className="py-4 px-8 flex font-bold text-xm lg:text-sm text-white"
+        className="bg-zinc-700 hover:cursor-pointer shadow-2xl rounded-lg px-4 py-6 text-center text-white"
       >
-        <AiOutlinePlus className='font-bold' size={20} />
-        Create New Account
-      </span>
+        <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">+</h2>
+        <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+          Create A New Course
+        </h2>
+      </div>
 
       {showModal && (
         <div className="max-w-md pt-2">

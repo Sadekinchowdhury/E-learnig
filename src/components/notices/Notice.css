@@ -3,7 +3,9 @@
   border: 1px solid black;
   border-radius: 0;
 }
-
+.notice-toggle-btn:hover{
+  background: #000000e0;
+}
 .active-notice {
   background: #000000;
   border-color: #00ba57;

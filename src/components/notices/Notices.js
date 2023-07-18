@@ -29,7 +29,7 @@ const Notices = () => {
         <li>
           <button
             onClick={showPublicNotice}
-            className={`notice-toggle-btn btn lg:btn-lg btn-sm bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
+            className={`notice-toggle-btn btn-xsm text-sm bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
               publicNotice && "active-notice"
             }`}
             to="/notices/public"
@@ -40,7 +40,7 @@ const Notices = () => {
         <li>
           <button
             onClick={showPrivateNotice}
-            className={`notice-toggle-btn btn lg:btn-lg btn-xsm text-sm bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
+            className={`notice-toggle-btn btn-xsm text-sm bg-gray-900 text-white font-semibold py-3 px-4 border-[#000000] ${
               privateNotice && "active-notice"
             }`}
           >

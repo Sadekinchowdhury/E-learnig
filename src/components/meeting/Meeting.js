@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import MeetingInmg from '../../assects/images/meeting.jpg'
-// import begginer from "../../assects/images/pricing-box-img1.png";
-// import business from "../../assects/images/pricing-box-img2.png";
-// import professional from "../../assects/images/pricing-box-img3.png";
+import begginer from "../../assects/images/pricing-box-img1.png";
+import business from "../../assects/images/pricing-box-img2.png";
+import professional from "../../assects/images/pricing-box-img3.png";
 import english from "../../assects/images/english.jpg";
 import sun from "../../assects/images/sun-with-cameraman.jpg";
 import org from "../../assects/images/organizational-resilence.jpg";
@@ -10,15 +10,105 @@ import digital from "../../assects/images/digital-strategy.jpg";
 import dataDriven from "../../assects/images/data-driven.jpg";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 export default function Meeting() {
-  const [pricing, setPricing] = useState([]);
-
-  useEffect(() => {
-    fetch("./Pricing.json")
-      .then((res) => res.json())
-      .then((data) => setPricing(data));
-  }, []);
+  const pricing = [
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: business,
+      title: "Business",
+      price: 180,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: professional,
+      title: "Professional",
+      price: 200,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+    {
+      img: begginer,
+      title: "Beginner",
+      price: 120,
+      infos: [
+        "0% transaction fee",
+        "100 products.",
+        "100 funnels",
+        "Unlimited landing pages.",
+        "Unlimited marketing emails",
+        "100,000 contacts",
+        "2000 active customers",
+        "3 websites",
+        "25 admin users",
+      ],
+    },
+  ];
 
   return (
     <>
@@ -59,7 +149,7 @@ export default function Meeting() {
 
               <div className="pt-4 text-center">
                 <Link className="mx-auto" to="/payment">
-                  <button className="flex mx-auto items-center content-center btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
+                  <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                     Get Started
                   </button>
                 </Link>
