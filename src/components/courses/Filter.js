@@ -59,8 +59,8 @@ const Filters = () => {
                             onChange={
                                 e => setSelects1(e.target.value)
                             }
-                            placeholder='choose'
-                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            placeholder=''
+                            className='w-full  px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
                             <option disabled hidden value="">Course Type</option>
@@ -80,8 +80,8 @@ const Filters = () => {
                             onChange={
                                 e => setSelects(e.target.value)
                             }
-                            placeholder='choose'
-                            className="px-3 w-full py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'"
+                            placeholder=''
+                            className="px-3 w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'"
                             name=""
                             id="">
                             <option disabled hidden value="">Course</option>
@@ -100,11 +100,11 @@ const Filters = () => {
                             onChange={
                                 e => setSelects(e.target.value)
                             }
-                            placeholder='choose'
-                            className="px-3 w-full py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'"
+                            placeholder=''
+                            className="px-3 w-full px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'"
                             name=""
                             id="">
-                            <option disabled hidden value="">Choose Country</option>
+                            <option disabled hidden value=""> Country</option>
                             <option value="Bangladesh">
                                 Bangladesh
                             </option>
@@ -130,11 +130,11 @@ const Filters = () => {
                             onChange={
                                 e => setSelects2(e.target.value)
                             }
-                            placeholder='choose'
-                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            placeholder=''
+                            className='w-full  px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
-                            <option disabled hidden value="">Choose Language</option>
+                            <option disabled hidden value=""> Language</option>
                             <option value="Bangla">
                                 Bangla
                             </option>
@@ -152,11 +152,11 @@ const Filters = () => {
                             onChange={
                                 e => setSelects3(e.target.value)
                             }
-                            placeholder='choose'
-                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            placeholder=''
+                            className='w-full  px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
-                            <option disabled hidden value="">Course Category</option>
+                            <option disabled hidden value="">Category</option>
                             {
                                 skillsAndCourses.map(skill =>
                                     <option value={skill}>
@@ -174,8 +174,8 @@ const Filters = () => {
                             onChange={
                                 e => setSelects4(e.target.value)
                             }
-                            placeholder='choose'
-                            className='w-full  py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                            placeholder=''
+                            className='w-full  px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                             name=""
                             id="">
                             <option disabled hidden value="">Course Duration</option>

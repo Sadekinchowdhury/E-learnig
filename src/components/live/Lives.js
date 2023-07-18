@@ -8,6 +8,7 @@ import { FiLogOut } from 'react-icons/fi';
 import { FaPaperPlane } from 'react-icons/fa';
 import { FaExpand } from 'react-icons/fa';
 import { useState } from 'react';
+import LiveInput from './LiveInput';
 
 const Lives = () => {
 
@@ -63,13 +64,13 @@ const Lives = () => {
     }
     return (
         <div className=''>
-            <div className="min-h-screen grid  grid-cols-12">
+            <div className="lg:h-[810px] h-[450px] grid  grid-cols-12">
                 <div className="col-span-2 lg:block hidden bg-black from-slate-900  to-gray-800 bg-gradient-to-l">
                     {/* Content for the first column */}
 
                     <div className='bg-purple-900 items-center shadow-2xl flex justify-between gap-2 px-6 py-3'>
                         <button onClick={userCondition} className='text-white font-semibold  bg-green-700 py-1 px-2 rounded-2xl '>
-                            Active
+                            online
                         </button>
                         <button onClick={userCondition} className='text-white font-semibold  bg-red-400 py-1 px-2 rounded-2xl '>
 
@@ -205,7 +206,7 @@ const Lives = () => {
 
                     <div className='absolute bottom-0 bg-slate-900 p-3 w-full flex'>
                         <input
-                            className="w-[98%] mx-auto bottom-2  bg-white border border-gray-300  rounded-[4px] py-4 px-6 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-[98%] mx-auto bottom-2  bg-white border border-gray-300  rounded-[4px] py-4 px-6 pl-11 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             type="text"
                             placeholder="Send a message...">
 
@@ -216,8 +217,10 @@ const Lives = () => {
                         >
                             <FaPaperPlane />
                         </button>
-                    </div>
 
+
+                    </div>
+                    <LiveInput className='absolute items-center justify-start' />
                 </div>
             </div>
         </div>
