@@ -3,6 +3,26 @@ import { AiOutlineCamera, AiOutlineEdit } from 'react-icons/ai'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
+import { message, Upload } from 'antd';
+
+
+const getBase64 = (img, callback) => {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => callback(reader.result));
+    reader.readAsDataURL(img);
+};
+const beforeUpload = (file) => {
+    const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
+    if (!isJpgOrPng) {
+        message.error('You can only upload JPG/PNG file!');
+    }
+    const isLt2M = file.size / 1024 / 1024 < 2;
+    if (!isLt2M) {
+        message.error('Image must smaller than 2MB!');
+    }
+    return isJpgOrPng && isLt2M;
+};
 const ProfileEdit = () => {
 
     const [social, setSosial] = useState('')
@@ -12,14 +32,34 @@ const ProfileEdit = () => {
         fieldName2: '',
     });
     console.log(formData)
-    const handleChange = (event) => {
-        const { name, value } = event.target;
 
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
+    const [loading, setLoading] = useState(false);
+    const [imageUrl, setImageUrl] = useState();
+    const handleChange = (info) => {
+        if (info.file.status === 'uploading') {
+            setLoading(true);
+            return;
+        }
+        if (info.file.status === 'done') {
+            // Get this url from response in real world.
+            getBase64(info.file.originFileObj, (url) => {
+                setLoading(false);
+                setImageUrl(url);
+            });
+        }
     };
+    const uploadButton = (
+        <div>
+            {loading ? <LoadingOutlined /> : <PlusOutlined />}
+            <div
+                style={{
+                    marginTop: 8,
+                }}
+            >
+                Upload
+            </div>
+        </div>
+    );
     return (
 
         <div className='bg-pink-900 from-blue-900 to-slate-800 via-orange-900 bg-gradient-to-t shadow-2xl mt-3 rounded-xl w-11/12 mx-auto p-3 '>
@@ -36,7 +76,33 @@ const ProfileEdit = () => {
 
                             <form method="dialog" className="modal-box p-2 lg:px-8">
                                 <div className='flex justify-center items-center py-6'>
-                                    <AiOutlineCamera className='p-3 rounded-full border-[1px] border-black  bg-black' color='white' size={70} />
+                                    {/* <input type="file" />
+                                    <AiOutlineCamera className='p-3 rounded-full border-[1px] border-black  bg-black' color='white' size={70} /> */}
+                                    <div>
+                                        <Upload
+                                            name="avatar"
+                                            listType="picture-circle"
+                                            className="avatar-uploader"
+                                            showUploadList={false}
+                                            action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                                            beforeUpload={beforeUpload}
+                                            onChange={handleChange}
+                                        >
+                                            {imageUrl ? (
+                                                <img
+                                                    src={imageUrl}
+                                                    alt="avatar"
+                                                    className=''
+                                                    style={{
+                                                        width: '100%',
+                                                    }}
+                                                />
+                                            ) : (
+                                                uploadButton
+                                            )}
+                                        </Upload>
+                                    </div>
+
                                 </div>
                                 <button onClick={() => window.my_modal_3.close()} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                 <div className=''>
@@ -299,7 +365,7 @@ const ProfileEdit = () => {
             </div>
 
 
-        </div>
+        </div >
 
     );
 };

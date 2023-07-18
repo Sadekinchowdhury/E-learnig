@@ -3,6 +3,7 @@ import { FaShoppingCart, FaStar } from 'react-icons/fa';
 import SearchBar from './Searchbar';
 import { Link } from 'react-router-dom';
 import Filters from './Filter';
+import CoursePage from './CoursePage';
 
 const AllCourse = () => {
     const [courses, setCourses] = useState([]);
@@ -11,17 +12,57 @@ const AllCourse = () => {
         fetch('./AllCourses.json')
             .then(res => res.json())
             .then(data => setCourses(data))
-    }, [courses]);
+    }, []);
 
-    console.log(courses)
+    // const [currentPage, setCurrentPage] = useState(1)
+    // const [postPerpage, setPostperPage] = useState(8)
+    // const indexOfLastItem = currentPage * postPerpage;
+    // const indexOfFirstItem = indexOfLastItem - postPerpage;
+    // const currentPost = courses.slice(indexOfFirstItem, indexOfLastItem);
+
+
+
+
+
+
+    const [page, setPage] = useState(1)
+
+    const [size, setSize] = useState(5)
+
+    console.log(page, "page current")
+    const numberoftotalPage = Math.ceil(courses.length / size)
+
+    const pages = [...Array(numberoftotalPage + 1).keys()].slice(1)
+
+
+
+    const indexOfLastItem = page * size;
+    const indexOfFirstItem = indexOfLastItem - size;
+    const currentPost = courses.slice(indexOfFirstItem, indexOfLastItem);
+
+
+    // const handlPrevious = () => {
+    //     if (page !== 1) {
+    //         setPage(page - 1)
+    //     }
+    // }
+    // const handlNext = () => {
+    //     if (page !== numberoftotalPage) {
+    //         setPage(page + 1)
+    //     }
+    // }
+
+
+
+
     return (
         <div className='rounded-xl mx-2  py-5 '>
             <SearchBar />
             <Filters />
             <div className='grid w-11/12 mx-auto  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
                 {
-                    courses.map(course =>
-                        <Link key={course.id} className='bg-sky-50  rounded-lg border border-gray-300 shadow-2xl ' course={course} to={`/course/${course.id}`}>
+                    currentPost.map(course =>
+                        <Link key={course.id} className={`bg-sky-50  rounded-lg border border-gray-300 shadow-2xl `} course={course} to={`/course/${course.id}`}>
                             <div className='relative'>
                                 <img className='w-full rounded-t-lg  h-48' src={course.picture} alt="" />
                                 <div className='absolute top-2 left-2'>
@@ -68,7 +109,21 @@ const AllCourse = () => {
                             </div>
                         </Link>
                     )
+
                 }
+            </div>
+            <div className='py-6 justify-center flex items-center'>
+                {/* <button className='gap-4 m-2 border px-3 py-1 rounded-md border-gray-400' onClick={handlPrevious}>Previous</button> */}
+                {
+                    pages.map((pag, index) =>
+
+                        <button
+                            onClick={() => setPage(pag)}
+                            className={`gap-4 m-2 border px-3 py-1 rounded-md border-gray-400${page === pag ? ' bg-purple-400' : ""}`}> {pag}</button>
+
+                    )
+                }
+                {/* <button className='gap-4 m-2 border px-3 py-1 rounded-md border-gray-400' onClick={handlNext}>Next</button> */}
             </div>
         </div>
     );
