@@ -18,7 +18,6 @@ const PersonalMeeting = () => {
       userName: "sweet007",
       password: "ZX3U4v//",
       ative: true,
-      online: false,
     },
     {
       sl: "5",
@@ -31,7 +30,6 @@ const PersonalMeeting = () => {
       userName: "sweet007",
       password: "ZX3U4v//",
       ative: true,
-      online: false,
     },
     {
       sl: "4",
@@ -44,7 +42,6 @@ const PersonalMeeting = () => {
       userName: "sweet007",
       password: "ZX3U4v//",
       ative: false,
-      online: true,
     },
     {
       sl: "3",
@@ -57,7 +54,6 @@ const PersonalMeeting = () => {
       userName: "sweet007",
       password: "ZX3U4v//",
       ative: true,
-      online: false,
     },
     {
       sl: "2",
@@ -70,7 +66,6 @@ const PersonalMeeting = () => {
       userName: "sweet007",
       password: "ZX3U4v//",
       ative: false,
-      online: true,
     },
     {
       sl: "1",
@@ -83,7 +78,6 @@ const PersonalMeeting = () => {
       userName: "sweet007",
       password: "ZX3U4v//",
       ative: true,
-      online: false,
     },
   ];
 
@@ -93,34 +87,33 @@ const PersonalMeeting = () => {
   return (
     <div className="p-5">
       <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-center text-white pt-5 pb-7">
-        Course Teacher Admin Panel
+        Personal Meeting Admin Panel
       </h1>
       <div className="">
-        <div className="flex items-center gap-x-2 justify-between">
-          <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
-            <span>Live Meeting</span>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+          <div className="bg-sky-700 shadow-2xl rounded-lg px-4 py-6 text-center text-white">
+            <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">
+              02
+            </h2>
+            <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+              Account Mode
+            </h2>
           </div>
-          <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
-            <span>Account Mode</span>
+          <div className="bg-pink-700 shadow-2xl rounded-lg px-4 py-6 text-center text-white">
+            <h2 className="font-bold lg:text-4xl md:text-4xl text-2xl mb-2">
+              {30 - users.length}
+            </h2>
+            <h2 className="lg:text-xl md:text-xl lg:font-semibold md:font-semibold">
+              Account Creation Pendin
+            </h2>
           </div>
-          <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
-            <span>1</span>
-          </div>
-          <div className="bg-[#00234a] font-bold text-xsm lg:text-sm py-4 px-8 text-white">
-            <span>Account Creation Pending</span>
-          </div>
-          <div className="bg-[#00234a] h-[50px] w-[50px] flex items-center justify-center font-bold font-bold text-xsm lg:text-sm py-4 px-4 text-white rounded rounded-full">
-            <span>{30 - users.length}</span>
-          </div>
+          <CreateNewMeeting />
           <Link
             to="/profile/personallive"
-            className="bg-[#FF0000] font-bold text-xsm lg:text-sm py-3 px-8 text-white"
+            className="flex items-center justify-center text-4xl bg-[#FF0000] font-bold py-3 px-8 text-white"
           >
-            <button>Live</button>
+            Live
           </Link>
-          <button className="bg-[#00234a] font-bold text-xm lg:text-sm text-white">
-            <CreateNewMeeting />
-          </button>
         </div>
         <div className="overflow-x-scroll">
           <table className="min-w-full mt-5 divide-y divide-gray-200">
@@ -191,12 +184,6 @@ const PersonalMeeting = () => {
                   scope="col"
                   className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
                 >
-                  Online Status
-                </th>
-                <th
-                  scope="col"
-                  className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
-                >
                   Action
                 </th>
               </tr>
@@ -231,18 +218,11 @@ const PersonalMeeting = () => {
                   <td className="bg-indigo-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.password}//
                   </td>
-                  <td className="bg-red-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  <td className="bg-gray-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.ative ? (
                       <span className="text-[green] font-bold">Active</span>
                     ) : (
                       <span className="text-[red] font-bold">Inactive</span>
-                    )}
-                  </td>
-                  <td className="bg-gray-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                    {user.online ? (
-                      <span className="text-[green] font-bold">Online</span>
-                    ) : (
-                      <span className="text-[red] font-bold">Offline</span>
                     )}
                   </td>
                   <td className="bg-sky-950 px-6 py-3 text-xsm text-white whitespace-nowrap flex items-center justify-between">

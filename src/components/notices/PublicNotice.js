@@ -40,30 +40,30 @@ const PublicNotice = () => {
     },
   ];
   return (
-    <table className="bg-gray-200 min-w-full mx-auto divide-y divide-gray-200">
-      <thead className="bg-gray-50">
+    <table className="shadow min-w-full mx-auto divide-y divide-gray-200">
+      <thead>
         <tr>
           <th
             scope="col"
-            className="px-6 py-3 text-left text-xs font-bold text-center text-gray-500 uppercase tracking-wider"
+            className="px-6 py-3 border-1 bg-black text-center text-xsm  text-center text-white uppercase tracking-wider"
           >
             SL
           </th>
           <th
             scope="col"
-            className="px-6 py-3 text-left text-xs font-bold text-center text-gray-500 uppercase tracking-wider"
+            className="px-6 py-3 border-1 bg-black text-center text-xsm  text-center text-white uppercase tracking-wider"
           >
             Title
           </th>
           <th
             scope="col"
-            className="px-6 py-3 text-left text-xs font-bold text-center text-gray-500 uppercase tracking-wider"
+            className="px-6 py-3 border-1 bg-black text-center text-xsm  text-center text-white uppercase tracking-wider"
           >
             Publish Date
           </th>
           <th
             scope="col"
-            className="px-6 py-3 text-left text-xs font-bold text-center text-gray-500 uppercase tracking-wider"
+            className="px-6 py-3 border-1 bg-black text-center text-xsm  text-center text-white uppercase tracking-wider"
           >
             Download
           </th>
@@ -72,23 +72,23 @@ const PublicNotice = () => {
       <tbody className="divide-y divide-gray-200">
         {notices.map((notice) => (
           <tr className="mt-2 bg-white">
-            <td className="px-4 py-2 lg:px-8 lg:py-4 md:px-8 md:px-4 whitespace-nowrap">
+            <td className="border-1 px-6 py-2 whitespace-nowrap">
               <div className="flex items-center content-center">
-                <div className="w-[40px] h-[40px] text-xsm flex items-center justify-center rounded font-medium text-white bg-[#00234a]">
+                <div className="w-[35px] h-[35px] text-xsm flex items-center justify-center rounded font-medium text-white bg-[#00234a]">
                   {notice.sl}
                 </div>
               </div>
             </td>
-            <td className="px-6 py-4 text-xsm whitespace-nowrap">
-              <div className="font-bold text-[#00397b]">{notice.title}</div>
+            <td className="border-1 px-6 py-3 text-[#00397b] text-xsm whitespace-nowrap">
+              {notice.title}
             </td>
-            <td className="px-6 py-4 whitespace-nowrap">
+            <td className="border-1 px-6 py-3 text-center text-[#00397b] whitespace-nowrap">
               <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                 {notice.date}
               </span>
             </td>
-            <td className="px-6  py-4 whitespace-nowrap">
-              <button className="notice-btn">
+            <td className="border-1 px-6  py-3 text-center whitespace-nowrap">
+              <button className="notice-btn mx-auto">
                 <span className="mr-3">
                   <HiDownload />
                 </span>{" "}
