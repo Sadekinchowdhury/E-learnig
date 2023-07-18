@@ -1,22 +1,19 @@
 import React from 'react';
-import { useState } from 'react';
 
-const CoursePage = ({ totalpost, postperpage, setCurrentPage }) => {
-
-    const allitems = []
-
-    for (let i = 1; i <= Math.ceil(totalpost / postperpage); i++) {
-        allitems.push(i)
+const PagaNation = ({ totalpost, postperPage, setcurrentPage }) => {
+    let pages = [];
+    for (let i = 1; i <= Math.ceil(totalpost / postperPage); i++) {
+        pages.push(i)
     }
-
+    console.log(totalpost, postperPage)
     return (
         <div>
             {
-                allitems.map((item, index) => {
-                    return <button onClick={() => setCurrentPage(item)} className='ml-2 bg-black text-white px-4 py-1 rounded-md'>
-                        {
-                            item
-                        }
+                pages.map((page, index) => {
+                    return <button
+                        className={`btn btn-active ml-3`} key={index}
+                        onClick={() => setcurrentPage(page)} >
+                        {page}
                     </button>
                 })
             }
@@ -24,4 +21,4 @@ const CoursePage = ({ totalpost, postperpage, setCurrentPage }) => {
     );
 };
 
-export default CoursePage;
+export default PagaNation;

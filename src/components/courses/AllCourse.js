@@ -4,6 +4,7 @@ import SearchBar from './Searchbar';
 import { Link } from 'react-router-dom';
 import Filters from './Filter';
 import CoursePage from './CoursePage';
+import PagaNation from './CoursePage';
 
 const AllCourse = () => {
     const [courses, setCourses] = useState([]);
@@ -25,33 +26,24 @@ const AllCourse = () => {
 
 
 
-    const [page, setPage] = useState(1)
+    // const [page, setPage] = useState(1)
 
-    const [size, setSize] = useState(5)
+    // const [size, setSize] = useState(5)
 
-    console.log(page, "page current")
-    const numberoftotalPage = Math.ceil(courses.length / size)
+    // console.log(page, "page current")
+    // const numberoftotalPage = Math.ceil(courses.length / size)
 
-    const pages = [...Array(numberoftotalPage + 1).keys()].slice(1)
+    // const pages = [...Array(numberoftotalPage + 1).keys()].slice(1)
 
-
-
-    const indexOfLastItem = page * size;
-    const indexOfFirstItem = indexOfLastItem - size;
-    const currentPost = courses.slice(indexOfFirstItem, indexOfLastItem);
+    const [currentPage, setcurrentPage] = useState(1)
+    const [postperPage, setPostperPage] = useState(8)
 
 
-    // const handlPrevious = () => {
-    //     if (page !== 1) {
-    //         setPage(page - 1)
-    //     }
-    // }
-    // const handlNext = () => {
-    //     if (page !== numberoftotalPage) {
-    //         setPage(page + 1)
-    //     }
-    // }
 
+
+    const lastpostindex = currentPage * postperPage;
+    const firstpostindex = lastpostindex - postperPage;
+    const currentpost = courses.slice(firstpostindex, lastpostindex)
 
 
 
@@ -61,7 +53,7 @@ const AllCourse = () => {
             <Filters />
             <div className='grid w-11/12 mx-auto  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
                 {
-                    currentPost.map(course =>
+                    currentpost.map(course =>
                         <Link key={course.id} className={`bg-sky-50  rounded-lg border border-gray-300 shadow-2xl `} course={course} to={`/course/${course.id}`}>
                             <div className='relative'>
                                 <img className='w-full rounded-t-lg  h-48' src={course.picture} alt="" />
@@ -113,8 +105,14 @@ const AllCourse = () => {
                 }
             </div>
             <div className='py-6 justify-center flex items-center'>
+
+                <PagaNation totalpost={courses.length}
+                    postperPage={postperPage}
+
+                    setcurrentPage={setcurrentPage} />
+
                 {/* <button className='gap-4 m-2 border px-3 py-1 rounded-md border-gray-400' onClick={handlPrevious}>Previous</button> */}
-                {
+                {/* {
                     pages.map((pag, index) =>
 
                         <button
@@ -122,7 +120,7 @@ const AllCourse = () => {
                             className={`gap-4 m-2 border px-3 py-1 rounded-md border-gray-400${page === pag ? ' bg-purple-400' : ""}`}> {pag}</button>
 
                     )
-                }
+                } */}
                 {/* <button className='gap-4 m-2 border px-3 py-1 rounded-md border-gray-400' onClick={handlNext}>Next</button> */}
             </div>
         </div>
