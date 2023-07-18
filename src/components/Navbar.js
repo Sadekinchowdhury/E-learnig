@@ -2,7 +2,7 @@ import Menu from "./Menu";
 import React, { useState } from "react";
 import Logo from "../assects/images/LoGo.png"
 
-export default function Navbar() {
+export default function Navbar({ handlThemeChange }) {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
         <div>
@@ -13,7 +13,7 @@ export default function Navbar() {
                             className="img-fluid w-16"
                             alt="" /></div>
                         <div className="hidden md:block">
-                            <Menu />
+                            <Menu handlThemeChange={handlThemeChange} />
                         </div>
                         <button type="button" className="md:hidden bg-slate-700 inline-flex items-center justify-center p-2 rounded-md text-slate-100 hover:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
                             onClick={

@@ -58,7 +58,7 @@ const Sidebar = () => {
               </IconContext.Provider>
               Course Teacher Admin Panel
             </Link>
-            <Link
+            {/* <Link
               to="/profile/livecourse"
               className="p-4 mt-4 hover:rounded-lg  hover:border-blue-700 hover:border-[0.5px] transition duration-300 hover:scale-110 hover:bg-gray-800"
             >
@@ -66,7 +66,7 @@ const Sidebar = () => {
                 <AiOutlinePlayCircle size={20} />
               </IconContext.Provider>
               Join Live Active Course
-            </Link>
+            </Link> */}
             <Link
               to="/profile/missingclass"
               className="p-4 mt-4 hover:rounded-lg  hover:border-blue-700 hover:border-[0.5px] transition duration-300 hover:scale-110 hover:bg-gray-800"
@@ -95,15 +95,7 @@ const Sidebar = () => {
               Personal Meetings Admin Pannel
             </Link>
 
-            <Link
-              to="/profile/onlinecourse"
-              className="p-4 mt-4 hover:rounded-lg  hover:border-blue-700 hover:border-[0.5px] transition duration-300 hover:scale-110 hover:bg-gray-800"
-            >
-              <IconContext.Provider value={{ className: "inline-block mr-2" }}>
-                <AiOutlineMonitor size={20} />
-              </IconContext.Provider>
-              Online Courses
-            </Link>
+
           </ul>
         </nav>
       </div>

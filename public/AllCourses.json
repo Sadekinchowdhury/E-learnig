@@ -9,7 +9,8 @@
         "CompleteDay": "02/07/2023",
         "Ratting": "https://icons8.com/icon/qdQpy48X3Rjv/star",
         "price": "500",
-        "C_time": "3 Months"
+        "C_time": "3 Months",
+        "course_name": "Web Development"
     },
     {
         "id": "10002",
@@ -21,7 +22,8 @@
         "CompleteDay": "02/07/2023",
         "Ratting": "werwer",
         "price": "500",
-        "C_time": "3 Months"
+        "C_time": "3 Months",
+        "course_name": "App Development"
     },
     {
         "id": "10003",
