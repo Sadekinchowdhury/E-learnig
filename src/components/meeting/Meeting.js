@@ -115,7 +115,7 @@ export default function Meeting() {
       <section className="bg-[#091650] py-16 lg:px-[200px] px-4 md:px-8">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-white mt-4">
-            Our Flexible Pricing Plans
+            Personal Meeting Package
           </h1>
         </div>
         <div className="pt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
@@ -177,7 +177,7 @@ export default function Meeting() {
                 to help learners of English enhance their spoken language
                 skills.
               </p>
-              <button className="flex items-center content-center rounded-lg mt-5 btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] border border-[#0ad3ef] hover:bg-[#091650]">
+              <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                 Learn More
               </button>
             </div>
@@ -199,7 +199,7 @@ export default function Meeting() {
                 <li className="mt-3">Download lessons for offline viewing</li>
                 <li className="mt-3">Exclusive content for subscriber</li>
               </ul>
-              <button className="flex items-center content-center rounded-lg mt-5 btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] border border-[#0ad3ef] hover:bg-[#091650]">
+              <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                 Learn More
               </button>
             </div>
@@ -237,7 +237,7 @@ export default function Meeting() {
                   </h3>
                 </div>
                 <div class="mx- py-4">
-                  <button className="flex mx-auto items-center content-center rounded-lg btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] border border-[#0ad3ef] hover:bg-[#091650]">
+                  <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                     Learn More
                   </button>
                 </div>
@@ -258,7 +258,7 @@ export default function Meeting() {
                 </h3>
               </div>
               <div class="mx- py-4">
-                <button className="flex mx-auto items-center content-center rounded-lg btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] border border-[#0ad3ef] hover:bg-[#091650]">
+                <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                   Learn More
                 </button>
               </div>
@@ -276,7 +276,7 @@ export default function Meeting() {
                 <h3 class="font-semibold text-xl mb-2">Data-Driven Teams</h3>
               </div>
               <div class="mx- py-4">
-                <button className="flex mx-auto items-center content-center rounded-lg btn btn-lg h-[50px] px-8 py-4 text-white text-xl bg-[#0ad3ef] border border-[#0ad3ef] hover:bg-[#091650]">
+                <button className="flex mx-auto items-center content-center px-8 py-3 text-white text-lg font-semibold bg-[#0ad3ef] rounded-[50px] border border-[#0ad3ef] hover:bg-[#091650]">
                   Learn More
                 </button>
               </div>

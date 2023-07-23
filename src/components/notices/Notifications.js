@@ -1,41 +1,36 @@
 import React from "react";
 import { HiDownload } from "react-icons/hi";
 import "./Notice.css";
-const PublicNotice = () => {
+const Notifications = () => {
   const notices = [
     {
-      sl: "7",
-      title: "Learn how to increase your web development skills",
-      date: "09/07/2023",
-    },
-    {
       sl: "6",
-      title: "Learn how to increase your web development skills",
+      title: "Learn how to become a full stack web developer",
       date: "09/07/2023",
     },
     {
       sl: "5",
-      title: "Learn how to increase your web development skills",
+      title: "Learn how to become a full stack web developer",
       date: "09/07/2023",
     },
     {
       sl: "4",
-      title: "Learn how to increase your web development skills",
+      title: "Learn how to become a full stack web developer",
       date: "09/07/2023",
     },
     {
       sl: "3",
-      title: "Learn how to increase your web development skills",
+      title: "Learn how to become a full stack web developer",
       date: "09/07/2023",
     },
     {
       sl: "2",
-      title: "Learn how to increase your web development skills",
+      title: "Learn how to become a full stack web developer",
       date: "09/07/2023",
     },
     {
       sl: "1",
-      title: "Learn how to increase your web development skills",
+      title: "Learn how to become a full stack web developer",
       date: "09/07/2023",
     },
   ];
@@ -102,4 +97,4 @@ const PublicNotice = () => {
   );
 };
 
-export default PublicNotice;
+export default Notifications;

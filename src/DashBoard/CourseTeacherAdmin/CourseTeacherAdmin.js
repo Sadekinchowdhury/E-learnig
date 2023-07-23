@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CreateTeacherAdmin from "./CreateTeacherAdmin";
 import EditTeacherAdmin from "./EditTeacherAdmin";
 const CourseTeacherAdmin = () => {
-  const users = [
+  const [selects1, setSelects1] = useState("");
+  const courses = [
     {
       sl: "2",
       title: "Web Design",
@@ -15,7 +16,7 @@ const CourseTeacherAdmin = () => {
       classDay: "Saturday-2pm Monday-2pm",
       appUser: "1900",
       totalRs: 15000,
-      onlineStats: true,
+      courseStats: "active",
     },
     {
       sl: "1",
@@ -28,7 +29,7 @@ const CourseTeacherAdmin = () => {
       classDay: "Saturday-2pm Monday-2pm",
       appUser: "1340",
       totalRs: 19900,
-      onlineStats: false,
+      courseStats: "inactive",
     },
     {
       sl: "1",
@@ -41,7 +42,7 @@ const CourseTeacherAdmin = () => {
       classDay: "Saturday-2pm Monday-2pm",
       appUser: "1340",
       totalRs: 19900,
-      onlineStats: true,
+      courseStats: "complete",
     },
     {
       sl: "1",
@@ -54,7 +55,7 @@ const CourseTeacherAdmin = () => {
       classDay: "Saturday-2pm Monday-2pm",
       appUser: "1340",
       totalRs: 19900,
-      onlineStats: false,
+      courseStats: "active",
     },
   ];
 
@@ -164,12 +165,12 @@ const CourseTeacherAdmin = () => {
               >
                 Total Rs
               </th>
-              <th
+              {/* <th
                 scope="col"
                 className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
               >
                 Online Status
-              </th>
+              </th> */}
               <th
                 scope="col"
                 className="bg-black text-center px-4 py-3 text-xs font-semibold text-white uppercase tracking-wider"
@@ -183,42 +184,59 @@ const CourseTeacherAdmin = () => {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {users.map((user, i) => (
+            {courses.map((course, i) => (
               <tr key={i}>
                 <td className="bg-emerald-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.sl}
+                  {course.sl}
                 </td>
                 <td className="bg-zinc-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.title}
+                  {course.title}
                 </td>
                 <td className="bg-sky-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.country}
+                  {course.country}
                 </td>
                 <td className="bg-indigo-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.applyLastDate}
+                  {course.applyLastDate}
                 </td>
                 <td className="bg-lime-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.startDate}
+                  {course.startDate}
                 </td>
                 <td className="bg-pink-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.compleationDate}
+                  {course.compleationDate}
                 </td>
                 <td className="bg-orange-500 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.language}
+                  {course.language}
                 </td>
                 <td className="bg-purple-900 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.classDay}
+                  {course.classDay}
                 </td>
                 <td className="bg-indigo-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.appUser}
+                  {course.appUser}
                 </td>
-                <td className="bg-red-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  Active,Inactive,Complete
+                <td className="bg-gray-900 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                  <button
+                    disabled={course.courseStats === "active"}
+                    className="text-[14px] px-1 bg-sky-900 text-white rounded"
+                  >
+                    Active
+                  </button>
+                  <button
+                    disabled={course.courseStats === "inactive"}
+                    className="text-[14px] px-1 mx-1 bg-[red] text-white rounded"
+                  >
+                    Inactive
+                  </button>
+                  <button
+                    disabled={course.courseStats === "complete"}
+                    className="text-[14px] px-1 bg-[green] text-white rounded"
+                  >
+                    Complete
+                  </button>
                 </td>
                 <td className="bg-sky-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                  {user.totalRs}
+                  {course.totalRs}
                 </td>
-                <td className="bg-gray-900 px-6 py-3 text-xsm whitespace-nowrap ">
+                {/* <td className="bg-gray-900 px-6 py-3 text-xsm whitespace-nowrap ">
                   <div className="flex items-center text-white justify-between">
                     {user.onlineStats ? (
                       <span className="text-[green] font-bold">Online</span>
@@ -226,7 +244,7 @@ const CourseTeacherAdmin = () => {
                       <span className="text-[red] font-bold">Offline</span>
                     )}
                   </div>
-                </td>
+                </td> */}
 
                 <td className="bg-lime-700 px-6 py-3 text-xsm text-white whitespace-nowrap">
                   <Link
