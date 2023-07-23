@@ -135,14 +135,14 @@ export default function Live() {
                     </div>
                 </div>
             </section>
-
-            <div>
-                <LiveFilters />
-            </div>
             <div className='my-8'>
                 <SearchBar />
             </div>
-            <div className='lg:w-9/12  w-full mx-auto'>
+            <div className='w-full p-2 lg:w-11/12 lg:mx-auto'>
+                <LiveFilters />
+            </div>
+
+            <div className='lg:w-11/12  w-full mx-auto'>
                 <LiveCourse />
             </div>
         </div>

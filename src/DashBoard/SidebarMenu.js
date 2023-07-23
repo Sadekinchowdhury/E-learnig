@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="flex justify-center  items-center py-3">
+    <div className="flex justify-center h-[100%] items-center py-3">
       <div className="flex lg:h-full h-1/2 flex-col  bg-gray-900 text-white">
         <nav className="flex-grow">
           <ul className="flex flex-col">

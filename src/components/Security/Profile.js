@@ -66,7 +66,12 @@ const ProfileDashboard = () => {
                     </div>
                     <hr color='black' className='text-blue-600 ' />
 
+                    <div className="flex items-center justify-center my-8 ">
+                        <button className='text-xl font-semibold bg-white text-black px-4 hover:border-[2px] hover:border-blue-700 transition duration-700 hover:bg-slate-800 hover:text-white py-1 rounded'>
 
+                            <AiOutlineLogout className='inline-block mr-2' />
+                            Logout</button>
+                    </div>
                 </div>
 
                 <div className='-right-4  bg-gray-900 rounded-r-full top-8 w-14 h-[50px] flex justify-center items-center absolute lg:static lg:hidden'>

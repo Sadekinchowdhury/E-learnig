@@ -51,12 +51,12 @@ const ProfileDashboard = () => {
         },
     ];
     return (
-        <div className='bg-slate-950 from-fuchsia-950 via-sky-950 to-blue-950 bg-gradient-to-l border  rounded-lg h-[100%]'>
+        <div className='bg-slate-950 from-fuchsia-950 via-sky-950 to-blue-950 bg-gradient-to-l  rounded-lg h-[100%]'>
             <div className='flex h-[60px] shadow-2xl  px-[25px] items-center justify-between rounded'>
                 <div className='flex items-center w-1/3 border-none'>
 
-                    <input type="text" color='black' placeholder="Search..." className="flex-1 w-[150px] lg:w-[300px] bg-slate-100 pl-[2px] rounded-l-lg py-1 h-[35px] bg-transparent outline-none text-white placeholder-gray-500" />
-                    <button class="p-2 rounded-r-lg bg-blue-500 text-black hover:bg-blue-600 focus:outline-none focus:bg-blue-600 h-[35px] px-3">
+                    <input type="text" color='black' placeholder="Search..." className="flex-1 w-[150px] lg:w-[300px] border-l border-b border-y  bg-slate-100 pl-[10px] rounded-l-lg py-1 h-[35px] bg-transparent outline-none text-white placeholder-white" />
+                    <button class="p-2 rounded-r-lg bg-blue-500 text-black hover:bg-blue-600 focus:outline-none focus:bg-blue-600 h-[35px] px-3 border-r border-y ">
                         <i class="fas fa-search"></i>
                     </button>
 
