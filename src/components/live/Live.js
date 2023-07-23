@@ -3,16 +3,17 @@ import { Link } from "react-router-dom";
 import LiveFilters from './LiveFilters';
 import LiveCourse from './LiveCourse';
 import SearchBar from '../courses/Searchbar';
+import LiveVideo from './LiveVideo';
 
 
 
 export default function Live() {
     return (
         <div className='bg-slate-700'>
-            <section class="bg-slate-700 pt-20 pb-20 w-full mx-auto">
-                <div class="container mx-auto px-2 w-4/5">
+            <section class="bg-slate-700 pt-16 s w-full mx-auto">
+                <div class="container mx-auto px-2 w-full lg:w-4/5">
                     <div class="flex flex-col lg:flex-row items-center">
-                        <div class="lg:w-1/2 mt-2 block rounded-lg m-5 bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        <div class="lg:w-1/2 w-full mt-2 block rounded-lg m-5 bg-white lg:p-6 p-2 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                             <h2 class="text-3xl flex justify-center border-b-2 border-slate-500 font-semibold mx-auto text-black mb-4">Join The Live Class</h2>
                             <form class="mt-10">
                                 <div class="md:flex md:items-center mb-3">
@@ -79,7 +80,7 @@ export default function Live() {
                                 </div>
                             </form>
                         </div>
-                        <div class="lg:w-1/2 mt-2 block rounded-lg m-5 bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        <div class="lg:w-1/2 mt-2 w-full block rounded-lg m-5 bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                             <h2 class="text-3xl flex justify-center border-b-2 border-slate-500 font-semibold mx-auto text-black mb-10">Join The Live Meeting</h2>
                             <form class="mt-10">
                                 <div class="md:flex md:items-center mb-3">
@@ -145,6 +146,7 @@ export default function Live() {
             <div className='lg:w-11/12  w-full mx-auto'>
                 <LiveCourse />
             </div>
+
         </div>
     )
 }
