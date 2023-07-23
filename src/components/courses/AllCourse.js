@@ -15,31 +15,9 @@ const AllCourse = () => {
             .then(data => setCourses(data))
     }, []);
 
-    // const [currentPage, setCurrentPage] = useState(1)
-    // const [postPerpage, setPostperPage] = useState(8)
-    // const indexOfLastItem = currentPage * postPerpage;
-    // const indexOfFirstItem = indexOfLastItem - postPerpage;
-    // const currentPost = courses.slice(indexOfFirstItem, indexOfLastItem);
-
-
-
-
-
-
-    // const [page, setPage] = useState(1)
-
-    // const [size, setSize] = useState(5)
-
-    // console.log(page, "page current")
-    // const numberoftotalPage = Math.ceil(courses.length / size)
-
-    // const pages = [...Array(numberoftotalPage + 1).keys()].slice(1)
 
     const [currentPage, setcurrentPage] = useState(1)
     const [postperPage, setPostperPage] = useState(8)
-
-
-
 
     const lastpostindex = currentPage * postperPage;
     const firstpostindex = lastpostindex - postperPage;
@@ -111,17 +89,7 @@ const AllCourse = () => {
 
                     setcurrentPage={setcurrentPage} />
 
-                {/* <button className='gap-4 m-2 border px-3 py-1 rounded-md border-gray-400' onClick={handlPrevious}>Previous</button> */}
-                {/* {
-                    pages.map((pag, index) =>
 
-                        <button
-                            onClick={() => setPage(pag)}
-                            className={`gap-4 m-2 border px-3 py-1 rounded-md border-gray-400${page === pag ? ' bg-purple-400' : ""}`}> {pag}</button>
-
-                    )
-                } */}
-                {/* <button className='gap-4 m-2 border px-3 py-1 rounded-md border-gray-400' onClick={handlNext}>Next</button> */}
             </div>
         </div>
     );

@@ -9,33 +9,10 @@ const ProfileDashboard = () => {
     console.log(open)
     return (
         <div className="flex flex-col w-full lg:flex-row">
-            <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:hidden block relative lg:static  lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl  py-6 ${!open && 'w-1/12 ml-1 rounded-l-full transform duration-1000   mt-20  z-50'} `}>
+            <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:hidden block relative lg:static  lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl  py-6 ${!open ? 'w-[0.1px] ml-1 rounded-l-full transform duration-1000   mt-20  z-50' : 'w-2/3'} `}>
                 {
-                    open && <div className=''>
-                        <div className="flex mt-10  text-center items-center justify-center mb-8">
-                            <img src={Avator}
-                                alt=""
-                                className="w-20 border-[6px] border-blue-500 h-20 rounded-full mr-4" />
-                        </div>
-                        <div className='text-center mb-8'>
-                            <h2 className="text-xl font-bold">Showkat Ali</h2>
-                            <p className="text-sm">
-                                rumel36@gmail.com
-                            </p>
-                        </div>
-                        <hr className='border-t-2  border-blue-400"' />
-                        <div>
-                            <Sidebar></Sidebar>
-                        </div>
-                        <hr color='black' className='text-blue-600 ' />
-
-                        <div className="flex items-center justify-center my-8  ">
-                            <button className='text-xl font-semibold bg-white text-black px-4 hover:border-[2px] hover:border-blue-700 transition duration-700 hover:bg-slate-800 hover:text-white py-1 rounded'>
-
-                                <AiOutlineLogout className='inline-block' />
-                                Logout</button>
-                        </div>
-                    </div>
+                    open &&
+                    <Sidebar></Sidebar>
                 }
                 <div className='-right-4  bg-gray-900 rounded-r-full top-0 w-10 h-[46px] flex justify-center items-center absolute lg:static lg:hidden'>
 
@@ -48,27 +25,8 @@ const ProfileDashboard = () => {
                 </div>
             </div>
             <div className={`bg-gray-900 text-white z-50  shadow-2xl w-1/2 lg:w-2/12 px-4 lg:block hidden lg:m-2 m-0 lg:my-2 my-0 lg:mx-2 mx-0 lg:rounded-xl rounded-b-lg py-6  `}>
-                <div className=''>
-                    <div className="flex mt-10  text-center items-center justify-center mb-8">
-                        <img src={Avator}
-                            alt=""
-                            className="w-20 border-[6px] border-blue-500 h-20 rounded-full mr-4" />
-                    </div>
-                    <div className='text-center mb-8'>
-                        <h2 className="text-xl font-bold">Showkat Ali</h2>
-                        <p className="text-sm">
-                            rumel36@gmail.com
-                        </p>
-                    </div>
-                    <hr className='border-t-2  border-blue-400"' />
-                    <div>
-                        <Sidebar></Sidebar>
-                    </div>
-                    <hr color='black' className='text-blue-600 ' />
 
-
-                </div>
-
+                <Sidebar></Sidebar>
                 <div className='-right-4  bg-gray-900 rounded-r-full top-8 w-14 h-[50px] flex justify-center items-center absolute lg:static lg:hidden'>
 
 
