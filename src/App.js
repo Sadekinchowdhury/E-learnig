@@ -44,12 +44,12 @@ import CourseTeacherAdmin from "./DashBoard/CourseTeacherAdmin/CourseTeacherAdmi
 import TeacherRegistrationForm from "./DashBoard/TeacherRegistration/TeacherRegistration";
 import PersonalLive from "./DashBoard/PersonalMeeting/PersonalLive";
 import TeacherLive from "./DashBoard/CourseTeacherAdmin/TeacherLive";
+import VideoPage from "./DashBoard/MissingClass/VideoPage";
 
 function App() {
   const disableRightClick = (e) => {
     e.preventDefault();
   };
-
 
   // onContextMenu={disableRightClick}
   //     onCopy={
@@ -58,10 +58,7 @@ function App() {
   //       }
   //     }
   return (
-
     <div className="overflow-hidden w-full">
-
-
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -129,6 +126,10 @@ function App() {
 
             <Route path="/profile/courseHistory" element={<CourseHistory />} />
             <Route path="/profile/missingclass" element={<MissingClass />} />
+            <Route
+              path="/profile/missingclass/video/:id"
+              element={<VideoPage />}
+            />
             <Route path="/profile/dashboard" element={<ProfileDashboard />} />
             <Route path="/profile/setting" element={<Setting />} />
             <Route

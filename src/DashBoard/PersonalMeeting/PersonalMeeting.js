@@ -4,12 +4,16 @@ import { AiFillEdit } from "react-icons/ai";
 import EditPersonalMeeting from "./EditePersonalMeeting";
 import CreateNewMeeting from "./CreateNewMeeting";
 import PersonalLive from "./PersonalLive";
+import { BiSolidHide } from "react-icons/bi";
+import { BiSolidShow } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const PersonalMeeting = () => {
+  const [showPass, setShowPass] = useState();
   const users = [
     {
       sl: "6",
-      courseId: "27923861",
+      courseId: 27923861,
       name: "Sweet",
       country: "Bangladesh",
       title: "Manager",
@@ -21,7 +25,7 @@ const PersonalMeeting = () => {
     },
     {
       sl: "5",
-      courseId: "27923861",
+      courseId: 27923862,
       name: "Sweet",
       country: "Bangladesh",
       title: "Manager",
@@ -33,7 +37,7 @@ const PersonalMeeting = () => {
     },
     {
       sl: "4",
-      courseId: "27923861",
+      courseId: 27923863,
       name: "Sweet",
       country: "Bangladesh",
       title: "Manager",
@@ -45,7 +49,7 @@ const PersonalMeeting = () => {
     },
     {
       sl: "3",
-      courseId: "27923861",
+      courseId: 27923864,
       name: "Sweet",
       country: "Bangladesh",
       title: "Manager",
@@ -57,7 +61,7 @@ const PersonalMeeting = () => {
     },
     {
       sl: "2",
-      courseId: "27923861",
+      courseId: 27923865,
       name: "Sweet",
       country: "Bangladesh",
       title: "Manager",
@@ -69,7 +73,7 @@ const PersonalMeeting = () => {
     },
     {
       sl: "1",
-      courseId: "27923861",
+      courseId: 27923866,
       name: "Sweet",
       country: "Bangladesh",
       title: "Manager",
@@ -83,6 +87,10 @@ const PersonalMeeting = () => {
 
   const handleDelete = (i) => {
     console.log("Deleted", i);
+  };
+
+  const handleShow = (id) => {
+    showPass === id ? setShowPass() : setShowPass(id);
   };
   return (
     <div className="p-5">
@@ -190,7 +198,7 @@ const PersonalMeeting = () => {
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {users.map((user, i) => (
-                <tr key={user.meaingId}>
+                <tr key={user.courseId}>
                   <td className="bg-emerald-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.sl}
                   </td>
@@ -216,7 +224,21 @@ const PersonalMeeting = () => {
                     {user.userName}
                   </td>
                   <td className="bg-indigo-800 px-6 py-3 text-xsm text-white whitespace-nowrap">
-                    {user.password}//
+                    <span className="flex justify-between">
+                      {showPass === user.courseId
+                        ? user.password
+                        : "**********"}
+                      <button
+                        className="ml-2"
+                        onClick={() => handleShow(user.courseId)}
+                      >
+                        {showPass === user.courseId ? (
+                          <BiSolidShow />
+                        ) : (
+                          <BiSolidHide />
+                        )}
+                      </button>
+                    </span>
                   </td>
                   <td className="bg-gray-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
                     {user.ative ? (
@@ -225,15 +247,17 @@ const PersonalMeeting = () => {
                       <span className="text-[red] font-bold">Inactive</span>
                     )}
                   </td>
-                  <td className="bg-sky-950 px-6 py-3 text-xsm text-white whitespace-nowrap flex items-center justify-between">
-                    <EditPersonalMeeting />
+                  <td className="bg-sky-950 px-6 py-3 text-xsm text-white whitespace-nowrap">
+                    <span className="flex items-center justify-between">
+                      <EditPersonalMeeting />
 
-                    <button
-                      onClick={() => handleDelete(i)}
-                      className="hover:text-[red] text-xl font-semibold transition duration-300"
-                    >
-                      <AiFillDelete />
-                    </button>
+                      <button
+                        onClick={() => handleDelete(i)}
+                        className="hover:text-[red] text-xl font-semibold transition duration-300"
+                      >
+                        <AiFillDelete />
+                      </button>
+                    </span>
                   </td>
                 </tr>
               ))}
