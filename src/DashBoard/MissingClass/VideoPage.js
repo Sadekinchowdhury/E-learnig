@@ -6,8 +6,8 @@ const VideoPage = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="flex flex-row items-center">
-        <div className="relative w-full pb-9/16">
+      <div className="flex flex-col items-center content-center">
+        <div className="pb-9/16">
           <iframe
             width="560"
             height="315"
@@ -17,19 +17,18 @@ const VideoPage = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+          <p className="mt-3">Learn React & Next.js simply features </p>
+          <div className="mt-4">
+            <a
+              href="YOUR_DOWNLOAD_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Download Video
+            </a>
+          </div>
         </div>
-      </div>
-
-      {/* Download Button */}
-      <div className="mt-4">
-        <a
-          href="YOUR_DOWNLOAD_LINK"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Download Video
-        </a>
       </div>
     </div>
   );
