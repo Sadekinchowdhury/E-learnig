@@ -139,7 +139,7 @@ const MeatingHome = () => {
     <section className="bg-[#091650] py-12 lg:px-[200px] px-4 md:px-8">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-white">
-          Our Flexible Pricing Plans
+          Personal Meeting Package
         </h1>
       </div>
       <div className="mt-8">
